@@ -1,0 +1,75 @@
+/* Small-screen exploration shares the desktop map and reviewed catalog. */
+#vorland-atlas .ea-mobile-software,#vorland-atlas .ea-mobile-context,#vorland-atlas .ea-mobile-cities,#vorland-atlas .ea-mobile-control,#vorland-atlas .ea-mobile-count{display:none}
+#vorland-atlas .ea-mobile-sheet:not([open]){display:none}
+@media(max-width:740px){
+  #vorland-atlas[data-mobile=true] .ea-hero{padding:22px 20px 14px}
+  #vorland-atlas[data-mobile=true] .ea-hero h1{font-size:clamp(38px,10vw,62px)}
+  #vorland-atlas[data-mobile=true] .ea-degree{font-size:22px}
+  #vorland-atlas[data-mobile=true] .ea-intro{margin-top:12px}
+  #vorland-atlas[data-mobile=true] .ea-intro p{font-size:15px;line-height:1.55}
+  #vorland-atlas[data-mobile=true] .ea-position{font-size:12px}
+  #vorland-atlas[data-mobile=true] .ea-chrome{padding:12px 20px}
+  #vorland-atlas[data-mobile=true] .ea-nav{display:flex;flex-wrap:wrap;gap:0 14px;justify-content:flex-start}
+  #vorland-atlas[data-mobile=true] .ea-nav a{min-height:36px;display:inline-flex;align-items:center}
+  #vorland-atlas[data-mobile=true] .ea-workspace{display:block;padding:0 16px 22px}
+  #vorland-atlas[data-mobile=true] .ea-mobile-software{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 20px 22px}
+  #vorland-atlas .ea-mobile-software a,#vorland-atlas .ea-mobile-software .ea-coming-soon{display:block;min-width:0;padding:10px;background:#12252d;border:1px solid #36525c;border-radius:7px;text-decoration:none}
+  #vorland-atlas .ea-mobile-software strong{display:block;font-size:14px;line-height:1.35;color:#d9f1ed}
+  #vorland-atlas .ea-mobile-software small{display:block;font-size:12px;color:#b5cbd1;line-height:1.5;margin-top:4px}
+  #vorland-atlas .ea-mobile-software .ea-coming-soon{background:#111d26;border-color:#2c3d48}
+  #vorland-atlas .ea-mobile-software .ea-coming-soon strong,#vorland-atlas .ea-mobile-software .ea-coming-soon small{color:#92a1ab}
+  #vorland-atlas[data-mobile=true] .ea-mobile-context{display:block}
+  #vorland-atlas .ea-mobile-context label{display:flex;align-items:center;gap:12px;font-size:14px;color:#b5cbd1}
+  #vorland-atlas .ea-mobile-island{min-width:0;flex:1;min-height:44px;font-size:16px;background:#142832;border:1px solid #44626e;color:#edf4ef;border-radius:6px;padding:8px}
+  #vorland-atlas .ea-mobile-title{font-family:'Instrument Serif',Georgia,serif;font-size:30px;font-weight:400;line-height:1.15;margin:15px 0 7px}
+  #vorland-atlas .ea-mobile-focus{font-size:14px;line-height:1.55;color:#beced4;margin:0 0 10px}
+  #vorland-atlas[data-mobile=true][data-island=false] .ea-mobile-title,#vorland-atlas[data-mobile=true][data-island=false] .ea-mobile-focus{display:none}
+  #vorland-atlas[data-mobile=true] .ea-toolbar{display:flex;flex-wrap:wrap;gap:6px 12px;padding:4px 0 8px}
+  #vorland-atlas[data-mobile=true] .ea-switch button{min-height:44px;font-size:14px}
+  #vorland-atlas[data-mobile=true] .ea-map-navigation{gap:12px;order:3;width:100%}
+  #vorland-atlas[data-mobile=true] .ea-up,#vorland-atlas[data-mobile=true] .ea-back{min-height:44px;font-size:14px}
+  #vorland-atlas[data-mobile=true] .ea-mobile-control{display:block;min-height:44px;padding:8px 10px;border:1px solid #486670;border-radius:6px;background:#142832;color:#d9f1ed;font-size:14px}
+  #vorland-atlas[data-mobile=true] .ea-map{height:clamp(330px,48svh,480px);touch-action:pan-y pinch-zoom;cursor:default;margin:0;border:1px solid #294550;border-radius:8px}
+  #vorland-atlas[data-mobile=true] .ea-island-label{width:125px;min-height:48px}
+  #vorland-atlas[data-mobile=true] .ea-island-label strong{font-size:18px;line-height:1.1}
+  #vorland-atlas[data-mobile=true] .ea-island-label small{display:none}
+  #vorland-atlas[data-mobile=true] .ea-mobile-count{display:block;font:12px/1.4 'DM Sans',Arial,sans-serif;margin-top:5px;color:#c7d7dc}
+  #vorland-atlas[data-mobile=true] .ea-spatial-city{width:48px;height:48px;background:radial-gradient(ellipse,#75e1d935,transparent 70%);border:1px solid #7bcece70;border-radius:50%}
+  #vorland-atlas[data-mobile=true] .ea-spatial-name{display:block;font-size:13px;line-height:1.3;width:116px;top:90%;color:#e6f1ed;padding:3px}
+  #vorland-atlas[data-mobile=true] .ea-map-zoom button{min-width:44px;min-height:44px;font-size:16px}
+  #vorland-atlas[data-mobile=true] .ea-map-zoom button[data-zoom=fit]{font-size:14px}
+  #vorland-atlas[data-mobile=true] .ea-zoom-label,#vorland-atlas[data-mobile=true] .ea-compact-map,#vorland-atlas[data-mobile=true] .ea-island-index,#vorland-atlas[data-mobile=true] .ea-tooltip{display:none!important}
+  #vorland-atlas[data-mobile=true] .ea-map-preview{font-size:13px;line-height:1.5;min-height:0;max-height:none;padding:9px 0;color:#b5cbd1}
+  #vorland-atlas[data-mobile=true] .ea-mobile-cities{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:5px 0 14px}
+  #vorland-atlas .ea-mobile-cities button{min-height:52px;text-align:left;padding:10px;border:1px solid #36535f;border-radius:6px;color:#e2eeeb;background:#132731;font-size:14px;line-height:1.4;overflow-wrap:anywhere}
+  #vorland-atlas .ea-mobile-cities button[aria-pressed=true]{border-color:#9ce7df;background:#21444b}
+  #vorland-atlas .ea-mobile-cities small{display:block;color:#b7cbd1;font-size:12px;margin-top:4px}
+  #vorland-atlas .ea-mobile-cities .ea-mobile-work-links{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px}
+  #vorland-atlas .ea-mobile-work-links button{flex:1;min-width:120px}
+  #vorland-atlas[data-mobile=true] .ea-legend{font-size:12px;gap:12px;padding-top:12px}
+  #vorland-atlas .ea-mobile-sheet{position:fixed;inset:auto 0 0;width:100%;max-width:740px;height:60dvh;max-height:calc(100dvh - 16px);margin:0 auto;padding:0;border:1px solid #66828a;border-bottom:0;border-radius:16px 16px 0 0;background:#eef1e9;color:#19343e;box-shadow:0 -12px 45px #0006;overflow:hidden;color-scheme:light}
+  #vorland-atlas .ea-mobile-sheet[open]{display:flex;flex-direction:column}
+  #vorland-atlas .ea-mobile-sheet[data-size=full]{height:calc(100dvh - 16px)}
+  #vorland-atlas .ea-mobile-sheet::backdrop{background:#030b1255}
+  #vorland-atlas .ea-sheet-actions{display:flex;justify-content:space-between;gap:8px;padding:10px 16px;border-bottom:1px solid #a9bfbd;flex-shrink:0;background:#eef1e9}
+  #vorland-atlas .ea-sheet-actions button{min-height:44px;padding:8px 12px;font-size:14px;border:1px solid #819e9f;border-radius:6px;background:transparent;color:#19343e}
+  #vorland-atlas .ea-mobile-sheet .ea-inspector{order:0;width:100%;flex:1;min-height:0;margin:0;border:0;border-radius:0;max-height:none;overflow-y:auto;overscroll-behavior:contain;padding:18px 20px calc(24px + env(safe-area-inset-bottom));background:#eef1e9;color:#19343e}
+  #vorland-atlas .ea-mobile-sheet .ea-tool-showcase,#vorland-atlas .ea-mobile-sheet .ea-close{display:none!important}
+  #vorland-atlas .ea-mobile-sheet .ea-panel-title{font-size:30px!important}
+  #vorland-atlas .ea-mobile-sheet .ea-citation{font-size:14px;line-height:1.65}
+  #vorland-atlas .ea-mobile-sheet .ea-panel-item{min-height:48px}
+  #vorland-atlas .ea-mobile-sheet .science-link{width:44px;height:44px}
+  #vorland-atlas[data-mobile=true][data-expanded=true] .ea-explorer{position:fixed;inset:0;z-index:80;width:100%;height:100dvh;padding:12px max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));background:#0b1720;display:flex;flex-direction:column;overflow:auto;overscroll-behavior:contain}
+  #vorland-atlas[data-expanded=true] .ea-mobile-context{flex-shrink:0}
+  #vorland-atlas[data-expanded=true] .ea-mobile-title{font-size:24px;margin:8px 0}
+  #vorland-atlas[data-expanded=true] .ea-mobile-focus{display:none}
+  #vorland-atlas[data-expanded=true] .ea-toolbar{flex-shrink:0}
+  #vorland-atlas[data-expanded=true] #ea-map-wrap{flex:1;min-height:180px;display:flex;flex-direction:column}
+  #vorland-atlas[data-expanded=true] .ea-map{height:auto;min-height:150px;flex:1;touch-action:none;cursor:grab}
+  #vorland-atlas[data-expanded=true] .ea-mobile-cities,#vorland-atlas[data-expanded=true] .ea-legend{display:none!important}
+  #vorland-atlas[data-expanded=true] .ea-list{overflow:auto;min-height:0}
+  #vorland-atlas[data-expanded=true] .ea-map-navigation{width:auto;order:0}
+  #vorland-atlas[data-expanded=true] .ea-mobile-island{min-height:44px}
+  #vorland-atlas[data-expanded=true] .ea-map-preview{flex-shrink:0}
+  @media(max-width:360px){#vorland-atlas[data-mobile=true] .ea-island-label{width:112px}#vorland-atlas[data-mobile=true] .ea-island-label strong{font-size:16px}#vorland-atlas[data-mobile=true] .ea-spatial-name{width:100px;font-size:12px}}
+}

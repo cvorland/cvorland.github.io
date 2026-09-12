@@ -15,6 +15,9 @@
     {id:'metaresearch',title:'metaresearch.ai',status:'Coming soon',comingSoon:true,description:'Software to facilitate meta-research projects.',detail:'Coming soon.',themes:['automation'],url:null,link:null}
   ];
   const state = {island:null,district:null,kind:'overview',selected:null,view:'map',nav:'research'};
+  const mobileQuery=window.matchMedia('(max-width:740px)');
+  const isMobile=()=>mobileQuery.matches;
+  let expanded=false,mobileOrigin=null,mobileTrigger=null,bodyLock=null;
   const design = {paper:true,labels:'serif',background:'dark',expedition:Boolean(window.VORLAND.ships?.length)};
   const ships=window.VORLAND.ships||[];
   root.querySelector('.ea-key-ship').hidden=!ships.length;
@@ -119,6 +122,10 @@ function makeSpatialFeatures() {
   const list = root.querySelector('.ea-list');
   const index = root.querySelector('.ea-island-index');
   const live = root.querySelector('[role=status]');
+  const explorer=root.querySelector('.ea-explorer'),inspector=root.querySelector('.ea-inspector');
+  const inspectorHome=inspector.parentNode,sheet=root.querySelector('.ea-mobile-sheet');
+  const mobileContext=root.querySelector('.ea-mobile-context'),mobileCities=root.querySelector('.ea-mobile-cities');
+  const mobileSoftware=root.querySelector('.ea-mobile-software'),islandSelect=root.querySelector('.ea-mobile-island');
   const byId = (items,id) => items.find(item => item.id===id);
   const softwareHomes={lazy:{automation:'automation-workflow',reproducibility:districtData.find(t=>t.id==='reproducibility').districts.find(d=>/sharing|availability|access/i.test(d.id+' '+d.title)).id},maarvin:{automation:'automation-review',integrity:districtData.find(t=>t.id==='integrity').districts[0].id},writing:{automation:'automation-workflow'},metaresearch:{automation:'automation-workflow'}};
   const toolsForTheme=id=>tools.filter(t=>t.themes.includes(id));
@@ -296,7 +303,7 @@ function makeSpatialFeatures() {
   controls.innerHTML=themes.map(theme=>{
     const b=theme.bounds;
     const clip='polygon('+theme.coast.map(p=>((p[0]-b.x)/b.w*100).toFixed(2)+'% '+((p[1]-b.y)/b.h*100).toFixed(2)+'%').join(',')+')';
-    return '<button type="button" class="ea-island-hit" data-theme="'+theme.id+'" style="clip-path:'+clip+'" aria-label="Explore '+esc(theme.title)+', '+themeCount(theme.id)+'"></button><button type="button" class="ea-island-label" data-theme="'+theme.id+'" style="--tone:'+theme.color+'" data-tooltip="'+esc('Main focus: '+theme.description)+'" aria-label="Zoom into '+esc(theme.title)+', '+themeCount(theme.id)+'"><strong>'+theme.label+'</strong><small>'+themeCount(theme.id)+'</small></button>';
+    return '<button type="button" class="ea-island-hit" data-theme="'+theme.id+'" style="clip-path:'+clip+'" aria-label="Explore '+esc(theme.title)+', '+themeCount(theme.id)+'"></button><button type="button" class="ea-island-label" data-theme="'+theme.id+'" style="--tone:'+theme.color+'" data-tooltip="'+esc('Main focus: '+theme.description)+'" aria-label="Zoom into '+esc(theme.title)+', '+themeCount(theme.id)+'"><strong>'+theme.label+'</strong><small>'+themeCount(theme.id)+'</small><span class="ea-mobile-count">'+theme.count+' papers</span></button>';
   }).join('')+works.filter(w=>!w.isShip).map(w=>'<button type="button" class="ea-node" data-tooltip="'+esc(citationText(w))+'" data-work="'+w.id+'" data-preprint="'+Boolean(w.preprint)+'" style="--tone:'+color(w.primary)+'" aria-label="'+esc(citationText(w))+'" aria-pressed="false">'+paperBuilding(Object.values(featured).includes(w.id),Boolean(w.preprint))+'<span class="ea-node-index" aria-hidden="true">'+w.n+'</span><span class="ea-node-label" aria-hidden="true">'+esc(w.short)+'<small>'+w.year+(w.preprint?' · Preprint':'')+'</small></span></button>').join('');
   cityControls.innerHTML=allDistricts.map(d=>'<div class="ea-city-group" data-city="'+d.id+'" style="--tone:'+color(d.theme)+'"><button type="button" class="ea-city" data-district="'+d.id+'" aria-label="'+esc(d.title)+', '+districtCount(d)+'" aria-pressed="false">'+cityMark(d.works.length+toolsForDistrict(d.id).length,d.works.includes(featured[d.theme]))+'<span class="ea-city-name">'+esc(d.title)+'</span><span class="ea-city-count">'+districtCount(d)+'</span></button>'+(d.works.includes(featured[d.theme])?'<button type="button" class="ea-landmark-entry" data-work="'+featured[d.theme]+'" aria-label="Open featured paper: '+esc(byId(works,featured[d.theme]).short)+'"><span aria-hidden="true">✦</span> Featured work</button>':'')+'</div>').join('');
   softwareControls.innerHTML=tools.map(t=>'<button type="button" class="ea-software-pin" data-tool="'+t.id+'" aria-label="Explore software: '+esc(t.title)+'">'+paperBuilding(false,false)+'<span class="ea-software-type">Software</span><strong><span class="ea-tool-full">'+esc(t.title)+'</span><span class="ea-tool-short">'+({lazy:'Lazy Scholar',maarvin:'MAARVIN.ai',writing:'ISBW'}[t.id])+'</span></strong></button>').join('');
@@ -308,6 +315,12 @@ function makeSpatialFeatures() {
     const tag=t.comingSoon?'div':'a';
     return '<div class="ea-launch-item'+(t.comingSoon?' ea-coming-soon':'')+'"><'+tag+' class="ea-launch-link"'+(t.comingSoon?'':' href="'+esc(t.url)+'" target="_blank" rel="noopener noreferrer"')+'><span class="ea-launch-heading"><strong>'+esc(t.title)+(t.comingSoon?'':' <span aria-hidden="true">↗</span>')+'</strong><span class="ea-launch-history">'+(t.comingSoon?'Coming soon':'Since '+esc(t.since))+'</span></span>'+(t.launched?'<span class="ea-launch-release">Launched '+esc(t.launched)+'</span>':'')+'<span class="ea-launch-purpose">'+launchPurpose[t.id]+'</span></'+tag+'>'+(t.comingSoon?'':'<button type="button" class="ea-launch-context" data-tool="'+t.id+'" aria-label="Related research for '+esc(t.title)+'">Related research →</button>')+'</div>';
   }).join('');
+
+  mobileSoftware.innerHTML=tools.map(t=>{
+    const tag=t.comingSoon?'div':'a';
+    return '<'+tag+(t.comingSoon?' class="ea-coming-soon"':' href="'+esc(t.url)+'" target="_blank" rel="noopener noreferrer"')+'><strong>'+esc(t.title)+(t.comingSoon?'':' ↗')+'</strong><small>'+esc(t.comingSoon?'Coming soon':t.id==='lazy'?'Free browser extension · Since '+t.since:toolHistory(t))+'</small></'+tag+'>';
+  }).join('');
+  islandSelect.innerHTML='<option value="">All islands</option>'+themes.map(t=>'<option value="'+t.id+'">'+esc(t.title)+'</option>').join('');
 
   function fit(bounds,width,height) {
     let w=bounds.w,h=bounds.h;
@@ -322,7 +335,7 @@ function makeSpatialFeatures() {
     if(!state.island)return fit(allBounds,width,height);
     const base=islandCamera(width,height);
     if(!state.district)return base;
-    const points=spatialFeatures.filter(f=>f.district===state.district&&f.kind!=='district');if(points.length){const xs=points.map(f=>f.x),ys=points.map(f=>f.y);return fit({x:Math.min(...xs)-38,y:Math.min(...ys)-62,w:Math.max(...xs)-Math.min(...xs)+76,h:Math.max(...ys)-Math.min(...ys)+100},width,height);}const p=cityPositions[state.district],zoom=2.4;
+    const points=spatialFeatures.filter(f=>f.district===state.district&&f.kind!=='district');if(points.length){const xs=points.map(f=>f.x),ys=points.map(f=>f.y);const view=fit({x:Math.min(...xs)-38,y:Math.min(...ys)-62,w:Math.max(...xs)-Math.min(...xs)+76,h:Math.max(...ys)-Math.min(...ys)+100},width,height);if(isMobile()&&width/view.w<2.35){const p=cityPositions[state.district],w=width/2.35,h=height/2.35;return {x:p.x-w/2,y:p.y-h/2,w,h};}return view;}const p=cityPositions[state.district],zoom=2.4;
     return {x:p.x-base.w/zoom/2,y:p.y-base.h/zoom*.56,w:base.w/zoom,h:base.h/zoom};
   }
   function buildGeometry() {
@@ -335,14 +348,16 @@ function makeSpatialFeatures() {
     // The artwork beneath them is left entirely unchanged.
     {
       themes.forEach(t=>{
+        out+='<g data-city-theme="'+t.id+'">';
         const districts=districtsFor(t.id),positions=districts.map(d=>cityPositions[d.id]);
         positions.forEach((p,j)=>{
           const q=positions[(j+1)%positions.length],landmark=districts[j].works.includes(featured[t.id]);
           out+='<path d="M'+p.x+','+p.y+' Q'+((p.x+q.x)/2+t.rx*.04)+','+((p.y+q.y)/2-t.ry*.025)+' '+q.x+','+q.y+'" fill="none" stroke="'+t.color+'" stroke-opacity=".29" stroke-width=".7" vector-effect="non-scaling-stroke"/>';
           spatialFeatures.filter(f=>f.district===districts[j].id&&f.kind!=='district').forEach(f=>{
-            out+='<g class="ea-city-building'+(f.kind==='tool'?' ea-city-building-software':'')+(f.featured?' ea-city-building-featured':'')+(f.comingSoon?' ea-planned-building':'')+(f.secondary?' ea-building-secondary':'')+'"'+(f.kind==='work'?' data-spatial-work="'+f.id+'" data-work-theme="'+f.theme+'"':'')+' transform="translate('+f.x+' '+(f.y+6)+')">'+atlasBuildingShape(f.secondary?14:18,f.secondary?9:11,f.secondary?5:6,f.featured)+'</g>';
+            out+='<g class="ea-city-building'+(f.kind==='tool'?' ea-city-building-software':'')+(f.featured?' ea-city-building-featured':'')+(f.comingSoon?' ea-planned-building':'')+(f.secondary?' ea-building-secondary':'')+'" data-building-district="'+f.district+'"'+(f.kind==='work'?' data-spatial-work="'+f.id+'" data-work-theme="'+f.theme+'"':'')+' transform="translate('+f.x+' '+(f.y+6)+')">'+atlasBuildingShape(f.secondary?14:18,f.secondary?9:11,f.secondary?5:6,f.featured)+'</g>';
           });
         });
+        out+='</g>';
       });
     }
     svg.innerHTML=out+'<g class="ea-overlap-routes" aria-hidden="true"></g>';
@@ -355,28 +370,56 @@ function makeSpatialFeatures() {
     cityControls.hidden=true;softwareControls.hidden=true;cityRoads.hidden=true;
     controls.querySelectorAll('.ea-node').forEach(n=>n.hidden=true);
     const scale=lastWidth/camera.w;
-    const closeDetail=scale>=1.6;
+    const closeDetail=isMobile()?scale>=2.3:scale>=1.6;
+    const mobileIslandLevel=!isMobile()||Boolean(state.island)&&camera.w<=islandCamera(lastWidth,lastHeight).w*1.25;
     root.dataset.mapDetail=closeDetail?'buildings':scale>=.8?'themes':'islands';
     spatialFeatures.forEach(f=>{
       const x=sx(f.x),y=sy(f.y),city=f.kind==='district';
-      f.button.hidden=(city?closeDetail:!closeDetail)||x<18||x>lastWidth-18||y<18||y>lastHeight-18;
+      const mobileHidden=isMobile()&&(!mobileIslandLevel||f.theme!==state.island||(!city&&state.district&&f.district!==state.district));
+      const inset=isMobile()?24:18;
+      f.button.hidden=mobileHidden||(city?closeDetail:!closeDetail)||x<inset||x>lastWidth-inset||y<inset||y>lastHeight-inset;
       if(f.button.hidden)return;
       f.button.style.left=x+'px';f.button.style.top=y+'px';
-      if(!city){f.button.style.width=Math.min(42,Math.max(28,23*scale))+'px';f.button.style.height=Math.min(40,Math.max(28,19*scale))+'px';}
+      if(!city){f.button.style.width=(isMobile()?44:Math.min(42,Math.max(28,23*scale)))+'px';f.button.style.height=(isMobile()?44:Math.min(40,Math.max(28,19*scale)))+'px';}
       f.button.setAttribute('aria-pressed',String(city?state.district===f.id:state.kind===f.kind&&state.selected===f.id));
     });
     positionVessels();
     renderConnections();
+    svg.querySelectorAll('[data-building-district]').forEach(g=>g.style.display=isMobile()&&closeDetail&&state.district&&g.dataset.buildingDistrict!==state.district?'none':'');
     themes.forEach(t=>{
+      const mobileOther=isMobile()&&state.island&&t.id!==state.island;
+      svg.querySelector('[data-land="'+t.id+'"]').style.display=mobileOther?'none':'';
+      svg.querySelector('[data-city-theme="'+t.id+'"]').style.display=isMobile()&&(!state.island||mobileOther)?'none':'';
       const hit=controls.querySelector('.ea-island-hit[data-theme="'+t.id+'"]');
       const label=controls.querySelector('.ea-island-label[data-theme="'+t.id+'"]');
-      hit.hidden=true;label.hidden=scale>=.8||sx(t.x)<35||sx(t.x)>lastWidth-35||sy(t.y)<35||sy(t.y)>lastHeight-35;
+      hit.hidden=true;label.hidden=(isMobile()?(state.island?(mobileIslandLevel||t.id!==state.island):false):scale>=.8)||sx(t.x)<35||sx(t.x)>lastWidth-35||sy(t.y)<35||sy(t.y)>lastHeight-35;
       hit.style.left=sx(t.bounds.x)+'px';hit.style.top=sy(t.bounds.y)+'px';hit.style.width=t.bounds.w/camera.w*lastWidth+'px';hit.style.height=t.bounds.h/camera.h*lastHeight+'px';
       label.style.left=sx(t.x)+'px';label.style.top=sy(t.y)+'px';
     });
   }
   // Locate ships by their own coastline, in map coordinates, so pan/zoom retains association.
+  function positionMobileVessels(){
+    shipLayer.style.setProperty('--ship-scale','1');
+    shipLayer.querySelectorAll('.ea-expedition').forEach(v=>v.hidden=true);
+    if(!state.island||state.district)return;
+    const t=byId(themes,state.island),own=shipsForTheme(t.id),base=islandCamera(lastWidth,lastHeight),key='mobile|'+t.id+'|'+lastWidth+'|'+lastHeight;
+    if(!vesselPositionCache.has(key)){
+      const coast=t.coast.map(p=>[(p[0]-base.x)/base.w*lastWidth,(p[1]-base.y)/base.h*lastHeight]);
+      const candidates=[];
+      for(let y=32;y<lastHeight-32;y+=14)for(let x=28;x<lastWidth-28;x+=14){
+        if(x<184&&y>lastHeight-82)continue;
+        if([[0,0],[-24,-28],[24,-28],[-24,28],[24,28]].some(p=>inside(x+p[0],y+p[1],coast)))continue;
+        candidates.push({x,y,d:Math.min(...coast.map(p=>Math.hypot(p[0]-x,p[1]-y)))});
+      }
+      candidates.sort((a,b)=>a.d-b.d);const chosen=[],positions=new Map();
+      for(const ship of own){const p=candidates.find(p=>chosen.every(q=>Math.abs(p.x-q.x)>=54||Math.abs(p.y-q.y)>=62));if(p){chosen.push(p);positions.set(ship.work,{x:base.x+p.x/lastWidth*base.w,y:base.y+p.y/lastHeight*base.h});}}
+      vesselPositionCache.set(key,positions);
+    }
+    const positions=vesselPositionCache.get(key);
+    own.forEach(ship=>{const p=positions.get(ship.work),v=shipLayer.querySelector('[data-expedition="'+ship.work+'"]');if(!p)return;const x=(p.x-camera.x)/camera.w*lastWidth,y=(p.y-camera.y)/camera.h*lastHeight;v.hidden=x<24||x>lastWidth-24||y<28||y>lastHeight-28;v.style.left=x+'px';v.style.top=y+'px';v.dataset.mapX=p.x;v.dataset.mapY=p.y;});
+  }
   function positionVessels(){
+    if(isMobile()){positionMobileVessels();return;}
     const base=fit(allBounds,lastWidth,lastHeight),key=lastWidth+'|'+lastHeight;
     const compactScale=Math.min(1,lastWidth/320);
     if(!vesselPositionCache.has(key)){
@@ -422,7 +465,7 @@ function makeSpatialFeatures() {
     ships.forEach(ship=>{
       const vessel=shipLayer.querySelector('[data-expedition="'+ship.work+'"]');
       const p=vesselPositionCache.get(key).get(ship.work);vessel.hidden=!p;
-      if(p){const x=(p.x-camera.x)/camera.w*lastWidth,y=(p.y-camera.y)/camera.h*lastHeight;vessel.hidden=x<0||x>lastWidth||y<0||y>lastHeight;vessel.style.left=x+'px';vessel.style.top=y+'px';vessel.dataset.mapX=p.x;vessel.dataset.mapY=p.y;}
+      if(p){const x=(p.x-camera.x)/camera.w*lastWidth,y=(p.y-camera.y)/camera.h*lastHeight;vessel.hidden=x<0||x>lastWidth||y<0||y>lastHeight||(isMobile()&&(!state.island||ship.theme!==state.island||Boolean(state.district)));vessel.style.left=x+'px';vessel.style.top=y+'px';vessel.dataset.mapX=p.x;vessel.dataset.mapY=p.y;}
     });
   }
   function renderConnections(){
@@ -478,18 +521,30 @@ function makeSpatialFeatures() {
     zoomAt(Math.exp(Math.max(-200,Math.min(200,delta))*.0018),(event.clientX-bounds.left)/bounds.width,(event.clientY-bounds.top)/bounds.height);
   },{passive:false});
   let drag=null,lastPanEnd=-Infinity;
+  const touches=new Map();let touchGesture=null;
+  const touchMid=()=>{const values=[...touches.values()];return {x:values.reduce((n,p)=>n+p.x,0)/values.length,y:values.reduce((n,p)=>n+p.y,0)/values.length,d:values.length>1?Math.hypot(values[0].x-values[1].x,values[0].y-values[1].y):0};};
+  const startTouch=()=>{touchGesture=touches.size?{...touchMid(),camera:{...camera},moved:false}:null;};
   map.addEventListener('pointerdown',event=>{
+    if(event.pointerType==='touch'&&isMobile()&&expanded&&camera&&!event.target.closest('.ea-map-zoom')){
+      cancelAnimationFrame(frame);touches.set(event.pointerId,{x:event.clientX,y:event.clientY});startTouch();return;
+    }
     if(event.button!==0||event.pointerType!=='mouse'||event.target.closest('button')||!camera)return;
     cancelAnimationFrame(frame);drag={x:event.clientX,y:event.clientY,camera:{...camera}};
     map.setPointerCapture(event.pointerId);map.dataset.dragging='true';event.preventDefault();
   });
   map.addEventListener('pointermove',event=>{
+    if(touches.has(event.pointerId)&&touchGesture){
+      touches.set(event.pointerId,{x:event.clientX,y:event.clientY});const current=touchMid(),origin=touchGesture,b=map.getBoundingClientRect();
+      if(Math.hypot(current.x-origin.x,current.y-origin.y)>4||Math.abs(current.d-origin.d)>4)origin.moved=true;
+      if(origin.moved){event.preventDefault();if(!map.hasPointerCapture(event.pointerId))map.setPointerCapture(event.pointerId);const ratio=origin.d&&current.d?origin.d/current.d:1,atlas=fit(allBounds,lastWidth,lastHeight),w=Math.max(lastWidth/5,Math.min(atlas.w*1.5,origin.camera.w*ratio)),h=w*lastHeight/lastWidth;camera={x:origin.camera.x+(origin.x-b.left)/lastWidth*origin.camera.w-(current.x-b.left)/lastWidth*w,y:origin.camera.y+(origin.y-b.top)/lastHeight*origin.camera.h-(current.y-b.top)/lastHeight*h,w,h};paint();lastPanEnd=performance.now();}return;
+    }
     if(!drag)return;
     if(Math.hypot(event.clientX-drag.x,event.clientY-drag.y)>4)drag.moved=true;
     camera={...drag.camera,x:drag.camera.x-(event.clientX-drag.x)/lastWidth*drag.camera.w,y:drag.camera.y-(event.clientY-drag.y)/lastHeight*drag.camera.h};paint();
   });
   const endPan=()=>{if(drag&&drag.moved)lastPanEnd=performance.now();drag=null;delete map.dataset.dragging;};
-  map.addEventListener('pointerup',endPan);map.addEventListener('pointercancel',endPan);map.addEventListener('lostpointercapture',endPan);
+  const endTouch=event=>{if(event.type==='lostpointercapture'&&event.target!==map)return;if(touches.has(event.pointerId)){const moved=touchGesture?.moved||touches.size>1;if(moved)lastPanEnd=performance.now();touches.delete(event.pointerId);startTouch();}endPan();};
+  map.addEventListener('pointerup',endTouch);map.addEventListener('pointercancel',endTouch);map.addEventListener('lostpointercapture',endTouch);
   map.addEventListener('click',event=>{
     if(event.target.closest('button')||!camera||performance.now()-lastPanEnd<200)return;
     const b=map.getBoundingClientRect(),x=camera.x+(event.clientX-b.left)/b.width*camera.w,y=camera.y+(event.clientY-b.top)/b.height*camera.h;
@@ -626,10 +681,14 @@ function makeSpatialFeatures() {
     if(up){up.hidden=state.kind==='overview';up.textContent=state.kind==='work'||state.kind==='tool'?'← Research theme':state.kind==='expedition'||state.district?'← Island':'← Overview';}
     zoomLabel.hidden=!state.island;
     if(state.island){const t=byId(themes,state.island);zoomLabel.style.setProperty('--tone',t.color);zoomLabel.innerHTML='<span>'+esc(t.title)+' / '+(state.district?districtCount(byId(allDistricts,state.district)):districtsFor(t.id).length+' themes')+'</span><strong>'+esc(state.district?byId(allDistricts,state.district).title:t.title)+'</strong>';}
+    renderMobile();
     resetPreview();
     drawMap(animate);
   }
   function select(kind,id,options={}) {
+    const mobileDetail=isMobile()&&['work','expedition','tool','tools','about'].includes(kind);
+    if(mobileDetail&&!sheet.open&&!mobileOrigin)rememberMobileOrigin();
+    if(isMobile()&&sheet.open&&!mobileDetail)closeMobileSheet(false);
     if(kind==='expedition'){const ship=ships.find(s=>s.work===id)||ships[0];if(ship){kind='work';id=ship.work;state.island=ship.theme;state.district=null;options.preserveCamera=true;}}
     hoveredWork=null;hoveredTheme=null;
     const savedCamera=options.preserveCamera&&camera?{...camera}:null;
@@ -652,7 +711,127 @@ function makeSpatialFeatures() {
     renderList();renderPanel();renderSelection(!savedCamera&&previousPlace!==state.island+'|'+state.district);
     if(savedCamera){cancelAnimationFrame(frame);camera=savedCamera;paint();}
     live.textContent=statusText();
+    if(mobileDetail)openMobileSheet();
   }
+  // Mobile keeps the current browsing location behind a native, focus-contained sheet.
+  function rememberMobileOrigin(){
+    mobileOrigin={state:{...state},camera:camera?{...camera}:null,listScroll:list.scrollTop,explorerScroll:explorer.scrollTop};
+    if(!mobileTrigger)mobileTrigger=document.activeElement;
+    // Lock before selecting a work can replace a long, document-scrolled list.
+    syncBodyLock(true);
+  }
+  function syncBodyLock(force=false){
+    const locked=isMobile()&&(force||expanded||sheet.open);
+    if(locked&&!bodyLock){
+      bodyLock={x:scrollX,y:scrollY,position:document.body.style.position,top:document.body.style.top,left:document.body.style.left,width:document.body.style.width,overflow:document.body.style.overflow};
+      Object.assign(document.body.style,{position:'fixed',top:-bodyLock.y+'px',left:-bodyLock.x+'px',width:'100%',overflow:'hidden'});
+    }else if(!locked&&bodyLock){
+      const saved=bodyLock;bodyLock=null;
+      Object.assign(document.body.style,{position:saved.position,top:saved.top,left:saved.left,width:saved.width,overflow:saved.overflow});
+      window.scrollTo({left:saved.x,top:saved.y,behavior:'instant'});
+    }
+  }
+  function openMobileSheet(){
+    dismissTooltip();
+    if(!sheet.open){sheet.dataset.size='peek';sheet.querySelector('[data-mobile-action=sheet-size]').textContent='Expand details ↑';sheet.querySelector('[data-mobile-action=sheet-size]').setAttribute('aria-expanded','false');sheet.showModal();syncBodyLock();}
+    inspector.scrollTop=0;
+    sheet.querySelector('[data-mobile-action=dismiss]').focus({preventScroll:true});
+  }
+  function restoreMobileFocus(trigger){
+    const usable=b=>b&&b.isConnected&&b.getClientRects().length&&!b.closest('[hidden]')&&!b.closest('dialog:not([open])');
+    let candidate=trigger;
+    if(!usable(candidate)&&trigger?.dataset){
+      const d=trigger.dataset;
+      if(d.spatialId)candidate=[...spatialLayer.querySelectorAll('[data-spatial-id]')].find(b=>b.dataset.spatialId===d.spatialId&&b.dataset.homeTheme===d.homeTheme);
+      else if(d.work)candidate=[...root.querySelectorAll('[data-work]')].find(b=>b.dataset.work===d.work&&usable(b));
+      else if(d.expedition)candidate=[...root.querySelectorAll('[data-expedition]')].find(b=>b.dataset.expedition===d.expedition&&usable(b));
+    }
+    (usable(candidate)?candidate:islandSelect).focus({preventScroll:true});
+  }
+  function closeMobileSheet(restore=true){
+    if(!sheet.open&&!mobileOrigin)return;
+    const origin=mobileOrigin,trigger=mobileTrigger;mobileOrigin=null;mobileTrigger=null;
+    if(sheet.open)sheet.close();
+    if(restore&&origin){Object.assign(state,origin.state);renderList();renderPanel();renderSelection();if(origin.camera){cancelAnimationFrame(frame);camera=origin.camera;paint();}list.scrollTop=origin.listScroll;explorer.scrollTop=origin.explorerScroll;}
+    syncBodyLock();
+    if(restore)requestAnimationFrame(()=>restoreMobileFocus(trigger));
+  }
+  function setExpanded(value){
+    if(value===expanded)return;
+    if(value)syncBodyLock(true);
+    expanded=value;root.dataset.expanded=String(value);touches.clear();touchGesture=null;
+    if(value){explorer.setAttribute('role','dialog');explorer.setAttribute('aria-modal','true');explorer.setAttribute('aria-label','Expanded research map');}
+    else{explorer.removeAttribute('role');explorer.removeAttribute('aria-modal');explorer.setAttribute('aria-label','Explore research');}
+    root.querySelectorAll('.ea-chrome,.ea-hero,.ea-mobile-software,.ea-footer,.ea-island-index,.skip-link').forEach(e=>e.inert=value);
+    syncBodyLock();renderMobile();drawMap();
+    const target=!value&&state.view==='list'?root.querySelector('[data-view=list]'):root.querySelector('[data-mobile-action='+ (value?'exit':'expand') +']');
+    if(isMobile())target.focus({preventScroll:true});
+  }
+  function renderMobile(){
+    if(!isMobile())return;
+    const t=state.island?byId(themes,state.island):null,d=state.district?byId(allDistricts,state.district):null;
+    islandSelect.value=state.island||'';
+    root.querySelector('.ea-mobile-title').textContent=d?d.title:t?t.title:'Explore the islands';
+    root.querySelector('.ea-mobile-focus').textContent=d?d.shortDescription:t?t.description:'Choose an island to explore its research. Island area reflects the number of primary papers.';
+    root.querySelector('[data-mobile-action=expand]').hidden=expanded||state.view!=='map';
+    root.querySelector('[data-mobile-action=exit]').hidden=!expanded;
+    mobileCities.hidden=!t||state.view!=='map'||expanded;
+    up.hidden=!d;
+    const markup=t?districtsFor(t.id).map(city=>'<button type="button" data-district="'+city.id+'" aria-pressed="'+(state.district===city.id)+'">'+esc(city.title)+'<small>'+districtCount(city)+'</small></button>').join('')+'<div class="ea-mobile-work-links"><button type="button" data-mobile-action="browse">Browse '+(d?'this theme':'island')+' in List →</button><button type="button" data-work="'+featured[t.id]+'">✦ Featured work</button>'+(shipsForTheme(t.id).length?'<button type="button" data-mobile-action="ships">Work in progress · '+shipsForTheme(t.id).length+' ships</button>':'')+'</div>':'';
+    // Preserve the activated city button between identical renders.
+    if(mobileCities.dataset.markup!==markup){mobileCities.innerHTML=markup;mobileCities.dataset.markup=markup;}
+  }
+  function configureMobile(){
+    root.dataset.mobile=String(isMobile());
+    mobileContext.hidden=!isMobile();mobileSoftware.hidden=!isMobile();
+    if(isMobile()){sheet.append(inspector);renderMobile();}
+    else{
+      closeMobileSheet(false);setExpanded(false);inspectorHome.append(inspector);syncBodyLock();
+      mobileCities.hidden=true;root.querySelectorAll('.ea-mobile-control').forEach(b=>b.hidden=true);
+    }
+    dismissTooltip();renderList();renderPanel();renderSelection();
+  }
+  islandSelect.addEventListener('change',()=>select(islandSelect.value?'theme':'overview',islandSelect.value||undefined));
+  sheet.addEventListener('cancel',event=>{event.preventDefault();closeMobileSheet();});
+  sheet.addEventListener('click',event=>{if(event.target===sheet){const b=sheet.getBoundingClientRect();if(event.clientY<b.top||event.clientX<b.left||event.clientX>b.right)closeMobileSheet();}});
+  root.addEventListener('click',event=>{
+    if(event.target.closest('.ea-map')&&performance.now()-lastPanEnd<400){event.preventDefault();event.stopImmediatePropagation();return;}
+    if(!isMobile())return;
+    const b=event.target.closest('button');if(!b)return;
+    if(!sheet.open)mobileTrigger=b;
+    if(!sheet.open&&(b.dataset.work||b.dataset.tool||b.dataset.expedition||['work','tool'].includes(b.dataset.spatialType)))rememberMobileOrigin();
+    if(!b.dataset.mobileAction)return;
+    event.preventDefault();event.stopImmediatePropagation();
+    switch(b.dataset.mobileAction){
+      case 'expand':setExpanded(true);break;
+      case 'exit':setExpanded(false);break;
+      case 'dismiss':closeMobileSheet();break;
+      case 'sheet-size':{const full=sheet.dataset.size!=='full';sheet.dataset.size=full?'full':'peek';b.textContent=full?'Reduce details ↓':'Expand details ↑';b.setAttribute('aria-expanded',String(full));break;}
+      case 'browse':state.view='list';renderSelection();break;
+      case 'ships':rememberMobileOrigin();kicker.textContent='Work in progress';panel.innerHTML='<h2 class="ea-panel-title">'+esc(byId(themes,state.island).title)+'</h2>'+shipsForTheme(state.island).map(shipItem).join('');openMobileSheet();break;
+    }
+  },true);
+  root.addEventListener('keydown',event=>{
+    if(!isMobile())return;
+    if(sheet.open){
+      if(event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();closeMobileSheet();}
+      if(event.key==='Tab'){
+        const candidates=[...sheet.querySelectorAll('button,a[href],input,select,[tabindex="0"]')].filter(e=>!e.disabled&&e.getClientRects().length&&!e.closest('[hidden]'));
+        const first=candidates[0],last=candidates[candidates.length-1];
+        if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}
+        else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}
+      }return;
+    }
+    if(!expanded)return;
+    if(event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();setExpanded(false);}
+    if(event.key==='Tab'){
+      const candidates=[...explorer.querySelectorAll('button,select,a[href],input,[tabindex="0"]')].filter(e=>!e.disabled&&e.getClientRects().length&&!e.closest('[hidden]'));
+      const first=candidates[0],last=candidates[candidates.length-1];
+      if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}
+      else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}
+    }
+  },true);
+  mobileQuery.addEventListener('change',configureMobile);
   function focusIsland(id) {
     const button=state.view==='list'?list.querySelector('[data-theme="'+id+'"]'):controls.querySelector('.ea-island-label[data-theme="'+id+'"]');
     if(button&&!button.hidden)button.focus({preventScroll:true});else back.focus({preventScroll:true});
@@ -694,11 +873,15 @@ function makeSpatialFeatures() {
     }
     const button=event.target.closest('button');
     if(!button||!root.contains(button))return;
-    if(button.dataset.locateWork){state.island=button.dataset.locateTheme;select('work',button.dataset.locateWork);close.focus({preventScroll:true});return;}
+    if(button.dataset.locateWork){
+      if(isMobile()){
+        closeMobileSheet(false);state.island=button.dataset.locateTheme;state.district=districtForWork(state.island,button.dataset.locateWork)?.id||null;state.kind=state.district?'district':'theme';state.selected=state.district||state.island;
+        renderList();renderPanel();renderSelection();rememberMobileOrigin();select('work',button.dataset.locateWork);
+      }else{state.island=button.dataset.locateTheme;select('work',button.dataset.locateWork);close.focus({preventScroll:true});}return;
+    }
     if(button.dataset.spatialType){
       state.island=button.dataset.homeTheme;state.district=button.dataset.homeDistrict;
-      select(button.dataset.spatialType,button.dataset.spatialId,{preserveCamera:true});
-      if(window.matchMedia('(max-width:740px)').matches)root.querySelector('.ea-inspector').scrollIntoView({block:'start',behavior:reduced()?'auto':'smooth'});
+      select(button.dataset.spatialType,button.dataset.spatialId,{preserveCamera:!(isMobile()&&button.dataset.spatialType==='district')});
       return;
     }
     if(button.dataset.zoom){
@@ -724,7 +907,7 @@ function makeSpatialFeatures() {
     else if(button.dataset.action==='overview'||button.dataset.nav==='research')returnOverview();
     else if(button.dataset.nav==='tools')select('tools');
     else if(button.dataset.nav==='about')select('about');
-    if((window.matchMedia('(max-width:740px)').matches||inIndex)&&!button.dataset.view){
+    if(!isMobile()&&inIndex&&!button.dataset.view){
       const detail=button.dataset.work||button.dataset.expedition||button.dataset.tool||button.dataset.nav==='about'||button.dataset.nav==='tools';
       const destination=root.querySelector(detail?'.ea-inspector':'.ea-explorer');
       destination.scrollIntoView({block:'start',behavior:reduced()?'auto':'smooth'});
@@ -744,8 +927,8 @@ function makeSpatialFeatures() {
     const button=event.target.closest('.ea-node');
     if(button)preview.textContent=citationText(byId(works,button.dataset.work));
   };
-  function resetPreview(){hoveredWork=null;hoveredTheme=null;renderConnections();preview.textContent=state.kind==='work'?citationText(byId(works,state.selected)):state.kind==='tool'?'Software · '+byId(tools,state.selected).title:'Scroll to zoom · Hover to explore · Click for details';}
-  const inspectSpatial=event=>{const b=event.target.closest('[data-spatial-type]');if(b){preview.textContent=b.dataset.tooltip;hoveredWork=b.dataset.spatialType==='work'?b.dataset.spatialId:null;hoveredTheme=hoveredWork?b.dataset.homeTheme:null;renderConnections();}};
+  function resetPreview(){hoveredWork=null;hoveredTheme=null;renderConnections();preview.textContent=isMobile()?(expanded?'Drag to move · Pinch to zoom · Tap for details':state.district?'Tap a building for details. Browse the List for every paper.':state.island?'Tap a research theme to explore. Expand the map to drag and zoom.':'Tap an island to explore.') :state.kind==='work'?citationText(byId(works,state.selected)):state.kind==='tool'?'Software · '+byId(tools,state.selected).title:'Scroll to zoom · Hover to explore · Click for details';}
+  const inspectSpatial=event=>{if(isMobile())return;const b=event.target.closest('[data-spatial-type]');if(b){preview.textContent=b.dataset.tooltip;hoveredWork=b.dataset.spatialType==='work'?b.dataset.spatialId:null;hoveredTheme=hoveredWork?b.dataset.homeTheme:null;renderConnections();}};
   spatialLayer.addEventListener('pointerover',inspectSpatial);spatialLayer.addEventListener('focusin',inspectSpatial);spatialLayer.addEventListener('pointerleave',resetPreview);spatialLayer.addEventListener('focusout',resetPreview);
   controls.addEventListener('pointerover',previewNode);controls.addEventListener('focusin',previewNode);
   controls.addEventListener('pointerleave',resetPreview);
@@ -759,6 +942,7 @@ function makeSpatialFeatures() {
   }
   tooltip.tabIndex=0;preview.tabIndex=0;
   const showTooltip=event=>{
+    if(isMobile())return;
     const b=event.target.closest('[data-tooltip]');
     if(!b){if(tooltip.contains(event.target))window.clearTimeout(tooltipHideTimer);return;}
     window.clearTimeout(tooltipHideTimer);
@@ -780,7 +964,7 @@ function makeSpatialFeatures() {
   };
   root.addEventListener('pointerout',hideTooltip);root.addEventListener('focusout',hideTooltip);
   map.addEventListener('wheel',dismissTooltip);
-  renderList();renderPanel();renderSelection();renderDesign();
+  configureMobile();renderDesign();
   const initial=new URLSearchParams(location.search);if(initial.has('theme')&&byId(themes,initial.get('theme')))select('theme',initial.get('theme'));if(initial.has('work')&&byId(works,initial.get('work')))select('work',initial.get('work'));
   if(globalThis.ResizeObserver){new ResizeObserver(()=>drawMap()).observe(map);}
 })();

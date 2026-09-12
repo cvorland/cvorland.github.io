@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Colby Vorland, PhD · Research & scientific tools</title><meta name="description" content="Colby Vorland studies scientific rigor, reproducibility, and transparency, and builds tools that help researchers inspect, understand, and use evidence."><meta name="theme-color" content="#0b131b"><link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/catalog.css"></head><body><a class="skip-link" href="#main-content">Skip to content</a><div id="vorland-atlas" aria-label="Colby Vorland, PhD — research and tools" data-paper="true" data-background="dark" data-overview="true">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Colby Vorland, PhD · Research & scientific tools</title><meta name="description" content="Colby Vorland studies scientific rigor, reproducibility, and transparency, and builds tools that help researchers inspect, understand, and use evidence."><meta name="theme-color" content="#0b131b"><link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/catalog.css"><link rel="stylesheet" href="assets/mobile.css"></head><body><a class="skip-link" href="#main-content">Skip to content</a><div id="vorland-atlas" aria-label="Colby Vorland, PhD — research and tools" data-paper="true" data-background="dark" data-overview="true">
   <header class="ea-chrome">
 <nav class="ea-nav" aria-label="Website navigation">
 <a href="./" aria-current="page">Research map</a><a href="research/">Publications</a><a href="tools/">Software</a><a href="about/">About</a>
@@ -16,14 +16,17 @@
       <p>I study scientific rigor, reproducibility, and transparency, and build tools that help researchers inspect, understand, and use evidence.</p>
     </div>
   </section>
+  <section class="ea-mobile-software" aria-label="Software I build" hidden></section>
   <div class="ea-workspace">
     <section class="ea-explorer" aria-label="Explore research">
+      <div class="ea-mobile-context" hidden><label>Island <select class="ea-mobile-island" aria-label="Choose a research island"></select></label><h2 class="ea-mobile-title">Explore the islands</h2><p class="ea-mobile-focus"></p></div>
       <div class="ea-toolbar">
         <div class="ea-switch" aria-label="Research view">
           <button type="button" data-view="map" aria-pressed="true">Map</button>
           <button type="button" data-view="list" aria-pressed="false">List</button>
         </div>
         <div class="ea-map-navigation"><button type="button" class="ea-up" data-action="parent" hidden>← Back</button><button type="button" class="ea-back" data-action="overview" hidden>← All islands</button></div>
+        <button type="button" class="ea-mobile-control" data-mobile-action="expand" hidden>Expand map ↗</button><button type="button" class="ea-mobile-control" data-mobile-action="exit" hidden>Close map ×</button>
       </div>
       <div id="ea-map-wrap">
         <div class="ea-map" aria-label="Research islands. Island area represents the number of papers and preprints assigned to a theme.">
@@ -40,6 +43,7 @@
         <div class="ea-compact-map"></div>
         <div class="ea-map-preview">Select an island to explore its papers.</div>
       </div>
+      <div class="ea-mobile-cities" hidden></div>
       <div class="ea-list" hidden></div>
       <div class="ea-legend">
         <span class="ea-key ea-key-city"><span class="ea-key-dot" aria-hidden="true"></span>Research theme</span>
@@ -59,6 +63,7 @@
   </div>
   <section class="ea-island-index" aria-label="All works on the selected island" hidden></section>
 </main><footer class="ea-footer"><span>Indiana University · School of Public Health–Bloomington</span><a href="sources/">Sources &amp; catalog notes</a><a href="about/#contact">Get in touch ↗</a></footer>
+  <dialog class="ea-mobile-sheet" aria-label="Research details" data-size="peek"><div class="ea-sheet-actions"><button type="button" data-mobile-action="sheet-size" aria-expanded="false">Expand details ↑</button><button type="button" data-mobile-action="dismiss" aria-label="Close research details">Close ×</button></div></dialog>
   <div class="ea-tooltip" id="ea-hover-description" role="tooltip" hidden></div>
   <div class="ea-sr" role="status" aria-live="polite" aria-atomic="true"></div>
 </div><script src="assets/site-data.js" defer></script><script src="assets/atlas.js" defer></script></body></html>

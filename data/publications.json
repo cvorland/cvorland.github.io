@@ -6884,131 +6884,6 @@
     "n": "001"
   },
   {
-    "catalog_id": "work-3ec5e958041e",
-    "title": "AI-assisted Rigor Assessment in Published Biomedical Research: A Scoping Review of Variability in Definitions and Generalizability",
-    "doi": null,
-    "year": 2026,
-    "type": "poster",
-    "venue": "9th World Conference on Research Integrity, Vancouver, BC, Canada",
-    "authors": [
-      {
-        "name": "Guerra E"
-      },
-      {
-        "name": "Menke J"
-      },
-      {
-        "name": "Vorland CJ"
-      },
-      {
-        "name": "Mayo-Wilson E"
-      },
-      {
-        "name": "Kilicoglu H"
-      }
-    ],
-    "author_list_complete": true,
-    "author_names_expanded": false,
-    "urls": [],
-    "source_names": [
-      "CV"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [
-      "cv-poster-02"
-    ],
-    "classification": {
-      "primary": "automation",
-      "themes": [
-        "automation",
-        "integrity"
-      ],
-      "subthemes": [
-        "automation-review",
-        "integrity-assessment"
-      ],
-      "summary": null,
-      "confidence": "moderate",
-      "evidenceBasis": "Title and supplied CV classification.",
-      "primarySubtheme": "automation-review",
-      "rationale": "Develops or evaluates computational assistance for research-integrity and trustworthiness assessment."
-    },
-    "versions": [],
-    "related": [],
-    "metadata_notes": [
-      "CV predates event. Do not imply presentation was delivered without public verification."
-    ],
-    "status": "Work in progress",
-    "status_note": null,
-    "all_dois": [],
-    "scholar_entries": [],
-    "open_science": [],
-    "abstract_available": false,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "CV, 22 February 2026",
-        "url": null,
-        "title": "AI-assisted Rigor Assessment in Published Biomedical Research: A Scoping Review of Variability in Definitions and Generalizability",
-        "doi": null,
-        "year": 2026,
-        "openalex_id": null,
-        "page": 10
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "CV, 22 February 2026",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Guerra E"
-          },
-          {
-            "name": "Menke J"
-          },
-          {
-            "name": "Vorland CJ"
-          },
-          {
-            "name": "Mayo-Wilson E"
-          },
-          {
-            "name": "Kilicoglu H"
-          }
-        ]
-      }
-    ],
-    "components": [],
-    "merged_catalog_ids": [
-      "work-3ec5e958041e"
-    ],
-    "id": "work-3ec5e958041e",
-    "typeLabel": "Poster",
-    "primary": "automation",
-    "themes": [
-      "automation",
-      "integrity"
-    ],
-    "subthemes": [
-      "automation-review",
-      "integrity-assessment"
-    ],
-    "tags": [],
-    "summary": null,
-    "isPaper": false,
-    "active": true,
-    "preprint": false,
-    "short": "AI-assisted Rigor Assessment in Published Biomedical Research: A Scoping Review of Variability in Definitions and Generalizability",
-    "takeaway": null,
-    "venueLabel": "9th World Conference on Research Integrity, Vancouver, BC, Canada",
-    "url": null,
-    "isShip": true,
-    "componentCount": 0,
-    "role": "Coauthor",
-    "n": "002"
-  },
-  {
     "catalog_id": "work-0905f98d201a",
     "title": "An Analysis of Transparency, Rigor, Reproducibility, and Verifiability of Randomized Controlled Trials of Beef Consumption and Health Outcomes",
     "doi": "10.1016/j.cdnut.2026.108762",
@@ -10223,7 +10098,7 @@
     "isShip": true,
     "componentCount": 2,
     "role": "Coauthor",
-    "n": "003"
+    "n": "002"
   },
   {
     "catalog_id": "work-433481a9a119",
@@ -11938,7 +11813,7 @@
     "isShip": false,
     "componentCount": 2,
     "role": "First author",
-    "n": "004"
+    "n": "003"
   },
   {
     "catalog_id": "work-88e37055e2fc",
@@ -16649,7 +16524,7 @@
     "isShip": false,
     "componentCount": 3,
     "role": "Coauthor",
-    "n": "005"
+    "n": "004"
   },
   {
     "catalog_id": "work-a1c585aa98d3",
@@ -22026,7 +21901,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "006"
+    "n": "005"
   },
   {
     "catalog_id": "work-313c9a9aa771",
@@ -23149,7 +23024,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "007"
+    "n": "006"
   },
   {
     "catalog_id": "work-908116217abc",
@@ -23319,10 +23194,13 @@
     ],
     "source_names": [
       "OpenAlex",
-      "Google Scholar"
+      "Google Scholar",
+      "CV"
     ],
     "cv_numbers": [],
-    "cv_ids": [],
+    "cv_ids": [
+      "cv-poster-02"
+    ],
     "classification": {
       "primary": "automation",
       "themes": [
@@ -23360,7 +23238,7 @@
       "Guerra and Menke both have asterisks on manuscript byline; do not assume meaning without explicit footnote.",
       "Scholar has duplicate records with differing author order for the same OSF yph8c resource. Canonical manuscript order above overrides the landing-page metadata order."
     ],
-    "status": "Preprint · not peer reviewed",
+    "status": "Work in progress",
     "keywords": [
       {
         "id": "https://openalex.org/keywords/operationalization",
@@ -23671,6 +23549,15 @@
         "doi": "10.31222/osf.io/yph8c_v1",
         "year": 2026,
         "openalex_id": "W7159621923"
+      },
+      {
+        "name": "CV, 22 February 2026",
+        "url": null,
+        "title": "AI-assisted Rigor Assessment in Published Biomedical Research: A Scoping Review of Variability in Definitions and Generalizability",
+        "doi": null,
+        "year": 2026,
+        "openalex_id": null,
+        "page": 10
       }
     ],
     "source_author_lists": [
@@ -24006,11 +23893,134 @@
             "name": "Halil Kilicoglu"
           }
         ]
+      },
+      {
+        "source": "CV, 22 February 2026",
+        "doi": null,
+        "authors": [
+          {
+            "name": "Guerra E"
+          },
+          {
+            "name": "Menke J"
+          },
+          {
+            "name": "Vorland CJ"
+          },
+          {
+            "name": "Mayo-Wilson E"
+          },
+          {
+            "name": "Kilicoglu H"
+          }
+        ]
       }
     ],
-    "components": [],
+    "featured_ship": true,
+    "ship_title": "Scoping review · 2026",
+    "components": [
+      {
+        "catalog_id": "work-3ec5e958041e",
+        "title": "AI-assisted Rigor Assessment in Published Biomedical Research: A Scoping Review of Variability in Definitions and Generalizability",
+        "doi": null,
+        "year": 2026,
+        "type": "poster",
+        "venue": "9th World Conference on Research Integrity, Vancouver, BC, Canada",
+        "authors": [
+          {
+            "name": "Guerra E"
+          },
+          {
+            "name": "Menke J"
+          },
+          {
+            "name": "Vorland CJ"
+          },
+          {
+            "name": "Mayo-Wilson E"
+          },
+          {
+            "name": "Kilicoglu H"
+          }
+        ],
+        "author_list_complete": true,
+        "author_names_expanded": false,
+        "urls": [],
+        "source_names": [
+          "CV"
+        ],
+        "cv_numbers": [],
+        "cv_ids": [
+          "cv-poster-02"
+        ],
+        "classification": {
+          "primary": "automation",
+          "themes": [
+            "automation",
+            "integrity"
+          ],
+          "subthemes": [
+            "automation-review",
+            "integrity-assessment"
+          ],
+          "summary": null,
+          "confidence": "moderate",
+          "evidenceBasis": "Title and supplied CV classification.",
+          "primarySubtheme": "automation-review",
+          "rationale": "Develops or evaluates computational assistance for research-integrity and trustworthiness assessment."
+        },
+        "versions": [],
+        "related": [],
+        "metadata_notes": [
+          "CV predates event. Do not imply presentation was delivered without public verification."
+        ],
+        "status": "cv-listed-2026-abstract-current-status-unverified",
+        "status_note": null,
+        "all_dois": [],
+        "scholar_entries": [],
+        "open_science": [],
+        "abstract_available": false,
+        "metadata_retrieved": "2026-09-11",
+        "sources": [
+          {
+            "name": "CV, 22 February 2026",
+            "url": null,
+            "title": "AI-assisted Rigor Assessment in Published Biomedical Research: A Scoping Review of Variability in Definitions and Generalizability",
+            "doi": null,
+            "year": 2026,
+            "openalex_id": null,
+            "page": 10
+          }
+        ],
+        "source_author_lists": [
+          {
+            "source": "CV, 22 February 2026",
+            "doi": null,
+            "authors": [
+              {
+                "name": "Guerra E"
+              },
+              {
+                "name": "Menke J"
+              },
+              {
+                "name": "Vorland CJ"
+              },
+              {
+                "name": "Mayo-Wilson E"
+              },
+              {
+                "name": "Kilicoglu H"
+              }
+            ]
+          }
+        ],
+        "component_role": "poster"
+      }
+    ],
     "merged_catalog_ids": [
-      "work-908116217abc"
+      "work-908116217abc",
+      "work-3ec5e958041e"
     ],
     "id": "work-908116217abc",
     "typeLabel": "Preprint",
@@ -24034,10 +24044,10 @@
     "short": "Automated assessment of the trustworthiness of biomedical publications: a protocol for a scoping review",
     "takeaway": "Sets out a scoping review of automated methods for assessing the trustworthiness of biomedical publications.",
     "venueLabel": "MetaArXiv",
-    "isShip": false,
-    "componentCount": 0,
+    "isShip": true,
+    "componentCount": 1,
     "role": "Coauthor",
-    "n": "008"
+    "n": "007"
   },
   {
     "catalog_id": "work-a309306afef8",
@@ -24149,10 +24159,13 @@
     "source_names": [
       "PubMed",
       "OpenAlex",
-      "Google Scholar"
+      "Google Scholar",
+      "CV"
     ],
     "cv_numbers": [],
-    "cv_ids": [],
+    "cv_ids": [
+      "cv-poster-03"
+    ],
     "classification": {
       "primary": "errors",
       "primarySubtheme": "errors-claims",
@@ -25175,6 +25188,15 @@
         "doi": null,
         "year": 2026,
         "openalex_id": "https://openalex.org/W7167389442"
+      },
+      {
+        "name": "CV, 22 February 2026",
+        "url": null,
+        "title": "Reporting and Misreporting of Sex-Specific Effects in Psychology and Neuroscience",
+        "doi": null,
+        "year": 2025,
+        "openalex_id": null,
+        "page": 10
       }
     ],
     "source_author_lists": [
@@ -25870,6 +25892,27 @@
             "affiliation_mapping": [],
             "raw_orcid": null,
             "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          }
+        ]
+      },
+      {
+        "source": "CV, 22 February 2026",
+        "doi": null,
+        "authors": [
+          {
+            "name": "Madeline T. Olivier"
+          },
+          {
+            "name": "Colby J. Vorland"
+          },
+          {
+            "name": "Simon Chung"
+          },
+          {
+            "name": "Andrew W. Brown"
+          },
+          {
+            "name": "Donna L. Maney"
           }
         ]
       }
@@ -27304,12 +27347,109 @@
           }
         ],
         "component_role": "project"
+      },
+      {
+        "catalog_id": "work-938d71e7e755",
+        "title": "Reporting and Misreporting of Sex-Specific Effects in Psychology and Neuroscience",
+        "doi": null,
+        "year": 2025,
+        "type": "poster",
+        "venue": "SCORE Workshop, Emory University",
+        "authors": [
+          {
+            "name": "Madeline T. Olivier"
+          },
+          {
+            "name": "Colby J. Vorland"
+          },
+          {
+            "name": "Simon Chung"
+          },
+          {
+            "name": "Andrew W. Brown"
+          },
+          {
+            "name": "Donna L. Maney"
+          }
+        ],
+        "author_list_complete": true,
+        "author_names_expanded": false,
+        "urls": [],
+        "source_names": [
+          "CV"
+        ],
+        "cv_numbers": [],
+        "cv_ids": [
+          "cv-poster-03"
+        ],
+        "classification": {
+          "primary": "errors",
+          "themes": [
+            "errors",
+            "transparency"
+          ],
+          "subthemes": [
+            "errors-claims",
+            "transparency-choices"
+          ],
+          "summary": null,
+          "confidence": "moderate",
+          "evidenceBasis": "Title and supplied CV classification.",
+          "primarySubtheme": "errors-claims",
+          "rationale": "Audits the validity of statistical comparisons supporting sex-dependent claims; the reporting of those claims is a secondary focus."
+        },
+        "versions": [],
+        "related": [],
+        "metadata_notes": [],
+        "status": "presented-as-listed-in-cv",
+        "status_note": null,
+        "all_dois": [],
+        "scholar_entries": [],
+        "open_science": [],
+        "abstract_available": false,
+        "metadata_retrieved": "2026-09-11",
+        "sources": [
+          {
+            "name": "CV, 22 February 2026",
+            "url": null,
+            "title": "Reporting and Misreporting of Sex-Specific Effects in Psychology and Neuroscience",
+            "doi": null,
+            "year": 2025,
+            "openalex_id": null,
+            "page": 10
+          }
+        ],
+        "source_author_lists": [
+          {
+            "source": "CV, 22 February 2026",
+            "doi": null,
+            "authors": [
+              {
+                "name": "Madeline T. Olivier"
+              },
+              {
+                "name": "Colby J. Vorland"
+              },
+              {
+                "name": "Simon Chung"
+              },
+              {
+                "name": "Andrew W. Brown"
+              },
+              {
+                "name": "Donna L. Maney"
+              }
+            ]
+          }
+        ],
+        "component_role": "poster"
       }
     ],
     "merged_catalog_ids": [
       "work-a309306afef8",
       "work-a6fe76a40295",
-      "work-61e13770b4a2"
+      "work-61e13770b4a2",
+      "work-938d71e7e755"
     ],
     "id": "sex",
     "typeLabel": "Article",
@@ -27335,9 +27475,9 @@
     "takeaway": "In a sample of 200 behavioral and brain science papers claiming sex-dependent effects, 24% supplied appropriate statistical evidence supporting the claim.",
     "venueLabel": "Proceedings of the National Academy of Sciences of the United States of America",
     "isShip": false,
-    "componentCount": 2,
+    "componentCount": 3,
     "role": "Coauthor",
-    "n": "009"
+    "n": "008"
   },
   {
     "catalog_id": "work-aa812318c68c",
@@ -29954,7 +30094,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "Coauthor",
-    "n": "010"
+    "n": "009"
   },
   {
     "catalog_id": "work-5aab49e02c6f",
@@ -31328,7 +31468,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "011"
+    "n": "010"
   },
   {
     "catalog_id": "work-b77dca48d676",
@@ -33803,7 +33943,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "012"
+    "n": "011"
   },
   {
     "catalog_id": "work-c41dea3952dd",
@@ -35231,7 +35371,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "013"
+    "n": "012"
   },
   {
     "catalog_id": "work-a785eb53fdb0",
@@ -36235,7 +36375,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "014"
+    "n": "013"
   },
   {
     "catalog_id": "work-ca69aa929bb2",
@@ -44587,7 +44727,7 @@
     "isShip": false,
     "componentCount": 6,
     "role": "Coauthor",
-    "n": "015"
+    "n": "014"
   },
   {
     "catalog_id": "work-9223a0b89e79",
@@ -47131,7 +47271,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "016"
+    "n": "015"
   },
   {
     "catalog_id": "work-4d9804d49f64",
@@ -47705,7 +47845,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "017"
+    "n": "016"
   },
   {
     "catalog_id": "work-ca0e893304be",
@@ -47893,10 +48033,13 @@
     "source_names": [
       "PubMed",
       "OpenAlex",
-      "Google Scholar"
+      "Google Scholar",
+      "CV"
     ],
     "cv_numbers": [],
-    "cv_ids": [],
+    "cv_ids": [
+      "cv-oral-03"
+    ],
     "classification": {
       "primary": "automation",
       "primarySubtheme": "automation-reporting",
@@ -48536,6 +48679,21 @@
         "doi": null,
         "year": 2026,
         "openalex_id": "https://openalex.org/W7163625324"
+      },
+      {
+        "name": "CV, 22 February 2026",
+        "url": "https://peerreviewcongress.org/uploads/attachments/drll4xkdlqts55my246uxl28-program-pdf-2025.pdf",
+        "title": "Leveraging Large Language Models for Assessing the Adherence of Randomized Controlled Trial Publications to Reporting Guidelines",
+        "doi": null,
+        "year": 2025,
+        "openalex_id": null,
+        "page": 10
+      },
+      {
+        "name": "Official Peer Review Congress program",
+        "url": "https://peerreviewcongress.org/uploads/attachments/drll4xkdlqts55my246uxl28-program-pdf-2025.pdf",
+        "title": "Leveraging Large Language Models for Assessing the Adherence of Randomized Controlled Trial Publications to Reporting Guidelines",
+        "year": 2025
       }
     ],
     "source_author_lists": [
@@ -49189,6 +49347,33 @@
             "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
           }
         ]
+      },
+      {
+        "source": "CV, 22 February 2026",
+        "doi": null,
+        "authors": [
+          {
+            "name": "Lan Jiang"
+          },
+          {
+            "name": "Xiangji Ying"
+          },
+          {
+            "name": "Mengfei Lan"
+          },
+          {
+            "name": "Andrew Brown"
+          },
+          {
+            "name": "Colby Vorland"
+          },
+          {
+            "name": "Evan Mayo-Wilson"
+          },
+          {
+            "name": "Halil Kilicoglu"
+          }
+        ]
       }
     ],
     "components": [
@@ -49813,11 +49998,131 @@
           }
         ],
         "component_role": "project"
+      },
+      {
+        "catalog_id": "work-52b4337f6cea",
+        "title": "Leveraging Large Language Models for Assessing the Adherence of Randomized Controlled Trial Publications to Reporting Guidelines",
+        "doi": null,
+        "year": 2025,
+        "type": "oral-abstract",
+        "venue": "International Congress on Peer Review and Scientific Publication, Chicago",
+        "authors": [
+          {
+            "name": "Lan Jiang"
+          },
+          {
+            "name": "Xiangji Ying"
+          },
+          {
+            "name": "Mengfei Lan"
+          },
+          {
+            "name": "Andrew Brown"
+          },
+          {
+            "name": "Colby Vorland"
+          },
+          {
+            "name": "Evan Mayo-Wilson"
+          },
+          {
+            "name": "Halil Kilicoglu"
+          }
+        ],
+        "author_list_complete": true,
+        "author_names_expanded": true,
+        "urls": [
+          "https://peerreviewcongress.org/uploads/attachments/drll4xkdlqts55my246uxl28-program-pdf-2025.pdf"
+        ],
+        "source_names": [
+          "CV"
+        ],
+        "cv_numbers": [],
+        "cv_ids": [
+          "cv-oral-03"
+        ],
+        "classification": {
+          "primary": "automation",
+          "themes": [
+            "automation",
+            "transparency"
+          ],
+          "subthemes": [
+            "automation-reporting",
+            "transparency-reporting"
+          ],
+          "summary": null,
+          "confidence": "moderate",
+          "evidenceBasis": "Title and supplied CV classification.",
+          "primarySubtheme": "automation-reporting",
+          "rationale": "Develops or evaluates computational assessment of trial-reporting completeness using reporting guidelines and annotated text."
+        },
+        "versions": [],
+        "related": [],
+        "metadata_notes": [],
+        "status": "conference-abstract",
+        "status_note": null,
+        "all_dois": [],
+        "scholar_entries": [],
+        "open_science": [],
+        "abstract_available": false,
+        "metadata_retrieved": "2026-09-11",
+        "sources": [
+          {
+            "name": "CV, 22 February 2026",
+            "url": "https://peerreviewcongress.org/uploads/attachments/drll4xkdlqts55my246uxl28-program-pdf-2025.pdf",
+            "title": "Leveraging Large Language Models for Assessing the Adherence of Randomized Controlled Trial Publications to Reporting Guidelines",
+            "doi": null,
+            "year": 2025,
+            "openalex_id": null,
+            "page": 10
+          },
+          {
+            "name": "Official Peer Review Congress program",
+            "url": "https://peerreviewcongress.org/uploads/attachments/drll4xkdlqts55my246uxl28-program-pdf-2025.pdf",
+            "title": "Leveraging Large Language Models for Assessing the Adherence of Randomized Controlled Trial Publications to Reporting Guidelines",
+            "year": 2025
+          }
+        ],
+        "source_author_lists": [
+          {
+            "source": "CV, 22 February 2026",
+            "doi": null,
+            "authors": [
+              {
+                "name": "Lan Jiang"
+              },
+              {
+                "name": "Xiangji Ying"
+              },
+              {
+                "name": "Mengfei Lan"
+              },
+              {
+                "name": "Andrew Brown"
+              },
+              {
+                "name": "Colby Vorland"
+              },
+              {
+                "name": "Evan Mayo-Wilson"
+              },
+              {
+                "name": "Halil Kilicoglu"
+              }
+            ]
+          }
+        ],
+        "url": "https://peerreviewcongress.org/uploads/attachments/drll4xkdlqts55my246uxl28-program-pdf-2025.pdf",
+        "url_label": "Official conference program and abstracts",
+        "date": "2025-09-05",
+        "component_role": "conference abstract"
       }
     ],
     "merged_catalog_ids": [
       "work-ca0e893304be",
-      "work-edb280e9f28a"
+      "work-edb280e9f28a",
+      "work-52b4337f6cea"
     ],
     "id": "work-ca0e893304be",
     "typeLabel": "Preprint",
@@ -49843,9 +50148,9 @@
     "takeaway": "Develops detailed reporting annotations and an evidence-retrieval plus language-model pipeline to assess whether trial protocols and results report individual SPIRIT and CONSORT elements.",
     "venueLabel": "medRxiv : the preprint server for health sciences",
     "isShip": false,
-    "componentCount": 1,
+    "componentCount": 2,
     "role": "Coauthor",
-    "n": "018"
+    "n": "017"
   },
   {
     "catalog_id": "work-a0cf4e8cec97",
@@ -51715,7 +52020,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "019"
+    "n": "018"
   },
   {
     "catalog_id": "work-73b959a828a7",
@@ -54329,7 +54634,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "020"
+    "n": "019"
   },
   {
     "catalog_id": "work-050b9708cea2",
@@ -55034,7 +55339,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "021"
+    "n": "020"
   },
   {
     "catalog_id": "work-382e7892f8e2",
@@ -56232,7 +56537,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "022"
+    "n": "021"
   },
   {
     "catalog_id": "work-27854a6322f6",
@@ -65240,7 +65545,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "023"
+    "n": "022"
   },
   {
     "catalog_id": "work-7db689150e08",
@@ -66453,7 +66758,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "Coauthor",
-    "n": "024"
+    "n": "023"
   },
   {
     "catalog_id": "work-55a1727b6bff",
@@ -71646,7 +71951,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "Coauthor",
-    "n": "025"
+    "n": "024"
   },
   {
     "catalog_id": "work-2202c3a7ea59",
@@ -81448,152 +81753,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "Coauthor",
-    "n": "026"
-  },
-  {
-    "catalog_id": "work-52b4337f6cea",
-    "title": "Leveraging Large Language Models for Assessing the Adherence of Randomized Controlled Trial Publications to Reporting Guidelines",
-    "doi": null,
-    "year": 2025,
-    "type": "oral-abstract",
-    "venue": "International Congress on Peer Review and Scientific Publication, Chicago",
-    "authors": [
-      {
-        "name": "Lan Jiang"
-      },
-      {
-        "name": "Xiangji Ying"
-      },
-      {
-        "name": "Mengfei Lan"
-      },
-      {
-        "name": "Andrew Brown"
-      },
-      {
-        "name": "Colby Vorland"
-      },
-      {
-        "name": "Evan Mayo-Wilson"
-      },
-      {
-        "name": "Halil Kilicoglu"
-      }
-    ],
-    "author_list_complete": true,
-    "author_names_expanded": true,
-    "urls": [
-      "https://peerreviewcongress.org/uploads/attachments/drll4xkdlqts55my246uxl28-program-pdf-2025.pdf"
-    ],
-    "source_names": [
-      "CV"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [
-      "cv-oral-03"
-    ],
-    "classification": {
-      "primary": "automation",
-      "themes": [
-        "automation",
-        "transparency"
-      ],
-      "subthemes": [
-        "automation-reporting",
-        "transparency-reporting"
-      ],
-      "summary": null,
-      "confidence": "moderate",
-      "evidenceBasis": "Title and supplied CV classification.",
-      "primarySubtheme": "automation-reporting",
-      "rationale": "Develops or evaluates computational assessment of trial-reporting completeness using reporting guidelines and annotated text."
-    },
-    "versions": [],
-    "related": [],
-    "metadata_notes": [],
-    "status": "Work in progress",
-    "status_note": null,
-    "all_dois": [],
-    "scholar_entries": [],
-    "open_science": [],
-    "abstract_available": false,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "CV, 22 February 2026",
-        "url": "https://peerreviewcongress.org/uploads/attachments/drll4xkdlqts55my246uxl28-program-pdf-2025.pdf",
-        "title": "Leveraging Large Language Models for Assessing the Adherence of Randomized Controlled Trial Publications to Reporting Guidelines",
-        "doi": null,
-        "year": 2025,
-        "openalex_id": null,
-        "page": 10
-      },
-      {
-        "name": "Official Peer Review Congress program",
-        "url": "https://peerreviewcongress.org/uploads/attachments/drll4xkdlqts55my246uxl28-program-pdf-2025.pdf",
-        "title": "Leveraging Large Language Models for Assessing the Adherence of Randomized Controlled Trial Publications to Reporting Guidelines",
-        "year": 2025
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "CV, 22 February 2026",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Lan Jiang"
-          },
-          {
-            "name": "Xiangji Ying"
-          },
-          {
-            "name": "Mengfei Lan"
-          },
-          {
-            "name": "Andrew Brown"
-          },
-          {
-            "name": "Colby Vorland"
-          },
-          {
-            "name": "Evan Mayo-Wilson"
-          },
-          {
-            "name": "Halil Kilicoglu"
-          }
-        ]
-      }
-    ],
-    "url": "https://peerreviewcongress.org/uploads/attachments/drll4xkdlqts55my246uxl28-program-pdf-2025.pdf",
-    "url_label": "Official conference program and abstracts",
-    "date": "2025-09-05",
-    "components": [],
-    "merged_catalog_ids": [
-      "work-52b4337f6cea"
-    ],
-    "id": "work-52b4337f6cea",
-    "typeLabel": "Conference abstract",
-    "primary": "automation",
-    "themes": [
-      "automation",
-      "transparency"
-    ],
-    "subthemes": [
-      "automation-reporting",
-      "transparency-reporting"
-    ],
-    "tags": [],
-    "summary": null,
-    "isPaper": false,
-    "active": true,
-    "preprint": false,
-    "short": "Leveraging Large Language Models for Assessing the Adherence of Randomized Controlled Trial Publications to Reporting Guidelines",
-    "takeaway": null,
-    "venueLabel": "International Congress on Peer Review and Scientific Publication, Chicago",
-    "isShip": true,
-    "componentCount": 0,
-    "role": "Coauthor",
-    "n": "027"
+    "n": "025"
   },
   {
     "catalog_id": "work-abf8ae6fd512",
@@ -83527,130 +83687,7 @@
     "isShip": false,
     "componentCount": 2,
     "role": "Coauthor",
-    "n": "028"
-  },
-  {
-    "catalog_id": "work-938d71e7e755",
-    "title": "Reporting and Misreporting of Sex-Specific Effects in Psychology and Neuroscience",
-    "doi": null,
-    "year": 2025,
-    "type": "poster",
-    "venue": "SCORE Workshop, Emory University",
-    "authors": [
-      {
-        "name": "Madeline T. Olivier"
-      },
-      {
-        "name": "Colby J. Vorland"
-      },
-      {
-        "name": "Simon Chung"
-      },
-      {
-        "name": "Andrew W. Brown"
-      },
-      {
-        "name": "Donna L. Maney"
-      }
-    ],
-    "author_list_complete": true,
-    "author_names_expanded": false,
-    "urls": [],
-    "source_names": [
-      "CV"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [
-      "cv-poster-03"
-    ],
-    "classification": {
-      "primary": "errors",
-      "themes": [
-        "errors",
-        "transparency"
-      ],
-      "subthemes": [
-        "errors-claims",
-        "transparency-choices"
-      ],
-      "summary": null,
-      "confidence": "moderate",
-      "evidenceBasis": "Title and supplied CV classification.",
-      "primarySubtheme": "errors-claims",
-      "rationale": "Audits the validity of statistical comparisons supporting sex-dependent claims; the reporting of those claims is a secondary focus."
-    },
-    "versions": [],
-    "related": [],
-    "metadata_notes": [],
-    "status": "Work in progress",
-    "status_note": null,
-    "all_dois": [],
-    "scholar_entries": [],
-    "open_science": [],
-    "abstract_available": false,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "CV, 22 February 2026",
-        "url": null,
-        "title": "Reporting and Misreporting of Sex-Specific Effects in Psychology and Neuroscience",
-        "doi": null,
-        "year": 2025,
-        "openalex_id": null,
-        "page": 10
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "CV, 22 February 2026",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Madeline T. Olivier"
-          },
-          {
-            "name": "Colby J. Vorland"
-          },
-          {
-            "name": "Simon Chung"
-          },
-          {
-            "name": "Andrew W. Brown"
-          },
-          {
-            "name": "Donna L. Maney"
-          }
-        ]
-      }
-    ],
-    "components": [],
-    "merged_catalog_ids": [
-      "work-938d71e7e755"
-    ],
-    "id": "work-938d71e7e755",
-    "typeLabel": "Poster",
-    "primary": "errors",
-    "themes": [
-      "errors",
-      "transparency"
-    ],
-    "subthemes": [
-      "errors-claims",
-      "transparency-choices"
-    ],
-    "tags": [],
-    "summary": null,
-    "isPaper": false,
-    "active": true,
-    "preprint": false,
-    "short": "Reporting and Misreporting of Sex-Specific Effects in Psychology and Neuroscience",
-    "takeaway": null,
-    "venueLabel": "SCORE Workshop, Emory University",
-    "url": null,
-    "isShip": true,
-    "componentCount": 0,
-    "role": "Coauthor",
-    "n": "029"
+    "n": "026"
   },
   {
     "catalog_id": "work-4bef7a36745c",
@@ -86952,7 +86989,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "Coauthor",
-    "n": "030"
+    "n": "027"
   },
   {
     "catalog_id": "work-9215b8422f57",
@@ -88691,7 +88728,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "031"
+    "n": "028"
   },
   {
     "catalog_id": "work-803d54d96aa0",
@@ -88902,7 +88939,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "032"
+    "n": "029"
   },
   {
     "catalog_id": "work-cf4e325fef6c",
@@ -91846,7 +91883,7 @@
     "isShip": false,
     "componentCount": 2,
     "role": "Coauthor",
-    "n": "033"
+    "n": "030"
   },
   {
     "catalog_id": "work-f0d90935b198",
@@ -93115,7 +93152,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "034"
+    "n": "031"
   },
   {
     "catalog_id": "work-53435da1ca65",
@@ -94969,7 +95006,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "035"
+    "n": "032"
   },
   {
     "catalog_id": "work-fb25786202fb",
@@ -97052,7 +97089,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "First author",
-    "n": "036"
+    "n": "033"
   },
   {
     "catalog_id": "work-fecdb07a8c42",
@@ -100129,7 +100166,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "037"
+    "n": "034"
   },
   {
     "catalog_id": "work-1d925f38b7a4",
@@ -102996,7 +103033,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "Coauthor",
-    "n": "038"
+    "n": "035"
   },
   {
     "catalog_id": "work-2ac7428d7d7d",
@@ -109657,7 +109694,7 @@
     "isShip": false,
     "componentCount": 2,
     "role": "Coauthor",
-    "n": "039"
+    "n": "036"
   },
   {
     "catalog_id": "work-a7fed4f7c758",
@@ -112205,7 +112242,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "040"
+    "n": "037"
   },
   {
     "catalog_id": "work-715a769ea192",
@@ -112688,7 +112725,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "041"
+    "n": "038"
   },
   {
     "catalog_id": "work-673df9a0d6e3",
@@ -113352,7 +113389,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "042"
+    "n": "039"
   },
   {
     "catalog_id": "work-d1cd172195e4",
@@ -118284,7 +118321,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "Coauthor",
-    "n": "043"
+    "n": "040"
   },
   {
     "catalog_id": "work-5663dca8d41a",
@@ -119688,7 +119725,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "044"
+    "n": "041"
   },
   {
     "catalog_id": "work-583fd420974a",
@@ -121336,7 +121373,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "First author",
-    "n": "045"
+    "n": "042"
   },
   {
     "catalog_id": "work-f0fbaa840e1a",
@@ -122564,7 +122601,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "046"
+    "n": "043"
   },
   {
     "catalog_id": "work-d7f5a010d6bf",
@@ -124041,7 +124078,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "047"
+    "n": "044"
   },
   {
     "catalog_id": "work-5c9c27623280",
@@ -125201,7 +125238,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "048"
+    "n": "045"
   },
   {
     "catalog_id": "work-d5869d2f9980",
@@ -126266,7 +126303,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "049"
+    "n": "046"
   },
   {
     "catalog_id": "work-a6b5da06a792",
@@ -127554,7 +127591,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "050"
+    "n": "047"
   },
   {
     "catalog_id": "work-6105f0e93eed",
@@ -129782,316 +129819,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "051"
-  },
-  {
-    "catalog_id": "work-3217ae29e12b",
-    "title": "69 Animal Husbandry Reporting in Rodent Studies of the Gut Microbiome Published in Kidney Research Journals",
-    "doi": null,
-    "year": 2022,
-    "date": "2022-04-01",
-    "type": "conference-abstract",
-    "venue": "American Journal of Kidney Diseases",
-    "volume": "79",
-    "issue": "4",
-    "pages": "S22–S22",
-    "authors": [
-      {
-        "name": "Dylan Spina",
-        "order": 1
-      },
-      {
-        "name": "Annabel Biruete",
-        "order": 2
-      },
-      {
-        "name": "Jacob Allen",
-        "order": 3
-      },
-      {
-        "name": "Tzu-Wen Cross",
-        "order": 4
-      },
-      {
-        "name": "Matthew Snelson",
-        "order": 5
-      },
-      {
-        "name": "Colby Vorland",
-        "order": 6
-      },
-      {
-        "name": "Brandon Kistler",
-        "order": 7
-      }
-    ],
-    "author_list_complete": true,
-    "author_names_expanded": true,
-    "urls": [],
-    "source_names": [
-      "Google Scholar",
-      "CV"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [
-      "cv-poster-07"
-    ],
-    "classification": {
-      "primary": "transparency",
-      "themes": [
-        "transparency",
-        "nutrition"
-      ],
-      "subthemes": [
-        "transparency-reporting",
-        "nutrition-ckd"
-      ],
-      "summary": null,
-      "confidence": "moderate",
-      "evidenceBasis": "Title and supplied CV classification.",
-      "primarySubtheme": "transparency-reporting",
-      "rationale": "Audits animal-husbandry reporting in kidney-research studies; kidney disease is the application domain."
-    },
-    "versions": [],
-    "related": [],
-    "all_dois": [],
-    "scholar_entries": [
-      {
-        "scholar_id": "M05iB0D1s5AC",
-        "year": 2022,
-        "citations": null,
-        "cv_match": "cv-poster-07",
-        "title": "69 Animal Husbandry Reporting in Rodent Studies of the Gut Microbiome Published in Kidney Research Journals",
-        "title_truncated": false,
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:M05iB0D1s5AC",
-        "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
-        "note": "Null citations means blank display; do not infer a measured zero."
-      }
-    ],
-    "open_science": [],
-    "abstract_available": false,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "Google Scholar",
-        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:M05iB0D1s5AC",
-        "title": "69 Animal Husbandry Reporting in Rodent Studies of the Gut Microbiome Published in Kidney Research Journals",
-        "doi": null,
-        "year": 2022,
-        "openalex_id": null
-      },
-      {
-        "name": "CV, 22 February 2026",
-        "url": null,
-        "title": "Animal Husbandry Reporting in Rodent Studies of the Gut Microbiome Published in Kidney Research Journals",
-        "doi": null,
-        "year": 2022,
-        "openalex_id": null,
-        "page": 10
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "Google Scholar",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Dylan Spina",
-            "order": 1
-          },
-          {
-            "name": "Annabel Biruete",
-            "order": 2
-          },
-          {
-            "name": "Jacob Allen",
-            "order": 3
-          },
-          {
-            "name": "Tzu-Wen Cross",
-            "order": 4
-          },
-          {
-            "name": "Matthew Snelson",
-            "order": 5
-          },
-          {
-            "name": "Colby Vorland",
-            "order": 6
-          },
-          {
-            "name": "Brandon Kistler",
-            "order": 7
-          }
-        ]
-      },
-      {
-        "source": "CV, 22 February 2026",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Spina, D."
-          },
-          {
-            "name": "Biruete, A."
-          },
-          {
-            "name": "Allen, J."
-          },
-          {
-            "name": "Cross, T.L."
-          },
-          {
-            "name": "Snelson, M."
-          },
-          {
-            "name": "Vorland, C.J."
-          },
-          {
-            "name": "Kistler, B.M."
-          }
-        ]
-      }
-    ],
-    "components": [
-      {
-        "catalog_id": "work-ba83df5734ba",
-        "title": "Animal Husbandry Reporting in Rodent Studies of the Gut Microbiome Published in Kidney Research Journals",
-        "doi": null,
-        "year": 2022,
-        "type": "poster",
-        "venue": "National Kidney Foundation meeting",
-        "authors": [
-          {
-            "name": "Spina, D."
-          },
-          {
-            "name": "Biruete, A."
-          },
-          {
-            "name": "Allen, J."
-          },
-          {
-            "name": "Cross, T.L."
-          },
-          {
-            "name": "Snelson, M."
-          },
-          {
-            "name": "Vorland, C.J."
-          },
-          {
-            "name": "Kistler, B.M."
-          }
-        ],
-        "author_list_complete": true,
-        "author_names_expanded": false,
-        "urls": [],
-        "source_names": [
-          "CV"
-        ],
-        "cv_numbers": [],
-        "cv_ids": [
-          "cv-poster-07"
-        ],
-        "classification": {
-          "primary": "transparency",
-          "themes": [
-            "transparency",
-            "nutrition"
-          ],
-          "subthemes": [
-            "transparency-reporting",
-            "nutrition-ckd"
-          ],
-          "summary": null,
-          "confidence": "moderate",
-          "evidenceBasis": "Title and supplied CV classification.",
-          "primarySubtheme": "transparency-reporting",
-          "rationale": "Audits animal-husbandry reporting in kidney-research studies; kidney disease is the application domain."
-        },
-        "versions": [],
-        "related": [],
-        "metadata_notes": [],
-        "status": "presented-as-listed-in-cv",
-        "status_note": null,
-        "all_dois": [],
-        "scholar_entries": [],
-        "open_science": [],
-        "abstract_available": false,
-        "metadata_retrieved": "2026-09-11",
-        "sources": [
-          {
-            "name": "CV, 22 February 2026",
-            "url": null,
-            "title": "Animal Husbandry Reporting in Rodent Studies of the Gut Microbiome Published in Kidney Research Journals",
-            "doi": null,
-            "year": 2022,
-            "openalex_id": null,
-            "page": 10
-          }
-        ],
-        "source_author_lists": [
-          {
-            "source": "CV, 22 February 2026",
-            "doi": null,
-            "authors": [
-              {
-                "name": "Spina, D."
-              },
-              {
-                "name": "Biruete, A."
-              },
-              {
-                "name": "Allen, J."
-              },
-              {
-                "name": "Cross, T.L."
-              },
-              {
-                "name": "Snelson, M."
-              },
-              {
-                "name": "Vorland, C.J."
-              },
-              {
-                "name": "Kistler, B.M."
-              }
-            ]
-          }
-        ],
-        "component_role": "poster"
-      }
-    ],
-    "merged_catalog_ids": [
-      "work-3217ae29e12b",
-      "work-ba83df5734ba"
-    ],
-    "id": "work-3217ae29e12b",
-    "typeLabel": "Conference abstract",
-    "primary": "transparency",
-    "themes": [
-      "transparency",
-      "nutrition"
-    ],
-    "subthemes": [
-      "transparency-reporting",
-      "nutrition-ckd"
-    ],
-    "tags": [],
-    "summary": null,
-    "isPaper": false,
-    "active": true,
-    "preprint": false,
-    "status": "Work in progress",
-    "short": "69 Animal Husbandry Reporting in Rodent Studies of the Gut Microbiome Published in Kidney Research Journals",
-    "takeaway": null,
-    "venueLabel": "American Journal of Kidney Diseases",
-    "url": null,
-    "isShip": true,
-    "componentCount": 1,
-    "role": "Coauthor",
-    "n": "052"
+    "n": "048"
   },
   {
     "catalog_id": "work-4dc00f8c08a6",
@@ -131495,7 +131223,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "053"
+    "n": "049"
   },
   {
     "catalog_id": "work-782a2bd87d99",
@@ -131698,7 +131426,9 @@
       8
     ],
     "cv_ids": [
-      "cv-pub-08"
+      "cv-pub-08",
+      "cv-poster-08",
+      "cv-poster-10"
     ],
     "classification": {
       "primary": "nutrition",
@@ -132108,6 +131838,28 @@
         "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:zA6iFVUQeVQC",
         "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
         "note": null
+      },
+      {
+        "scholar_id": "g5m5HwL7SMYC",
+        "year": 2022,
+        "citations": null,
+        "cv_match": "cv-poster-08",
+        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphate Transporters and Biochemistries in Nephrectomized Male Rats",
+        "title_truncated": false,
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:g5m5HwL7SMYC",
+        "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
+        "note": "Null citations means blank display; do not infer a measured zero."
+      },
+      {
+        "scholar_id": "YFjsv_pBGBYC",
+        "year": 2020,
+        "citations": null,
+        "cv_match": "cv-poster-10",
+        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
+        "title_truncated": false,
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:YFjsv_pBGBYC",
+        "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
+        "note": "Null citations means blank display; do not infer a measured zero."
       }
     ],
     "sourceMetadata": {
@@ -132316,6 +132068,40 @@
         "year": 2022,
         "openalex_id": null,
         "page": 5
+      },
+      {
+        "name": "CV, 22 February 2026",
+        "url": null,
+        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Transporters and Biochemistries in Nephrectomized Male Rats",
+        "doi": null,
+        "year": 2021,
+        "openalex_id": null,
+        "page": 11
+      },
+      {
+        "name": "CV, 22 February 2026",
+        "url": null,
+        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
+        "doi": null,
+        "year": 2020,
+        "openalex_id": null,
+        "page": 11
+      },
+      {
+        "name": "Google Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:g5m5HwL7SMYC",
+        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphate Transporters and Biochemistries in Nephrectomized Male Rats",
+        "doi": null,
+        "year": 2022,
+        "openalex_id": null
+      },
+      {
+        "name": "Google Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:YFjsv_pBGBYC",
+        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
+        "doi": null,
+        "year": 2020,
+        "openalex_id": null
       }
     ],
     "source_author_lists": [
@@ -133249,11 +133035,643 @@
             "name": "Hill Gallant, K. M."
           }
         ]
+      },
+      {
+        "source": "CV, 22 February 2026",
+        "doi": null,
+        "authors": [
+          {
+            "name": "Schmitz, K.M."
+          },
+          {
+            "name": "Cladis, D.P."
+          },
+          {
+            "name": "Vorland, C.J."
+          },
+          {
+            "name": "Biruete, A."
+          },
+          {
+            "name": "O’Neill, K."
+          },
+          {
+            "name": "Chen, N.X."
+          },
+          {
+            "name": "Moe, S.M."
+          },
+          {
+            "name": "Hill Gallant, K.M."
+          }
+        ]
+      },
+      {
+        "source": "CV, 22 February 2026",
+        "doi": null,
+        "authors": [
+          {
+            "name": "Schmitz, K.M."
+          },
+          {
+            "name": "Cladis, D.P."
+          },
+          {
+            "name": "Vorland, C.J."
+          },
+          {
+            "name": "Dong, Y."
+          },
+          {
+            "name": "Wastney, M.E."
+          },
+          {
+            "name": "Moe, S.M."
+          },
+          {
+            "name": "Hill Gallant, K.M."
+          }
+        ]
+      },
+      {
+        "source": "Google Scholar",
+        "doi": null,
+        "authors": [
+          {
+            "name": "Kendal Schmitz",
+            "order": 1
+          },
+          {
+            "name": "Dennis Cladis",
+            "order": 2
+          },
+          {
+            "name": "Colby Vorland",
+            "order": 3
+          },
+          {
+            "name": "Annabel Biruete",
+            "order": 4
+          },
+          {
+            "name": "James Dominguez",
+            "order": 5
+          },
+          {
+            "name": "Kalisha O’Neill",
+            "order": 6
+          },
+          {
+            "name": "Neal Chen",
+            "order": 7
+          },
+          {
+            "name": "Sharon Moe",
+            "order": 8
+          },
+          {
+            "name": "Kathleen Hill Gallant",
+            "order": 9
+          }
+        ]
+      },
+      {
+        "source": "Google Scholar",
+        "doi": null,
+        "authors": [
+          {
+            "name": "Kendal Schmitz",
+            "order": 1
+          },
+          {
+            "name": "Dennis Cladis",
+            "order": 2
+          },
+          {
+            "name": "Colby Vorland",
+            "order": 3
+          },
+          {
+            "name": "Ying Dong",
+            "order": 4
+          },
+          {
+            "name": "Meryl Wastney",
+            "order": 5
+          },
+          {
+            "name": "Sharon Moe",
+            "order": 6
+          },
+          {
+            "name": "Kathleen Hill Gallant",
+            "order": 7
+          }
+        ]
       }
     ],
-    "components": [],
+    "components": [
+      {
+        "catalog_id": "work-b56770d96850",
+        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Transporters and Biochemistries in Nephrectomized Male Rats",
+        "doi": null,
+        "year": 2021,
+        "type": "poster",
+        "venue": "American Society for Bone and Mineral Research meeting",
+        "authors": [
+          {
+            "name": "Schmitz, K.M."
+          },
+          {
+            "name": "Cladis, D.P."
+          },
+          {
+            "name": "Vorland, C.J."
+          },
+          {
+            "name": "Biruete, A."
+          },
+          {
+            "name": "O’Neill, K."
+          },
+          {
+            "name": "Chen, N.X."
+          },
+          {
+            "name": "Moe, S.M."
+          },
+          {
+            "name": "Hill Gallant, K.M."
+          }
+        ],
+        "author_list_complete": true,
+        "author_names_expanded": false,
+        "urls": [],
+        "source_names": [
+          "CV"
+        ],
+        "cv_numbers": [],
+        "cv_ids": [
+          "cv-poster-08"
+        ],
+        "classification": {
+          "primary": "nutrition",
+          "themes": [
+            "nutrition"
+          ],
+          "subthemes": [
+            "nutrition-phosphorus"
+          ],
+          "summary": null,
+          "confidence": "moderate",
+          "evidenceBasis": "Title and supplied CV classification.",
+          "primarySubtheme": "nutrition-phosphorus",
+          "rationale": "The substantive contribution concerns phosphorus or mineral intake, measurement, absorption, regulation, balance, or bone health."
+        },
+        "versions": [],
+        "related": [],
+        "metadata_notes": [],
+        "status": "presented-as-listed-in-cv",
+        "status_note": null,
+        "all_dois": [],
+        "scholar_entries": [],
+        "open_science": [],
+        "abstract_available": false,
+        "metadata_retrieved": "2026-09-11",
+        "sources": [
+          {
+            "name": "CV, 22 February 2026",
+            "url": null,
+            "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Transporters and Biochemistries in Nephrectomized Male Rats",
+            "doi": null,
+            "year": 2021,
+            "openalex_id": null,
+            "page": 11
+          }
+        ],
+        "source_author_lists": [
+          {
+            "source": "CV, 22 February 2026",
+            "doi": null,
+            "authors": [
+              {
+                "name": "Schmitz, K.M."
+              },
+              {
+                "name": "Cladis, D.P."
+              },
+              {
+                "name": "Vorland, C.J."
+              },
+              {
+                "name": "Biruete, A."
+              },
+              {
+                "name": "O’Neill, K."
+              },
+              {
+                "name": "Chen, N.X."
+              },
+              {
+                "name": "Moe, S.M."
+              },
+              {
+                "name": "Hill Gallant, K.M."
+              }
+            ]
+          }
+        ],
+        "component_role": "poster"
+      },
+      {
+        "catalog_id": "work-f3078c1093a3",
+        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
+        "doi": null,
+        "year": 2020,
+        "type": "poster",
+        "venue": "American Society for Bone and Mineral Research meeting",
+        "authors": [
+          {
+            "name": "Schmitz, K.M."
+          },
+          {
+            "name": "Cladis, D.P."
+          },
+          {
+            "name": "Vorland, C.J."
+          },
+          {
+            "name": "Dong, Y."
+          },
+          {
+            "name": "Wastney, M.E."
+          },
+          {
+            "name": "Moe, S.M."
+          },
+          {
+            "name": "Hill Gallant, K.M."
+          }
+        ],
+        "author_list_complete": true,
+        "author_names_expanded": false,
+        "urls": [],
+        "source_names": [
+          "CV"
+        ],
+        "cv_numbers": [],
+        "cv_ids": [
+          "cv-poster-10"
+        ],
+        "classification": {
+          "primary": "nutrition",
+          "themes": [
+            "nutrition"
+          ],
+          "subthemes": [
+            "nutrition-phosphorus"
+          ],
+          "summary": null,
+          "confidence": "moderate",
+          "evidenceBasis": "Title and supplied CV classification.",
+          "primarySubtheme": "nutrition-phosphorus",
+          "rationale": "The substantive contribution concerns phosphorus or mineral intake, measurement, absorption, regulation, balance, or bone health."
+        },
+        "versions": [],
+        "related": [],
+        "metadata_notes": [],
+        "status": "presented-as-listed-in-cv",
+        "status_note": null,
+        "all_dois": [],
+        "scholar_entries": [],
+        "open_science": [],
+        "abstract_available": false,
+        "metadata_retrieved": "2026-09-11",
+        "sources": [
+          {
+            "name": "CV, 22 February 2026",
+            "url": null,
+            "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
+            "doi": null,
+            "year": 2020,
+            "openalex_id": null,
+            "page": 11
+          }
+        ],
+        "source_author_lists": [
+          {
+            "source": "CV, 22 February 2026",
+            "doi": null,
+            "authors": [
+              {
+                "name": "Schmitz, K.M."
+              },
+              {
+                "name": "Cladis, D.P."
+              },
+              {
+                "name": "Vorland, C.J."
+              },
+              {
+                "name": "Dong, Y."
+              },
+              {
+                "name": "Wastney, M.E."
+              },
+              {
+                "name": "Moe, S.M."
+              },
+              {
+                "name": "Hill Gallant, K.M."
+              }
+            ]
+          }
+        ],
+        "component_role": "poster"
+      },
+      {
+        "catalog_id": "work-e2f64ac12ddd",
+        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphate Transporters and Biochemistries in Nephrectomized Male Rats",
+        "doi": null,
+        "year": 2022,
+        "date": "2022-02-01",
+        "type": "conference-abstract",
+        "venue": "Journal of Bone and Mineral Research",
+        "volume": "37",
+        "issue": null,
+        "pages": "70–70",
+        "authors": [
+          {
+            "name": "Kendal Schmitz",
+            "order": 1
+          },
+          {
+            "name": "Dennis Cladis",
+            "order": 2
+          },
+          {
+            "name": "Colby Vorland",
+            "order": 3
+          },
+          {
+            "name": "Annabel Biruete",
+            "order": 4
+          },
+          {
+            "name": "James Dominguez",
+            "order": 5
+          },
+          {
+            "name": "Kalisha O’Neill",
+            "order": 6
+          },
+          {
+            "name": "Neal Chen",
+            "order": 7
+          },
+          {
+            "name": "Sharon Moe",
+            "order": 8
+          },
+          {
+            "name": "Kathleen Hill Gallant",
+            "order": 9
+          }
+        ],
+        "author_list_complete": true,
+        "author_names_expanded": true,
+        "urls": [],
+        "source_names": [
+          "Google Scholar"
+        ],
+        "cv_numbers": [],
+        "cv_ids": [],
+        "classification": {
+          "primary": "nutrition",
+          "themes": [
+            "nutrition"
+          ],
+          "subthemes": [
+            "nutrition-phosphorus"
+          ],
+          "type": "conference-abstract",
+          "summary": "A conference abstract examining intestinal phosphate transporters and biochemical measures under different dietary phosphorus conditions in nephrectomized male rats.",
+          "evidenceBasis": "Source title and conference citation.",
+          "primarySubtheme": "nutrition-phosphorus",
+          "rationale": "The substantive contribution concerns phosphorus or mineral intake, measurement, absorption, regulation, balance, or bone health."
+        },
+        "versions": [],
+        "related": [],
+        "all_dois": [],
+        "scholar_entries": [
+          {
+            "scholar_id": "g5m5HwL7SMYC",
+            "year": 2022,
+            "citations": null,
+            "cv_match": "cv-poster-08",
+            "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphate Transporters and Biochemistries in Nephrectomized Male Rats",
+            "title_truncated": false,
+            "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:g5m5HwL7SMYC",
+            "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
+            "note": "Null citations means blank display; do not infer a measured zero."
+          }
+        ],
+        "open_science": [],
+        "abstract_available": false,
+        "metadata_retrieved": "2026-09-11",
+        "sources": [
+          {
+            "name": "Google Scholar",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:g5m5HwL7SMYC",
+            "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphate Transporters and Biochemistries in Nephrectomized Male Rats",
+            "doi": null,
+            "year": 2022,
+            "openalex_id": null
+          }
+        ],
+        "source_author_lists": [
+          {
+            "source": "Google Scholar",
+            "doi": null,
+            "authors": [
+              {
+                "name": "Kendal Schmitz",
+                "order": 1
+              },
+              {
+                "name": "Dennis Cladis",
+                "order": 2
+              },
+              {
+                "name": "Colby Vorland",
+                "order": 3
+              },
+              {
+                "name": "Annabel Biruete",
+                "order": 4
+              },
+              {
+                "name": "James Dominguez",
+                "order": 5
+              },
+              {
+                "name": "Kalisha O’Neill",
+                "order": 6
+              },
+              {
+                "name": "Neal Chen",
+                "order": 7
+              },
+              {
+                "name": "Sharon Moe",
+                "order": 8
+              },
+              {
+                "name": "Kathleen Hill Gallant",
+                "order": 9
+              }
+            ]
+          }
+        ],
+        "component_role": "conference abstract"
+      },
+      {
+        "catalog_id": "work-6422e93b7464",
+        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
+        "doi": null,
+        "year": 2020,
+        "date": "2020-11-01",
+        "type": "conference-abstract",
+        "venue": "Journal of Bone and Mineral Research",
+        "volume": "35",
+        "issue": null,
+        "pages": "277–278",
+        "authors": [
+          {
+            "name": "Kendal Schmitz",
+            "order": 1
+          },
+          {
+            "name": "Dennis Cladis",
+            "order": 2
+          },
+          {
+            "name": "Colby Vorland",
+            "order": 3
+          },
+          {
+            "name": "Ying Dong",
+            "order": 4
+          },
+          {
+            "name": "Meryl Wastney",
+            "order": 5
+          },
+          {
+            "name": "Sharon Moe",
+            "order": 6
+          },
+          {
+            "name": "Kathleen Hill Gallant",
+            "order": 7
+          }
+        ],
+        "author_list_complete": true,
+        "author_names_expanded": true,
+        "urls": [],
+        "source_names": [
+          "Google Scholar"
+        ],
+        "cv_numbers": [],
+        "cv_ids": [],
+        "classification": {
+          "primary": "nutrition",
+          "themes": [
+            "nutrition"
+          ],
+          "subthemes": [
+            "nutrition-phosphorus"
+          ],
+          "summary": null,
+          "confidence": "moderate",
+          "evidenceBasis": "Title and supplied CV classification.",
+          "primarySubtheme": "nutrition-phosphorus",
+          "rationale": "The substantive contribution concerns phosphorus or mineral intake, measurement, absorption, regulation, balance, or bone health."
+        },
+        "versions": [],
+        "related": [],
+        "all_dois": [],
+        "scholar_entries": [
+          {
+            "scholar_id": "YFjsv_pBGBYC",
+            "year": 2020,
+            "citations": null,
+            "cv_match": "cv-poster-10",
+            "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
+            "title_truncated": false,
+            "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:YFjsv_pBGBYC",
+            "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
+            "note": "Null citations means blank display; do not infer a measured zero."
+          }
+        ],
+        "open_science": [],
+        "abstract_available": false,
+        "metadata_retrieved": "2026-09-11",
+        "sources": [
+          {
+            "name": "Google Scholar",
+            "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:YFjsv_pBGBYC",
+            "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
+            "doi": null,
+            "year": 2020,
+            "openalex_id": null
+          }
+        ],
+        "source_author_lists": [
+          {
+            "source": "Google Scholar",
+            "doi": null,
+            "authors": [
+              {
+                "name": "Kendal Schmitz",
+                "order": 1
+              },
+              {
+                "name": "Dennis Cladis",
+                "order": 2
+              },
+              {
+                "name": "Colby Vorland",
+                "order": 3
+              },
+              {
+                "name": "Ying Dong",
+                "order": 4
+              },
+              {
+                "name": "Meryl Wastney",
+                "order": 5
+              },
+              {
+                "name": "Sharon Moe",
+                "order": 6
+              },
+              {
+                "name": "Kathleen Hill Gallant",
+                "order": 7
+              }
+            ]
+          }
+        ],
+        "component_role": "conference abstract"
+      }
+    ],
     "merged_catalog_ids": [
-      "work-782a2bd87d99"
+      "work-782a2bd87d99",
+      "work-b56770d96850",
+      "work-f3078c1093a3",
+      "work-e2f64ac12ddd",
+      "work-6422e93b7464"
     ],
     "id": "work-782a2bd87d99",
     "typeLabel": "Article",
@@ -133277,9 +133695,9 @@
     "takeaway": "Tests whether a high-phosphorus meal after a low-phosphorus diet increases intestinal absorption in male rats with reduced kidney function, finding no enhanced absorption efficiency.",
     "venueLabel": "JBMR plus",
     "isShip": false,
-    "componentCount": 0,
+    "componentCount": 4,
     "role": "Coauthor",
-    "n": "054"
+    "n": "050"
   },
   {
     "catalog_id": "work-20ceb84b155d",
@@ -133736,335 +134154,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "055"
-  },
-  {
-    "catalog_id": "work-e2f64ac12ddd",
-    "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphate Transporters and Biochemistries in Nephrectomized Male Rats",
-    "doi": null,
-    "year": 2022,
-    "date": "2022-02-01",
-    "type": "conference-abstract",
-    "venue": "Journal of Bone and Mineral Research",
-    "volume": "37",
-    "issue": null,
-    "pages": "70–70",
-    "authors": [
-      {
-        "name": "Kendal Schmitz",
-        "order": 1
-      },
-      {
-        "name": "Dennis Cladis",
-        "order": 2
-      },
-      {
-        "name": "Colby Vorland",
-        "order": 3
-      },
-      {
-        "name": "Annabel Biruete",
-        "order": 4
-      },
-      {
-        "name": "James Dominguez",
-        "order": 5
-      },
-      {
-        "name": "Kalisha O’Neill",
-        "order": 6
-      },
-      {
-        "name": "Neal Chen",
-        "order": 7
-      },
-      {
-        "name": "Sharon Moe",
-        "order": 8
-      },
-      {
-        "name": "Kathleen Hill Gallant",
-        "order": 9
-      }
-    ],
-    "author_list_complete": true,
-    "author_names_expanded": true,
-    "urls": [],
-    "source_names": [
-      "Google Scholar",
-      "CV"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [
-      "cv-poster-08"
-    ],
-    "classification": {
-      "primary": "nutrition",
-      "themes": [
-        "nutrition"
-      ],
-      "subthemes": [
-        "nutrition-phosphorus"
-      ],
-      "type": "conference-abstract",
-      "summary": "A conference abstract examining intestinal phosphate transporters and biochemical measures under different dietary phosphorus conditions in nephrectomized male rats.",
-      "evidenceBasis": "Source title and conference citation.",
-      "primarySubtheme": "nutrition-phosphorus",
-      "rationale": "The substantive contribution concerns phosphorus or mineral intake, measurement, absorption, regulation, balance, or bone health."
-    },
-    "versions": [],
-    "related": [],
-    "all_dois": [],
-    "scholar_entries": [
-      {
-        "scholar_id": "g5m5HwL7SMYC",
-        "year": 2022,
-        "citations": null,
-        "cv_match": "cv-poster-08",
-        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphate Transporters and Biochemistries in Nephrectomized Male Rats",
-        "title_truncated": false,
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:g5m5HwL7SMYC",
-        "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
-        "note": "Null citations means blank display; do not infer a measured zero."
-      }
-    ],
-    "open_science": [],
-    "abstract_available": false,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "Google Scholar",
-        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:g5m5HwL7SMYC",
-        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphate Transporters and Biochemistries in Nephrectomized Male Rats",
-        "doi": null,
-        "year": 2022,
-        "openalex_id": null
-      },
-      {
-        "name": "CV, 22 February 2026",
-        "url": null,
-        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Transporters and Biochemistries in Nephrectomized Male Rats",
-        "doi": null,
-        "year": 2021,
-        "openalex_id": null,
-        "page": 11
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "Google Scholar",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Kendal Schmitz",
-            "order": 1
-          },
-          {
-            "name": "Dennis Cladis",
-            "order": 2
-          },
-          {
-            "name": "Colby Vorland",
-            "order": 3
-          },
-          {
-            "name": "Annabel Biruete",
-            "order": 4
-          },
-          {
-            "name": "James Dominguez",
-            "order": 5
-          },
-          {
-            "name": "Kalisha O’Neill",
-            "order": 6
-          },
-          {
-            "name": "Neal Chen",
-            "order": 7
-          },
-          {
-            "name": "Sharon Moe",
-            "order": 8
-          },
-          {
-            "name": "Kathleen Hill Gallant",
-            "order": 9
-          }
-        ]
-      },
-      {
-        "source": "CV, 22 February 2026",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Schmitz, K.M."
-          },
-          {
-            "name": "Cladis, D.P."
-          },
-          {
-            "name": "Vorland, C.J."
-          },
-          {
-            "name": "Biruete, A."
-          },
-          {
-            "name": "O’Neill, K."
-          },
-          {
-            "name": "Chen, N.X."
-          },
-          {
-            "name": "Moe, S.M."
-          },
-          {
-            "name": "Hill Gallant, K.M."
-          }
-        ]
-      }
-    ],
-    "components": [
-      {
-        "catalog_id": "work-b56770d96850",
-        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Transporters and Biochemistries in Nephrectomized Male Rats",
-        "doi": null,
-        "year": 2021,
-        "type": "poster",
-        "venue": "American Society for Bone and Mineral Research meeting",
-        "authors": [
-          {
-            "name": "Schmitz, K.M."
-          },
-          {
-            "name": "Cladis, D.P."
-          },
-          {
-            "name": "Vorland, C.J."
-          },
-          {
-            "name": "Biruete, A."
-          },
-          {
-            "name": "O’Neill, K."
-          },
-          {
-            "name": "Chen, N.X."
-          },
-          {
-            "name": "Moe, S.M."
-          },
-          {
-            "name": "Hill Gallant, K.M."
-          }
-        ],
-        "author_list_complete": true,
-        "author_names_expanded": false,
-        "urls": [],
-        "source_names": [
-          "CV"
-        ],
-        "cv_numbers": [],
-        "cv_ids": [
-          "cv-poster-08"
-        ],
-        "classification": {
-          "primary": "nutrition",
-          "themes": [
-            "nutrition"
-          ],
-          "subthemes": [
-            "nutrition-phosphorus"
-          ],
-          "summary": null,
-          "confidence": "moderate",
-          "evidenceBasis": "Title and supplied CV classification.",
-          "primarySubtheme": "nutrition-phosphorus",
-          "rationale": "The substantive contribution concerns phosphorus or mineral intake, measurement, absorption, regulation, balance, or bone health."
-        },
-        "versions": [],
-        "related": [],
-        "metadata_notes": [],
-        "status": "presented-as-listed-in-cv",
-        "status_note": null,
-        "all_dois": [],
-        "scholar_entries": [],
-        "open_science": [],
-        "abstract_available": false,
-        "metadata_retrieved": "2026-09-11",
-        "sources": [
-          {
-            "name": "CV, 22 February 2026",
-            "url": null,
-            "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Transporters and Biochemistries in Nephrectomized Male Rats",
-            "doi": null,
-            "year": 2021,
-            "openalex_id": null,
-            "page": 11
-          }
-        ],
-        "source_author_lists": [
-          {
-            "source": "CV, 22 February 2026",
-            "doi": null,
-            "authors": [
-              {
-                "name": "Schmitz, K.M."
-              },
-              {
-                "name": "Cladis, D.P."
-              },
-              {
-                "name": "Vorland, C.J."
-              },
-              {
-                "name": "Biruete, A."
-              },
-              {
-                "name": "O’Neill, K."
-              },
-              {
-                "name": "Chen, N.X."
-              },
-              {
-                "name": "Moe, S.M."
-              },
-              {
-                "name": "Hill Gallant, K.M."
-              }
-            ]
-          }
-        ],
-        "component_role": "poster"
-      }
-    ],
-    "merged_catalog_ids": [
-      "work-e2f64ac12ddd",
-      "work-b56770d96850"
-    ],
-    "id": "work-e2f64ac12ddd",
-    "typeLabel": "Conference abstract",
-    "primary": "nutrition",
-    "themes": [
-      "nutrition"
-    ],
-    "subthemes": [
-      "nutrition-phosphorus"
-    ],
-    "tags": [],
-    "summary": "A conference abstract examining intestinal phosphate transporters and biochemical measures under different dietary phosphorus conditions in nephrectomized male rats.",
-    "isPaper": false,
-    "active": true,
-    "preprint": false,
-    "status": "Work in progress",
-    "short": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphate Transporters and Biochemistries in Nephrectomized Male Rats",
-    "takeaway": "A conference abstract examining intestinal phosphate transporters and biochemical measures under different dietary phosphorus conditions in nephrectomized male rats.",
-    "venueLabel": "Journal of Bone and Mineral Research",
-    "url": null,
-    "isShip": true,
-    "componentCount": 1,
-    "role": "Coauthor",
-    "n": "056"
+    "n": "051"
   },
   {
     "catalog_id": "work-6be8c9de0174",
@@ -135124,7 +135214,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "057"
+    "n": "052"
   },
   {
     "catalog_id": "work-4cf8715aa6de",
@@ -137250,7 +137340,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "058"
+    "n": "053"
   },
   {
     "catalog_id": "work-daafe38662bb",
@@ -139059,7 +139149,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "059"
+    "n": "054"
   },
   {
     "catalog_id": "work-91612bc61c62",
@@ -139973,7 +140063,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "060"
+    "n": "055"
   },
   {
     "catalog_id": "work-d05319426afe",
@@ -142308,7 +142398,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "First author",
-    "n": "061"
+    "n": "056"
   },
   {
     "catalog_id": "work-1ce27eca6ca4",
@@ -144544,7 +144634,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "062"
+    "n": "057"
   },
   {
     "catalog_id": "work-90389bcaec00",
@@ -145625,7 +145715,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "063"
+    "n": "058"
   },
   {
     "catalog_id": "work-3935440eabf6",
@@ -150886,7 +150976,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "Coauthor",
-    "n": "064"
+    "n": "059"
   },
   {
     "catalog_id": "work-5616b39a9995",
@@ -152189,7 +152279,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "065"
+    "n": "060"
   },
   {
     "catalog_id": "work-6aca22f8e3f0",
@@ -153130,7 +153220,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "066"
+    "n": "061"
   },
   {
     "catalog_id": "work-5a6c8b4bc3a1",
@@ -155205,7 +155295,7 @@
     "isShip": false,
     "componentCount": 2,
     "role": "First author",
-    "n": "067"
+    "n": "062"
   },
   {
     "catalog_id": "work-b25d87ee26e7",
@@ -156292,7 +156382,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "068"
+    "n": "063"
   },
   {
     "catalog_id": "work-0bf637ca1e62",
@@ -158556,7 +158646,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "069"
+    "n": "064"
   },
   {
     "catalog_id": "work-539d977d992c",
@@ -159623,7 +159713,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Last author",
-    "n": "070"
+    "n": "065"
   },
   {
     "catalog_id": "work-2f104753d98f",
@@ -159989,7 +160079,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Last author",
-    "n": "071"
+    "n": "066"
   },
   {
     "catalog_id": "work-056e3cb8abfe",
@@ -163024,141 +163114,7 @@
     "isShip": false,
     "componentCount": 2,
     "role": "Coauthor",
-    "n": "072"
-  },
-  {
-    "catalog_id": "work-90c184c85658",
-    "title": "Semi-automated screening for improbable randomization in PDFs",
-    "doi": null,
-    "year": 2021,
-    "date": null,
-    "type": "conference-abstract",
-    "venue": "Computational Research Integrity Conference",
-    "volume": null,
-    "issue": null,
-    "pages": null,
-    "authors": [
-      {
-        "name": "C Vorland",
-        "order": 1
-      },
-      {
-        "name": "David B Allison",
-        "order": 2
-      },
-      {
-        "name": "Andrew W Brown",
-        "order": 3
-      }
-    ],
-    "author_list_complete": true,
-    "author_names_expanded": false,
-    "url": "https://cri-conf.org/pdfs/CRI-CONF_2021_paper_5.pdf",
-    "urls": [
-      "https://cri-conf.org/pdfs/CRI-CONF_2021_paper_5.pdf"
-    ],
-    "source_names": [
-      "Google Scholar"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [],
-    "classification": {
-      "primary": "automation",
-      "themes": [
-        "automation",
-        "integrity",
-        "errors"
-      ],
-      "subthemes": [
-        "automation-review",
-        "integrity-assessment",
-        "errors-design"
-      ],
-      "summary": null,
-      "confidence": "moderate",
-      "evidenceBasis": "Title and supplied CV classification.",
-      "primarySubtheme": "automation-review",
-      "rationale": "Uses computational screening for improbable randomization as a check of trial trustworthiness and design."
-    },
-    "versions": [],
-    "related": [],
-    "all_dois": [],
-    "scholar_entries": [
-      {
-        "scholar_id": "BqipwSGYUEgC",
-        "year": 2021,
-        "citations": 3,
-        "cv_match": "cv-oral-07",
-        "title": "Semi-automated screening for improbable randomization in PDFs",
-        "title_truncated": false,
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:BqipwSGYUEgC",
-        "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
-        "note": null
-      }
-    ],
-    "open_science": [],
-    "abstract_available": false,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "Google Scholar",
-        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:BqipwSGYUEgC",
-        "title": "Semi-automated screening for improbable randomization in PDFs",
-        "doi": null,
-        "year": 2021,
-        "openalex_id": null
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "Google Scholar",
-        "doi": null,
-        "authors": [
-          {
-            "name": "C Vorland",
-            "order": 1
-          },
-          {
-            "name": "David B Allison",
-            "order": 2
-          },
-          {
-            "name": "Andrew W Brown",
-            "order": 3
-          }
-        ]
-      }
-    ],
-    "components": [],
-    "merged_catalog_ids": [
-      "work-90c184c85658"
-    ],
-    "id": "work-90c184c85658",
-    "typeLabel": "Conference abstract",
-    "primary": "automation",
-    "themes": [
-      "automation",
-      "integrity",
-      "errors"
-    ],
-    "subthemes": [
-      "automation-review",
-      "integrity-assessment",
-      "errors-design"
-    ],
-    "tags": [],
-    "summary": null,
-    "isPaper": false,
-    "active": true,
-    "preprint": false,
-    "status": "Work in progress",
-    "short": "Semi-automated screening for improbable randomization in PDFs",
-    "takeaway": null,
-    "venueLabel": "Computational Research Integrity Conference",
-    "isShip": true,
-    "componentCount": 0,
-    "role": "First author",
-    "n": "073"
+    "n": "067"
   },
   {
     "catalog_id": "work-110f05b84de8",
@@ -163957,7 +163913,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Author",
-    "n": "074"
+    "n": "068"
   },
   {
     "catalog_id": "work-1e3630adb79d",
@@ -164681,7 +164637,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "075"
+    "n": "069"
   },
   {
     "catalog_id": "work-c7d4df2dcafc",
@@ -168361,7 +168317,7 @@
     "isShip": false,
     "componentCount": 2,
     "role": "Coauthor",
-    "n": "076"
+    "n": "070"
   },
   {
     "catalog_id": "work-9a5dcb9b5707",
@@ -169010,7 +168966,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "First author",
-    "n": "077"
+    "n": "071"
   },
   {
     "catalog_id": "work-0542fc962b89",
@@ -170097,7 +170053,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "078"
+    "n": "072"
   },
   {
     "catalog_id": "work-a1bc9c710d7c",
@@ -172483,310 +172439,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "Coauthor",
-    "n": "079"
-  },
-  {
-    "catalog_id": "work-6422e93b7464",
-    "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
-    "doi": null,
-    "year": 2020,
-    "date": "2020-11-01",
-    "type": "conference-abstract",
-    "venue": "Journal of Bone and Mineral Research",
-    "volume": "35",
-    "issue": null,
-    "pages": "277–278",
-    "authors": [
-      {
-        "name": "Kendal Schmitz",
-        "order": 1
-      },
-      {
-        "name": "Dennis Cladis",
-        "order": 2
-      },
-      {
-        "name": "Colby Vorland",
-        "order": 3
-      },
-      {
-        "name": "Ying Dong",
-        "order": 4
-      },
-      {
-        "name": "Meryl Wastney",
-        "order": 5
-      },
-      {
-        "name": "Sharon Moe",
-        "order": 6
-      },
-      {
-        "name": "Kathleen Hill Gallant",
-        "order": 7
-      }
-    ],
-    "author_list_complete": true,
-    "author_names_expanded": true,
-    "urls": [],
-    "source_names": [
-      "Google Scholar",
-      "CV"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [
-      "cv-poster-10"
-    ],
-    "classification": {
-      "primary": "nutrition",
-      "themes": [
-        "nutrition"
-      ],
-      "subthemes": [
-        "nutrition-phosphorus"
-      ],
-      "summary": null,
-      "confidence": "moderate",
-      "evidenceBasis": "Title and supplied CV classification.",
-      "primarySubtheme": "nutrition-phosphorus",
-      "rationale": "The substantive contribution concerns phosphorus or mineral intake, measurement, absorption, regulation, balance, or bone health."
-    },
-    "versions": [],
-    "related": [],
-    "all_dois": [],
-    "scholar_entries": [
-      {
-        "scholar_id": "YFjsv_pBGBYC",
-        "year": 2020,
-        "citations": null,
-        "cv_match": "cv-poster-10",
-        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
-        "title_truncated": false,
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:YFjsv_pBGBYC",
-        "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
-        "note": "Null citations means blank display; do not infer a measured zero."
-      }
-    ],
-    "open_science": [],
-    "abstract_available": false,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "Google Scholar",
-        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:YFjsv_pBGBYC",
-        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
-        "doi": null,
-        "year": 2020,
-        "openalex_id": null
-      },
-      {
-        "name": "CV, 22 February 2026",
-        "url": null,
-        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
-        "doi": null,
-        "year": 2020,
-        "openalex_id": null,
-        "page": 11
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "Google Scholar",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Kendal Schmitz",
-            "order": 1
-          },
-          {
-            "name": "Dennis Cladis",
-            "order": 2
-          },
-          {
-            "name": "Colby Vorland",
-            "order": 3
-          },
-          {
-            "name": "Ying Dong",
-            "order": 4
-          },
-          {
-            "name": "Meryl Wastney",
-            "order": 5
-          },
-          {
-            "name": "Sharon Moe",
-            "order": 6
-          },
-          {
-            "name": "Kathleen Hill Gallant",
-            "order": 7
-          }
-        ]
-      },
-      {
-        "source": "CV, 22 February 2026",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Schmitz, K.M."
-          },
-          {
-            "name": "Cladis, D.P."
-          },
-          {
-            "name": "Vorland, C.J."
-          },
-          {
-            "name": "Dong, Y."
-          },
-          {
-            "name": "Wastney, M.E."
-          },
-          {
-            "name": "Moe, S.M."
-          },
-          {
-            "name": "Hill Gallant, K.M."
-          }
-        ]
-      }
-    ],
-    "components": [
-      {
-        "catalog_id": "work-f3078c1093a3",
-        "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
-        "doi": null,
-        "year": 2020,
-        "type": "poster",
-        "venue": "American Society for Bone and Mineral Research meeting",
-        "authors": [
-          {
-            "name": "Schmitz, K.M."
-          },
-          {
-            "name": "Cladis, D.P."
-          },
-          {
-            "name": "Vorland, C.J."
-          },
-          {
-            "name": "Dong, Y."
-          },
-          {
-            "name": "Wastney, M.E."
-          },
-          {
-            "name": "Moe, S.M."
-          },
-          {
-            "name": "Hill Gallant, K.M."
-          }
-        ],
-        "author_list_complete": true,
-        "author_names_expanded": false,
-        "urls": [],
-        "source_names": [
-          "CV"
-        ],
-        "cv_numbers": [],
-        "cv_ids": [
-          "cv-poster-10"
-        ],
-        "classification": {
-          "primary": "nutrition",
-          "themes": [
-            "nutrition"
-          ],
-          "subthemes": [
-            "nutrition-phosphorus"
-          ],
-          "summary": null,
-          "confidence": "moderate",
-          "evidenceBasis": "Title and supplied CV classification.",
-          "primarySubtheme": "nutrition-phosphorus",
-          "rationale": "The substantive contribution concerns phosphorus or mineral intake, measurement, absorption, regulation, balance, or bone health."
-        },
-        "versions": [],
-        "related": [],
-        "metadata_notes": [],
-        "status": "presented-as-listed-in-cv",
-        "status_note": null,
-        "all_dois": [],
-        "scholar_entries": [],
-        "open_science": [],
-        "abstract_available": false,
-        "metadata_retrieved": "2026-09-11",
-        "sources": [
-          {
-            "name": "CV, 22 February 2026",
-            "url": null,
-            "title": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
-            "doi": null,
-            "year": 2020,
-            "openalex_id": null,
-            "page": 11
-          }
-        ],
-        "source_author_lists": [
-          {
-            "source": "CV, 22 February 2026",
-            "doi": null,
-            "authors": [
-              {
-                "name": "Schmitz, K.M."
-              },
-              {
-                "name": "Cladis, D.P."
-              },
-              {
-                "name": "Vorland, C.J."
-              },
-              {
-                "name": "Dong, Y."
-              },
-              {
-                "name": "Wastney, M.E."
-              },
-              {
-                "name": "Moe, S.M."
-              },
-              {
-                "name": "Hill Gallant, K.M."
-              }
-            ]
-          }
-        ],
-        "component_role": "poster"
-      }
-    ],
-    "merged_catalog_ids": [
-      "work-6422e93b7464",
-      "work-f3078c1093a3"
-    ],
-    "id": "work-6422e93b7464",
-    "typeLabel": "Conference abstract",
-    "primary": "nutrition",
-    "themes": [
-      "nutrition"
-    ],
-    "subthemes": [
-      "nutrition-phosphorus"
-    ],
-    "tags": [],
-    "summary": null,
-    "isPaper": false,
-    "active": true,
-    "preprint": false,
-    "status": "Work in progress",
-    "short": "Effects of Low and High Dietary Phosphorus and Acute High Dietary Phosphorus on Intestinal Phosphorus Fractional Absorption in Nephrectomized Male Rats",
-    "takeaway": null,
-    "venueLabel": "Journal of Bone and Mineral Research",
-    "url": null,
-    "isShip": true,
-    "componentCount": 1,
-    "role": "Coauthor",
-    "n": "080"
+    "n": "073"
   },
   {
     "catalog_id": "work-747060ddcfec",
@@ -174542,7 +174195,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "First author",
-    "n": "081"
+    "n": "074"
   },
   {
     "catalog_id": "work-b340ab3e3c6a",
@@ -175086,7 +174739,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "082"
+    "n": "075"
   },
   {
     "catalog_id": "work-11b30ad70fbc",
@@ -176982,7 +176635,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "083"
+    "n": "076"
   },
   {
     "catalog_id": "work-2e99a514e7db",
@@ -178199,7 +177852,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
-    "n": "084"
+    "n": "077"
   },
   {
     "catalog_id": "work-cfb66f7d72f6",
@@ -180634,7 +180287,7 @@
     "isShip": false,
     "componentCount": 2,
     "role": "First author",
-    "n": "085"
+    "n": "078"
   },
   {
     "catalog_id": "work-c48edbada72a",
@@ -181818,7 +181471,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "086"
+    "n": "079"
   },
   {
     "catalog_id": "work-0998f6c2e517",
@@ -183414,124 +183067,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "087"
-  },
-  {
-    "catalog_id": "work-0ba72c141ca7",
-    "title": "Reporting Research on Murine Genetic Models of Obesity: Methods Development and Rationale for a Systematic Literature Survey",
-    "doi": null,
-    "year": 2020,
-    "type": "poster",
-    "venue": "Obesity Week",
-    "authors": [
-      {
-        "name": "Vorland, C.J."
-      },
-      {
-        "name": "Smith, Jr., D."
-      },
-      {
-        "name": "Allison, D.B."
-      },
-      {
-        "name": "Brown, A.W."
-      }
-    ],
-    "author_list_complete": true,
-    "author_names_expanded": false,
-    "urls": [],
-    "source_names": [
-      "CV"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [
-      "cv-poster-09"
-    ],
-    "classification": {
-      "primary": "transparency",
-      "themes": [
-        "transparency",
-        "nutrition"
-      ],
-      "subthemes": [
-        "transparency-reporting",
-        "nutrition-diet"
-      ],
-      "summary": null,
-      "confidence": "moderate",
-      "evidenceBasis": "Title and supplied CV classification.",
-      "primarySubtheme": "transparency-reporting",
-      "rationale": "Plans assessment of reporting practices in nutrition or obesity research."
-    },
-    "versions": [],
-    "related": [],
-    "metadata_notes": [],
-    "status": "Work in progress",
-    "status_note": null,
-    "all_dois": [],
-    "scholar_entries": [],
-    "open_science": [],
-    "abstract_available": false,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "CV, 22 February 2026",
-        "url": null,
-        "title": "Reporting Research on Murine Genetic Models of Obesity: Methods Development and Rationale for a Systematic Literature Survey",
-        "doi": null,
-        "year": 2020,
-        "openalex_id": null,
-        "page": 11
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "CV, 22 February 2026",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Vorland, C.J."
-          },
-          {
-            "name": "Smith, Jr., D."
-          },
-          {
-            "name": "Allison, D.B."
-          },
-          {
-            "name": "Brown, A.W."
-          }
-        ]
-      }
-    ],
-    "components": [],
-    "merged_catalog_ids": [
-      "work-0ba72c141ca7"
-    ],
-    "id": "work-0ba72c141ca7",
-    "typeLabel": "Poster",
-    "primary": "transparency",
-    "themes": [
-      "transparency",
-      "nutrition"
-    ],
-    "subthemes": [
-      "transparency-reporting",
-      "nutrition-diet"
-    ],
-    "tags": [],
-    "summary": null,
-    "isPaper": false,
-    "active": true,
-    "preprint": false,
-    "short": "Reporting Research on Murine Genetic Models of Obesity: Methods Development and Rationale for a Systematic Literature Survey",
-    "takeaway": null,
-    "venueLabel": "Obesity Week",
-    "url": null,
-    "isShip": true,
-    "componentCount": 0,
-    "role": "First author",
-    "n": "088"
+    "n": "080"
   },
   {
     "catalog_id": "work-19198f0d0559",
@@ -185128,7 +184664,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "089"
+    "n": "081"
   },
   {
     "catalog_id": "work-372e35ec1ef7",
@@ -186140,704 +185676,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "090"
-  },
-  {
-    "catalog_id": "work-f65701be73c8",
-    "title": "A Quantitative Investigation of Differences in Mediterranean Diet Definitions in Nutrition Research (P13-026-19)",
-    "doi": "10.1093/cdn/nzz036.p13-026-19",
-    "openalex_id": "https://openalex.org/W2951066633",
-    "year": 2019,
-    "date": "2019-06-01",
-    "type": "conference-abstract",
-    "venue": "Current Developments in Nutrition",
-    "publisher": "Elsevier BV",
-    "volume": "3",
-    "issue": null,
-    "pages": "nzz036.P13–026",
-    "authors": [
-      {
-        "name": "Daniel Lingle",
-        "given": null,
-        "family": null,
-        "orcid": null,
-        "openalex_id": "https://openalex.org/A5078644343",
-        "display_name": "Daniel Lingle",
-        "order": 1,
-        "position": "first",
-        "is_corresponding": false,
-        "affiliations": [
-          "Indiana University-Bloomington"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I4210119109",
-            "display_name": "Indiana University Bloomington",
-            "ror": "https://ror.org/02k40bc56",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I4210119109",
-              "https://openalex.org/I592451"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Indiana University-Bloomington",
-            "institution_ids": [
-              "https://openalex.org/I4210119109"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Stephanie Dickinson",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0002-2998-4467",
-        "openalex_id": "https://openalex.org/A5080022641",
-        "display_name": "Stephanie Dickinson",
-        "order": 2,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [
-          "Indiana University-Bloomington"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I4210119109",
-            "display_name": "Indiana University Bloomington",
-            "ror": "https://ror.org/02k40bc56",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I4210119109",
-              "https://openalex.org/I592451"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Indiana University-Bloomington",
-            "institution_ids": [
-              "https://openalex.org/I4210119109"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Colby Vorland",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0003-4225-372X",
-        "openalex_id": "https://openalex.org/A5074473858",
-        "display_name": "Colby J. Vorland",
-        "order": 3,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [
-          "Indiana University-Bloomington"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I4210119109",
-            "display_name": "Indiana University Bloomington",
-            "ror": "https://ror.org/02k40bc56",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I4210119109",
-              "https://openalex.org/I592451"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Indiana University-Bloomington",
-            "institution_ids": [
-              "https://openalex.org/I4210119109"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Andrew Brown",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0002-1758-8205",
-        "openalex_id": "https://openalex.org/A5009250776",
-        "display_name": "Andrew W. Brown",
-        "order": 4,
-        "position": "last",
-        "is_corresponding": false,
-        "affiliations": [
-          "Indiana University"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I592451",
-            "display_name": "Indiana University",
-            "ror": "https://ror.org/01kg8sb98",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I592451"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Indiana University",
-            "institution_ids": [
-              "https://openalex.org/I592451"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      }
-    ],
-    "author_list_complete": true,
-    "url": "https://doi.org/10.1093/cdn/nzz036.p13-026-19",
-    "source_names": [
-      "OpenAlex",
-      "CV"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [
-      "cv-poster-13"
-    ],
-    "classification": {
-      "primary": "transparency",
-      "themes": [
-        "transparency",
-        "nutrition"
-      ],
-      "subthemes": [
-        "transparency-choices",
-        "nutrition-diet"
-      ],
-      "applications": [
-        "Nutrition",
-        "Mediterranean diet"
-      ],
-      "summary": "Quantifies variation in the operational definitions of Mediterranean diets used in nutrition studies.",
-      "study_group": "mediterranean-definitions",
-      "relationship": null,
-      "target_doi": null,
-      "confidence": "high",
-      "note": null,
-      "openalex_id": "https://openalex.org/W2951066633",
-      "id": "W2951066633",
-      "type": "conference-abstract",
-      "classification_basis": "Editorial judgment based on the saved title and abstract, with stated exceptions; not an OpenAlex subject label.",
-      "source_urls": [
-        "https://api.openalex.org/works/W2951066633"
-      ],
-      "counting_note": "Distinct public output; count according to its output type, not automatically as a journal paper.",
-      "primarySubtheme": "transparency-choices",
-      "rationale": "Examines variation in how Mediterranean diets are defined, making nutritional constructs and interpretation more explicit."
-    },
-    "versions": [],
-    "related": [],
-    "keywords": [
-      {
-        "id": "https://openalex.org/keywords/mediterranean-diet",
-        "display_name": "Mediterranean diet",
-        "score": 0.539191484451294
-      },
-      {
-        "id": "https://openalex.org/keywords/mediterranean-climate",
-        "display_name": "Mediterranean climate",
-        "score": 0.4421142339706421
-      },
-      {
-        "id": "https://openalex.org/keywords/psychology",
-        "display_name": "Psychology",
-        "score": 0.33664724230766296
-      },
-      {
-        "id": "https://openalex.org/keywords/biology",
-        "display_name": "Biology",
-        "score": 0.3277866244316101
-      },
-      {
-        "id": "https://openalex.org/keywords/medicine",
-        "display_name": "Medicine",
-        "score": 0.2359059453010559
-      },
-      {
-        "id": "https://openalex.org/keywords/internal-medicine",
-        "display_name": "Internal medicine",
-        "score": 0.1532406508922577
-      },
-      {
-        "id": "https://openalex.org/keywords/ecology",
-        "display_name": "Ecology",
-        "score": 0.10701870918273926
-      }
-    ],
-    "mesh": [],
-    "topics": [
-      {
-        "id": "https://openalex.org/T10866",
-        "display_name": "Nutritional Studies and Diet",
-        "score": 0.965499997138977,
-        "subfield": {
-          "id": "https://openalex.org/subfields/2739",
-          "display_name": "Public Health, Environmental and Occupational Health"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/27",
-          "display_name": "Medicine"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/4",
-          "display_name": "Health Sciences"
-        }
-      }
-    ],
-    "primary_topic": {
-      "id": "https://openalex.org/T10866",
-      "display_name": "Nutritional Studies and Diet",
-      "score": 0.965499997138977,
-      "subfield": {
-        "id": "https://openalex.org/subfields/2739",
-        "display_name": "Public Health, Environmental and Occupational Health"
-      },
-      "field": {
-        "id": "https://openalex.org/fields/27",
-        "display_name": "Medicine"
-      },
-      "domain": {
-        "id": "https://openalex.org/domains/4",
-        "display_name": "Health Sciences"
-      }
-    },
-    "concepts": [
-      {
-        "id": "https://openalex.org/C2778962194",
-        "wikidata": "https://www.wikidata.org/wiki/Q47564",
-        "display_name": "Mediterranean diet",
-        "level": 2,
-        "score": 0.539191484451294
-      },
-      {
-        "id": "https://openalex.org/C4646841",
-        "wikidata": "https://www.wikidata.org/wiki/Q13996",
-        "display_name": "Mediterranean climate",
-        "level": 2,
-        "score": 0.4421142339706421
-      },
-      {
-        "id": "https://openalex.org/C15744967",
-        "wikidata": "https://www.wikidata.org/wiki/Q9418",
-        "display_name": "Psychology",
-        "level": 0,
-        "score": 0.33664724230766296
-      },
-      {
-        "id": "https://openalex.org/C86803240",
-        "wikidata": "https://www.wikidata.org/wiki/Q420",
-        "display_name": "Biology",
-        "level": 0,
-        "score": 0.3277866244316101
-      },
-      {
-        "id": "https://openalex.org/C71924100",
-        "wikidata": "https://www.wikidata.org/wiki/Q11190",
-        "display_name": "Medicine",
-        "level": 0,
-        "score": 0.2359059453010559
-      },
-      {
-        "id": "https://openalex.org/C126322002",
-        "wikidata": "https://www.wikidata.org/wiki/Q11180",
-        "display_name": "Internal medicine",
-        "level": 1,
-        "score": 0.1532406508922577
-      },
-      {
-        "id": "https://openalex.org/C18903297",
-        "wikidata": "https://www.wikidata.org/wiki/Q7150",
-        "display_name": "Ecology",
-        "level": 1,
-        "score": 0.10701870918273926
-      }
-    ],
-    "citation_counts": {
-      "openalex": 1,
-      "retrieved_at": "2026-09-12T02:12:44.491823+00:00",
-      "counts_by_year": [
-        {
-          "year": 2022,
-          "cited_by_count": 1
-        }
-      ]
-    },
-    "open_access": {
-      "is_oa": true,
-      "oa_status": "gold",
-      "oa_url": "https://www.sciencedirect.com/science/article/pii/S2475299123148025/pdf",
-      "any_repository_has_fulltext": true
-    },
-    "license": "cc-by-nc-nd",
-    "language": "en",
-    "referenced_works": [],
-    "related_works": [
-      "https://openalex.org/W2054202803",
-      "https://openalex.org/W3042175488",
-      "https://openalex.org/W2781159576",
-      "https://openalex.org/W2060566141",
-      "https://openalex.org/W4200257707",
-      "https://openalex.org/W2962956635",
-      "https://openalex.org/W3040931446",
-      "https://openalex.org/W3030787491",
-      "https://openalex.org/W176525083",
-      "https://openalex.org/W2152186050"
-    ],
-    "all_dois": [
-      "10.1093/cdn/nzz036.p13-026-19"
-    ],
-    "scholar_entries": [],
-    "open_science": [
-      {
-        "kind": "open-access",
-        "url": "https://doi.org/10.1093/cdn/nzz036.p13-026-19",
-        "label": "Free abstract",
-        "source_url": "https://api.openalex.org/works/W2951066633",
-        "evidence": "OpenAlex marks this location open access (gold); availability is metadata-reported, not an independently tested reusable license.",
-        "verified_at": "2026-09-12T02:41:33.503631+00:00",
-        "verification": "source-metadata",
-        "oa_status": "gold",
-        "license": "cc-by-nc-nd",
-        "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2475299123148025/pdf"
-      }
-    ],
-    "abstract_available": true,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "OpenAlex",
-        "url": "https://doi.org/10.1093/cdn/nzz036.p13-026-19",
-        "title": "A Quantitative Investigation of Differences in Mediterranean Diet Definitions in Nutrition Research (P13-026-19)",
-        "doi": "10.1093/cdn/nzz036.p13-026-19",
-        "year": 2019,
-        "openalex_id": "https://openalex.org/W2951066633"
-      },
-      {
-        "name": "CV, 22 February 2026",
-        "url": null,
-        "title": "A Quantitative Investigation of Differences in Mediterranean Diet Definitions in Nutrition Research",
-        "doi": null,
-        "year": 2019,
-        "openalex_id": null,
-        "page": 11
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "OpenAlex",
-        "doi": "10.1093/cdn/nzz036.p13-026-19",
-        "authors": [
-          {
-            "name": "Daniel Lingle",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5078644343",
-            "display_name": "Daniel Lingle",
-            "order": 1,
-            "position": "first",
-            "is_corresponding": false,
-            "affiliations": [
-              "Indiana University-Bloomington"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I4210119109",
-                "display_name": "Indiana University Bloomington",
-                "ror": "https://ror.org/02k40bc56",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I4210119109",
-                  "https://openalex.org/I592451"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Indiana University-Bloomington",
-                "institution_ids": [
-                  "https://openalex.org/I4210119109"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Stephanie Dickinson",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0002-2998-4467",
-            "openalex_id": "https://openalex.org/A5080022641",
-            "display_name": "Stephanie Dickinson",
-            "order": 2,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Indiana University-Bloomington"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I4210119109",
-                "display_name": "Indiana University Bloomington",
-                "ror": "https://ror.org/02k40bc56",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I4210119109",
-                  "https://openalex.org/I592451"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Indiana University-Bloomington",
-                "institution_ids": [
-                  "https://openalex.org/I4210119109"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Colby Vorland",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0003-4225-372X",
-            "openalex_id": "https://openalex.org/A5074473858",
-            "display_name": "Colby J. Vorland",
-            "order": 3,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Indiana University-Bloomington"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I4210119109",
-                "display_name": "Indiana University Bloomington",
-                "ror": "https://ror.org/02k40bc56",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I4210119109",
-                  "https://openalex.org/I592451"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Indiana University-Bloomington",
-                "institution_ids": [
-                  "https://openalex.org/I4210119109"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Andrew Brown",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0002-1758-8205",
-            "openalex_id": "https://openalex.org/A5009250776",
-            "display_name": "Andrew W. Brown",
-            "order": 4,
-            "position": "last",
-            "is_corresponding": false,
-            "affiliations": [
-              "Indiana University"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I592451",
-                "display_name": "Indiana University",
-                "ror": "https://ror.org/01kg8sb98",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I592451"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Indiana University",
-                "institution_ids": [
-                  "https://openalex.org/I592451"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          }
-        ]
-      },
-      {
-        "source": "CV, 22 February 2026",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Lingle, DW."
-          },
-          {
-            "name": "Dickinson, SL."
-          },
-          {
-            "name": "Vorland, CJ."
-          },
-          {
-            "name": "Brown, AW."
-          }
-        ]
-      }
-    ],
-    "components": [
-      {
-        "catalog_id": "work-f9ea9f7910d5",
-        "title": "A Quantitative Investigation of Differences in Mediterranean Diet Definitions in Nutrition Research",
-        "doi": null,
-        "year": 2019,
-        "type": "poster",
-        "venue": "American Society for Nutrition (Nutrition 2019), Baltimore, MD",
-        "authors": [
-          {
-            "name": "Lingle, DW."
-          },
-          {
-            "name": "Dickinson, SL."
-          },
-          {
-            "name": "Vorland, CJ."
-          },
-          {
-            "name": "Brown, AW."
-          }
-        ],
-        "author_list_complete": true,
-        "author_names_expanded": false,
-        "urls": [],
-        "source_names": [
-          "CV"
-        ],
-        "cv_numbers": [],
-        "cv_ids": [
-          "cv-poster-13"
-        ],
-        "classification": {
-          "primary": "transparency",
-          "themes": [
-            "transparency",
-            "nutrition"
-          ],
-          "subthemes": [
-            "transparency-choices",
-            "nutrition-diet"
-          ],
-          "summary": null,
-          "confidence": "moderate",
-          "evidenceBasis": "Title and supplied CV classification.",
-          "primarySubtheme": "transparency-choices",
-          "rationale": "Examines variation in how Mediterranean diets are defined, making nutritional constructs and interpretation more explicit."
-        },
-        "versions": [],
-        "related": [],
-        "metadata_notes": [],
-        "status": "presented-as-listed-in-cv",
-        "status_note": null,
-        "all_dois": [],
-        "scholar_entries": [],
-        "open_science": [],
-        "abstract_available": false,
-        "metadata_retrieved": "2026-09-11",
-        "sources": [
-          {
-            "name": "CV, 22 February 2026",
-            "url": null,
-            "title": "A Quantitative Investigation of Differences in Mediterranean Diet Definitions in Nutrition Research",
-            "doi": null,
-            "year": 2019,
-            "openalex_id": null,
-            "page": 11
-          }
-        ],
-        "source_author_lists": [
-          {
-            "source": "CV, 22 February 2026",
-            "doi": null,
-            "authors": [
-              {
-                "name": "Lingle, DW."
-              },
-              {
-                "name": "Dickinson, SL."
-              },
-              {
-                "name": "Vorland, CJ."
-              },
-              {
-                "name": "Brown, AW."
-              }
-            ]
-          }
-        ],
-        "component_role": "poster"
-      }
-    ],
-    "merged_catalog_ids": [
-      "work-f65701be73c8",
-      "work-f9ea9f7910d5"
-    ],
-    "id": "work-f65701be73c8",
-    "typeLabel": "Conference abstract",
-    "primary": "transparency",
-    "themes": [
-      "transparency",
-      "nutrition"
-    ],
-    "subthemes": [
-      "transparency-choices",
-      "nutrition-diet"
-    ],
-    "tags": [
-      "Nutrition",
-      "Mediterranean diet"
-    ],
-    "summary": "Quantifies variation in the operational definitions of Mediterranean diets used in nutrition studies.",
-    "isPaper": false,
-    "active": true,
-    "preprint": false,
-    "status": "Work in progress",
-    "short": "A Quantitative Investigation of Differences in Mediterranean Diet Definitions in Nutrition Research (P13-026-19)",
-    "takeaway": "Quantifies variation in the operational definitions of Mediterranean diets used in nutrition studies.",
-    "venueLabel": "Current Developments in Nutrition",
-    "isShip": true,
-    "componentCount": 1,
-    "role": "Coauthor",
-    "n": "091"
+    "n": "082"
   },
   {
     "catalog_id": "work-46919a61a5f3",
@@ -189151,7 +187990,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "First author",
-    "n": "092"
+    "n": "083"
   },
   {
     "catalog_id": "work-83effacda49b",
@@ -190094,7 +188933,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "093"
+    "n": "084"
   },
   {
     "catalog_id": "work-540a2a1971b0",
@@ -191216,7 +190055,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "094"
+    "n": "085"
   },
   {
     "catalog_id": "work-e062f386aa20",
@@ -191692,7 +190531,7 @@
     "isShip": false,
     "componentCount": 0,
     "role": "Author",
-    "n": "095"
+    "n": "086"
   },
   {
     "catalog_id": "work-bab19ca0b66e",
@@ -193819,7 +192658,7 @@
     "isShip": false,
     "componentCount": 3,
     "role": "First author",
-    "n": "096"
+    "n": "087"
   },
   {
     "catalog_id": "work-a486e53f05ee",
@@ -195060,1133 +193899,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "First author",
-    "n": "097"
-  },
-  {
-    "catalog_id": "work-63b8979e1798",
-    "title": "Comparison of Digestion Methods for Phosphorus Analysis of Fecal and Diet Samples",
-    "doi": "10.1096/fasebj.31.1_supplement.801.8",
-    "openalex_id": "https://openalex.org/W3195478157",
-    "year": 2017,
-    "date": "2017-04-01",
-    "type": "conference-abstract",
-    "venue": "The FASEB Journal",
-    "publisher": "Wiley",
-    "volume": "31",
-    "issue": "S1",
-    "pages": null,
-    "authors": [
-      {
-        "name": "Colby J. Vorland",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0003-4225-372X",
-        "openalex_id": "https://openalex.org/A5074473858",
-        "display_name": "Colby J. Vorland",
-        "order": 1,
-        "position": "first",
-        "is_corresponding": false,
-        "affiliations": [
-          "Nutrition Science Purdue University West Lafayette IN",
-          "Nutrition Science, Purdue University, West Lafayette, IN"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I219193219",
-            "display_name": "Purdue University West Lafayette",
-            "ror": "https://ror.org/02dqehb95",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I219193219"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Nutrition Science Purdue University West Lafayette IN",
-            "institution_ids": [
-              "https://openalex.org/I219193219"
-            ]
-          },
-          {
-            "raw_affiliation_string": "Nutrition Science, Purdue University, West Lafayette, IN",
-            "institution_ids": [
-              "https://openalex.org/I219193219"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Berdine R. Martin",
-        "given": null,
-        "family": null,
-        "orcid": null,
-        "openalex_id": "https://openalex.org/A5111777714",
-        "display_name": "Berdine R. Martin",
-        "order": 2,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [
-          "Nutrition Science Purdue University West Lafayette IN",
-          "Nutrition Science, Purdue University, West Lafayette, IN"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I219193219",
-            "display_name": "Purdue University West Lafayette",
-            "ror": "https://ror.org/02dqehb95",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I219193219"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Nutrition Science Purdue University West Lafayette IN",
-            "institution_ids": [
-              "https://openalex.org/I219193219"
-            ]
-          },
-          {
-            "raw_affiliation_string": "Nutrition Science, Purdue University, West Lafayette, IN",
-            "institution_ids": [
-              "https://openalex.org/I219193219"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Cheryl L. H. Armstrong",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0002-8635-543X",
-        "openalex_id": "https://openalex.org/A5068480623",
-        "display_name": "Cheryl Armstrong",
-        "order": 3,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [
-          "Nutrition Science Purdue University West Lafayette IN",
-          "Nutrition Science, Purdue University, West Lafayette, IN"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I219193219",
-            "display_name": "Purdue University West Lafayette",
-            "ror": "https://ror.org/02dqehb95",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I219193219"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Nutrition Science Purdue University West Lafayette IN",
-            "institution_ids": [
-              "https://openalex.org/I219193219"
-            ]
-          },
-          {
-            "raw_affiliation_string": "Nutrition Science, Purdue University, West Lafayette, IN",
-            "institution_ids": [
-              "https://openalex.org/I219193219"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "J. Scott Radcliffe",
-        "given": null,
-        "family": null,
-        "orcid": null,
-        "openalex_id": "https://openalex.org/A5111366505",
-        "display_name": "J. S. Radcliffe",
-        "order": 4,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [
-          "Animal Science Purdue University West Lafayette IN",
-          "Animal Science, Purdue University, West Lafayette, IN"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I219193219",
-            "display_name": "Purdue University West Lafayette",
-            "ror": "https://ror.org/02dqehb95",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I219193219"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Animal Science Purdue University West Lafayette IN",
-            "institution_ids": [
-              "https://openalex.org/I219193219"
-            ]
-          },
-          {
-            "raw_affiliation_string": "Animal Science, Purdue University, West Lafayette, IN",
-            "institution_ids": [
-              "https://openalex.org/I219193219"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Ranjani N. Moorthi",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0002-3125-0868",
-        "openalex_id": "https://openalex.org/A5017330394",
-        "display_name": "Ranjani N. Moorthi",
-        "order": 5,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [
-          "Indiana University School of Medicine Indianapolis IN",
-          "Indiana University School of Medicine, Indianapolis, IN"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I4394709130",
-            "display_name": "Indiana University School of Medicine",
-            "ror": "https://ror.org/02ets8c94",
-            "country_code": null,
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I4394709130",
-              "https://openalex.org/I592451"
-            ]
-          },
-          {
-            "id": "https://openalex.org/I55769427",
-            "display_name": "Indiana University – Purdue University Indianapolis",
-            "ror": "https://ror.org/05gxnyn08",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I55769427",
-              "https://openalex.org/I592451"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Indiana University School of Medicine Indianapolis IN",
-            "institution_ids": [
-              "https://openalex.org/I4394709130",
-              "https://openalex.org/I55769427"
-            ]
-          },
-          {
-            "raw_affiliation_string": "Indiana University School of Medicine, Indianapolis, IN",
-            "institution_ids": [
-              "https://openalex.org/I4394709130",
-              "https://openalex.org/I55769427"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Sharon M. Moe",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0003-3562-9725",
-        "openalex_id": "https://openalex.org/A5074659892",
-        "display_name": "Sharon M. Moe",
-        "order": 6,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [
-          "Indiana University School of Medicine Indianapolis IN",
-          "Indiana University School of Medicine, Indianapolis, IN"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I4394709130",
-            "display_name": "Indiana University School of Medicine",
-            "ror": "https://ror.org/02ets8c94",
-            "country_code": null,
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I4394709130",
-              "https://openalex.org/I592451"
-            ]
-          },
-          {
-            "id": "https://openalex.org/I55769427",
-            "display_name": "Indiana University – Purdue University Indianapolis",
-            "ror": "https://ror.org/05gxnyn08",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I55769427",
-              "https://openalex.org/I592451"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Indiana University School of Medicine Indianapolis IN",
-            "institution_ids": [
-              "https://openalex.org/I4394709130",
-              "https://openalex.org/I55769427"
-            ]
-          },
-          {
-            "raw_affiliation_string": "Indiana University School of Medicine, Indianapolis, IN",
-            "institution_ids": [
-              "https://openalex.org/I4394709130",
-              "https://openalex.org/I55769427"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Kathleen M. Hill Gallant",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0002-1528-8161",
-        "openalex_id": "https://openalex.org/A5082700641",
-        "display_name": "Kathleen M. Hill Gallant",
-        "order": 7,
-        "position": "last",
-        "is_corresponding": false,
-        "affiliations": [
-          "Purdue University West Lafayette IN",
-          "Purdue University, West Lafayette, IN"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I219193219",
-            "display_name": "Purdue University West Lafayette",
-            "ror": "https://ror.org/02dqehb95",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I219193219"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Purdue University West Lafayette IN",
-            "institution_ids": [
-              "https://openalex.org/I219193219"
-            ]
-          },
-          {
-            "raw_affiliation_string": "Purdue University, West Lafayette, IN",
-            "institution_ids": [
-              "https://openalex.org/I219193219"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      }
-    ],
-    "author_list_complete": true,
-    "url": "https://doi.org/10.1096/fasebj.31.1_supplement.801.8",
-    "source_names": [
-      "OpenAlex",
-      "CV"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [
-      "cv-poster-17"
-    ],
-    "classification": {
-      "primary": "nutrition",
-      "themes": [
-        "nutrition"
-      ],
-      "subthemes": [
-        "nutrition-phosphorus"
-      ],
-      "applications": [
-        "Phosphorus",
-        "Laboratory methods"
-      ],
-      "summary": "Compares digestion methods for measuring phosphorus in fecal and dietary samples.",
-      "study_group": "phosphorus-digestion-methods",
-      "relationship": null,
-      "target_doi": null,
-      "confidence": "high",
-      "note": null,
-      "openalex_id": "https://openalex.org/W3195478157",
-      "id": "W3195478157",
-      "type": "conference-abstract",
-      "classification_basis": "Editorial judgment based on the saved title and abstract, with stated exceptions; not an OpenAlex subject label.",
-      "source_urls": [
-        "https://api.openalex.org/works/W3195478157"
-      ],
-      "counting_note": "Distinct public output; count according to its output type, not automatically as a journal paper.",
-      "primarySubtheme": "nutrition-phosphorus",
-      "rationale": "The substantive contribution concerns phosphorus or mineral intake, measurement, absorption, regulation, balance, or bone health."
-    },
-    "versions": [],
-    "related": [],
-    "keywords": [
-      {
-        "id": "https://openalex.org/keywords/chemistry",
-        "display_name": "Chemistry",
-        "score": 0.7755047082901001
-      },
-      {
-        "id": "https://openalex.org/keywords/muffle-furnace",
-        "display_name": "Muffle furnace",
-        "score": 0.7442973256111145
-      },
-      {
-        "id": "https://openalex.org/keywords/digestion",
-        "display_name": "Digestion (alchemy)",
-        "score": 0.6690781116485596
-      },
-      {
-        "id": "https://openalex.org/keywords/phosphorus",
-        "display_name": "Phosphorus",
-        "score": 0.643549382686615
-      },
-      {
-        "id": "https://openalex.org/keywords/food-science",
-        "display_name": "Food science",
-        "score": 0.5229502320289612
-      },
-      {
-        "id": "https://openalex.org/keywords/microwave-digestion",
-        "display_name": "Microwave digestion",
-        "score": 0.43406394124031067
-      },
-      {
-        "id": "https://openalex.org/keywords/chromatography",
-        "display_name": "Chromatography",
-        "score": 0.3805820047855377
-      },
-      {
-        "id": "https://openalex.org/keywords/detection-limit",
-        "display_name": "Detection limit",
-        "score": 0.2101399004459381
-      },
-      {
-        "id": "https://openalex.org/keywords/biochemistry",
-        "display_name": "Biochemistry",
-        "score": 0.11213892698287964
-      }
-    ],
-    "mesh": [],
-    "topics": [
-      {
-        "id": "https://openalex.org/T10866",
-        "display_name": "Nutritional Studies and Diet",
-        "score": 0.7271000146865845,
-        "subfield": {
-          "id": "https://openalex.org/subfields/2739",
-          "display_name": "Public Health, Environmental and Occupational Health"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/27",
-          "display_name": "Medicine"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/4",
-          "display_name": "Health Sciences"
-        }
-      },
-      {
-        "id": "https://openalex.org/T12186",
-        "display_name": "Phosphorus and nutrient management",
-        "score": 0.6657999753952026,
-        "subfield": {
-          "id": "https://openalex.org/subfields/2311",
-          "display_name": "Waste Management and Disposal"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/23",
-          "display_name": "Environmental Science"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/3",
-          "display_name": "Physical Sciences"
-        }
-      }
-    ],
-    "primary_topic": {
-      "id": "https://openalex.org/T10866",
-      "display_name": "Nutritional Studies and Diet",
-      "score": 0.7271000146865845,
-      "subfield": {
-        "id": "https://openalex.org/subfields/2739",
-        "display_name": "Public Health, Environmental and Occupational Health"
-      },
-      "field": {
-        "id": "https://openalex.org/fields/27",
-        "display_name": "Medicine"
-      },
-      "domain": {
-        "id": "https://openalex.org/domains/4",
-        "display_name": "Health Sciences"
-      }
-    },
-    "concepts": [
-      {
-        "id": "https://openalex.org/C185592680",
-        "wikidata": "https://www.wikidata.org/wiki/Q2329",
-        "display_name": "Chemistry",
-        "level": 0,
-        "score": 0.7755047082901001
-      },
-      {
-        "id": "https://openalex.org/C2777212416",
-        "wikidata": "https://www.wikidata.org/wiki/Q1064870",
-        "display_name": "Muffle furnace",
-        "level": 4,
-        "score": 0.7442973256111145
-      },
-      {
-        "id": "https://openalex.org/C2781357212",
-        "wikidata": "https://www.wikidata.org/wiki/Q5275608",
-        "display_name": "Digestion (alchemy)",
-        "level": 2,
-        "score": 0.6690781116485596
-      },
-      {
-        "id": "https://openalex.org/C510538283",
-        "wikidata": "https://www.wikidata.org/wiki/Q674",
-        "display_name": "Phosphorus",
-        "level": 2,
-        "score": 0.643549382686615
-      },
-      {
-        "id": "https://openalex.org/C31903555",
-        "wikidata": "https://www.wikidata.org/wiki/Q1637030",
-        "display_name": "Food science",
-        "level": 1,
-        "score": 0.5229502320289612
-      },
-      {
-        "id": "https://openalex.org/C20505706",
-        "wikidata": "https://www.wikidata.org/wiki/Q6840497",
-        "display_name": "Microwave digestion",
-        "level": 3,
-        "score": 0.43406394124031067
-      },
-      {
-        "id": "https://openalex.org/C43617362",
-        "wikidata": "https://www.wikidata.org/wiki/Q170050",
-        "display_name": "Chromatography",
-        "level": 1,
-        "score": 0.3805820047855377
-      },
-      {
-        "id": "https://openalex.org/C119128265",
-        "wikidata": "https://www.wikidata.org/wiki/Q900165",
-        "display_name": "Detection limit",
-        "level": 2,
-        "score": 0.2101399004459381
-      },
-      {
-        "id": "https://openalex.org/C55493867",
-        "wikidata": "https://www.wikidata.org/wiki/Q7094",
-        "display_name": "Biochemistry",
-        "level": 1,
-        "score": 0.11213892698287964
-      },
-      {
-        "id": "https://openalex.org/C161790260",
-        "wikidata": "https://www.wikidata.org/wiki/Q82264",
-        "display_name": "Catalysis",
-        "level": 2,
-        "score": 0.0
-      },
-      {
-        "id": "https://openalex.org/C7082614",
-        "wikidata": "https://www.wikidata.org/wiki/Q849523",
-        "display_name": "Calcination",
-        "level": 3,
-        "score": 0.0
-      },
-      {
-        "id": "https://openalex.org/C178790620",
-        "wikidata": "https://www.wikidata.org/wiki/Q11351",
-        "display_name": "Organic chemistry",
-        "level": 1,
-        "score": 0.0
-      }
-    ],
-    "citation_counts": {
-      "openalex": 2,
-      "retrieved_at": "2026-09-12T02:12:44.491823+00:00",
-      "counts_by_year": [
-        {
-          "year": 2026,
-          "cited_by_count": 1
-        },
-        {
-          "year": 2019,
-          "cited_by_count": 1
-        }
-      ]
-    },
-    "open_access": {
-      "is_oa": false,
-      "oa_status": "closed",
-      "oa_url": null,
-      "any_repository_has_fulltext": false
-    },
-    "license": null,
-    "language": "en",
-    "referenced_works": [],
-    "related_works": [
-      "https://openalex.org/W2374723894",
-      "https://openalex.org/W2353424417",
-      "https://openalex.org/W2386263688",
-      "https://openalex.org/W2366256090",
-      "https://openalex.org/W4303453206",
-      "https://openalex.org/W2388212028",
-      "https://openalex.org/W2374146904",
-      "https://openalex.org/W2356238787",
-      "https://openalex.org/W3144982905",
-      "https://openalex.org/W2379190275"
-    ],
-    "all_dois": [
-      "10.1096/fasebj.31.1_supplement.801.8"
-    ],
-    "scholar_entries": [],
-    "open_science": [],
-    "abstract_available": true,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "OpenAlex",
-        "url": "https://doi.org/10.1096/fasebj.31.1_supplement.801.8",
-        "title": "Comparison of Digestion Methods for Phosphorus Analysis of Fecal and Diet Samples",
-        "doi": "10.1096/fasebj.31.1_supplement.801.8",
-        "year": 2017,
-        "openalex_id": "https://openalex.org/W3195478157"
-      },
-      {
-        "name": "CV, 22 February 2026",
-        "url": null,
-        "title": "Comparison of Digestion Methods for Phosphorus Analysis of Fecal and Diet Samples",
-        "doi": null,
-        "year": 2017,
-        "openalex_id": null,
-        "page": 11
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "OpenAlex",
-        "doi": "10.1096/fasebj.31.1_supplement.801.8",
-        "authors": [
-          {
-            "name": "Colby J. Vorland",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0003-4225-372X",
-            "openalex_id": "https://openalex.org/A5074473858",
-            "display_name": "Colby J. Vorland",
-            "order": 1,
-            "position": "first",
-            "is_corresponding": false,
-            "affiliations": [
-              "Nutrition Science Purdue University West Lafayette IN",
-              "Nutrition Science, Purdue University, West Lafayette, IN"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I219193219",
-                "display_name": "Purdue University West Lafayette",
-                "ror": "https://ror.org/02dqehb95",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I219193219"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Nutrition Science Purdue University West Lafayette IN",
-                "institution_ids": [
-                  "https://openalex.org/I219193219"
-                ]
-              },
-              {
-                "raw_affiliation_string": "Nutrition Science, Purdue University, West Lafayette, IN",
-                "institution_ids": [
-                  "https://openalex.org/I219193219"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Berdine R. Martin",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5111777714",
-            "display_name": "Berdine R. Martin",
-            "order": 2,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Nutrition Science Purdue University West Lafayette IN",
-              "Nutrition Science, Purdue University, West Lafayette, IN"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I219193219",
-                "display_name": "Purdue University West Lafayette",
-                "ror": "https://ror.org/02dqehb95",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I219193219"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Nutrition Science Purdue University West Lafayette IN",
-                "institution_ids": [
-                  "https://openalex.org/I219193219"
-                ]
-              },
-              {
-                "raw_affiliation_string": "Nutrition Science, Purdue University, West Lafayette, IN",
-                "institution_ids": [
-                  "https://openalex.org/I219193219"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Cheryl L. H. Armstrong",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0002-8635-543X",
-            "openalex_id": "https://openalex.org/A5068480623",
-            "display_name": "Cheryl Armstrong",
-            "order": 3,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Nutrition Science Purdue University West Lafayette IN",
-              "Nutrition Science, Purdue University, West Lafayette, IN"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I219193219",
-                "display_name": "Purdue University West Lafayette",
-                "ror": "https://ror.org/02dqehb95",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I219193219"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Nutrition Science Purdue University West Lafayette IN",
-                "institution_ids": [
-                  "https://openalex.org/I219193219"
-                ]
-              },
-              {
-                "raw_affiliation_string": "Nutrition Science, Purdue University, West Lafayette, IN",
-                "institution_ids": [
-                  "https://openalex.org/I219193219"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "J. Scott Radcliffe",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5111366505",
-            "display_name": "J. S. Radcliffe",
-            "order": 4,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Animal Science Purdue University West Lafayette IN",
-              "Animal Science, Purdue University, West Lafayette, IN"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I219193219",
-                "display_name": "Purdue University West Lafayette",
-                "ror": "https://ror.org/02dqehb95",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I219193219"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Animal Science Purdue University West Lafayette IN",
-                "institution_ids": [
-                  "https://openalex.org/I219193219"
-                ]
-              },
-              {
-                "raw_affiliation_string": "Animal Science, Purdue University, West Lafayette, IN",
-                "institution_ids": [
-                  "https://openalex.org/I219193219"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Ranjani N. Moorthi",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0002-3125-0868",
-            "openalex_id": "https://openalex.org/A5017330394",
-            "display_name": "Ranjani N. Moorthi",
-            "order": 5,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Indiana University School of Medicine Indianapolis IN",
-              "Indiana University School of Medicine, Indianapolis, IN"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I4394709130",
-                "display_name": "Indiana University School of Medicine",
-                "ror": "https://ror.org/02ets8c94",
-                "country_code": null,
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I4394709130",
-                  "https://openalex.org/I592451"
-                ]
-              },
-              {
-                "id": "https://openalex.org/I55769427",
-                "display_name": "Indiana University – Purdue University Indianapolis",
-                "ror": "https://ror.org/05gxnyn08",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I55769427",
-                  "https://openalex.org/I592451"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Indiana University School of Medicine Indianapolis IN",
-                "institution_ids": [
-                  "https://openalex.org/I4394709130",
-                  "https://openalex.org/I55769427"
-                ]
-              },
-              {
-                "raw_affiliation_string": "Indiana University School of Medicine, Indianapolis, IN",
-                "institution_ids": [
-                  "https://openalex.org/I4394709130",
-                  "https://openalex.org/I55769427"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Sharon M. Moe",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0003-3562-9725",
-            "openalex_id": "https://openalex.org/A5074659892",
-            "display_name": "Sharon M. Moe",
-            "order": 6,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Indiana University School of Medicine Indianapolis IN",
-              "Indiana University School of Medicine, Indianapolis, IN"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I4394709130",
-                "display_name": "Indiana University School of Medicine",
-                "ror": "https://ror.org/02ets8c94",
-                "country_code": null,
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I4394709130",
-                  "https://openalex.org/I592451"
-                ]
-              },
-              {
-                "id": "https://openalex.org/I55769427",
-                "display_name": "Indiana University – Purdue University Indianapolis",
-                "ror": "https://ror.org/05gxnyn08",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I55769427",
-                  "https://openalex.org/I592451"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Indiana University School of Medicine Indianapolis IN",
-                "institution_ids": [
-                  "https://openalex.org/I4394709130",
-                  "https://openalex.org/I55769427"
-                ]
-              },
-              {
-                "raw_affiliation_string": "Indiana University School of Medicine, Indianapolis, IN",
-                "institution_ids": [
-                  "https://openalex.org/I4394709130",
-                  "https://openalex.org/I55769427"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Kathleen M. Hill Gallant",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0002-1528-8161",
-            "openalex_id": "https://openalex.org/A5082700641",
-            "display_name": "Kathleen M. Hill Gallant",
-            "order": 7,
-            "position": "last",
-            "is_corresponding": false,
-            "affiliations": [
-              "Purdue University West Lafayette IN",
-              "Purdue University, West Lafayette, IN"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I219193219",
-                "display_name": "Purdue University West Lafayette",
-                "ror": "https://ror.org/02dqehb95",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I219193219"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Purdue University West Lafayette IN",
-                "institution_ids": [
-                  "https://openalex.org/I219193219"
-                ]
-              },
-              {
-                "raw_affiliation_string": "Purdue University, West Lafayette, IN",
-                "institution_ids": [
-                  "https://openalex.org/I219193219"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          }
-        ]
-      },
-      {
-        "source": "CV, 22 February 2026",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Vorland, CJ."
-          },
-          {
-            "name": "Martin, BR."
-          },
-          {
-            "name": "Armstrong, C."
-          },
-          {
-            "name": "Radcliffe, S."
-          },
-          {
-            "name": "Moe, SM."
-          },
-          {
-            "name": "Hill Gallant, KM."
-          }
-        ]
-      }
-    ],
-    "components": [
-      {
-        "catalog_id": "work-8b612da0bfe2",
-        "title": "Comparison of Digestion Methods for Phosphorus Analysis of Fecal and Diet Samples",
-        "doi": null,
-        "year": 2017,
-        "type": "poster",
-        "venue": "Experimental Biology meeting, Chicago, IL",
-        "authors": [
-          {
-            "name": "Vorland, CJ."
-          },
-          {
-            "name": "Martin, BR."
-          },
-          {
-            "name": "Armstrong, C."
-          },
-          {
-            "name": "Radcliffe, S."
-          },
-          {
-            "name": "Moe, SM."
-          },
-          {
-            "name": "Hill Gallant, KM."
-          }
-        ],
-        "author_list_complete": true,
-        "author_names_expanded": false,
-        "urls": [],
-        "source_names": [
-          "CV"
-        ],
-        "cv_numbers": [],
-        "cv_ids": [
-          "cv-poster-17"
-        ],
-        "classification": {
-          "primary": "nutrition",
-          "themes": [
-            "nutrition"
-          ],
-          "subthemes": [
-            "nutrition-phosphorus"
-          ],
-          "summary": null,
-          "confidence": "moderate",
-          "evidenceBasis": "Title and supplied CV classification.",
-          "primarySubtheme": "nutrition-phosphorus",
-          "rationale": "The substantive contribution concerns phosphorus or mineral intake, measurement, absorption, regulation, balance, or bone health."
-        },
-        "versions": [],
-        "related": [],
-        "metadata_notes": [],
-        "status": "presented-as-listed-in-cv",
-        "status_note": null,
-        "all_dois": [],
-        "scholar_entries": [],
-        "open_science": [],
-        "abstract_available": false,
-        "metadata_retrieved": "2026-09-11",
-        "sources": [
-          {
-            "name": "CV, 22 February 2026",
-            "url": null,
-            "title": "Comparison of Digestion Methods for Phosphorus Analysis of Fecal and Diet Samples",
-            "doi": null,
-            "year": 2017,
-            "openalex_id": null,
-            "page": 11
-          }
-        ],
-        "source_author_lists": [
-          {
-            "source": "CV, 22 February 2026",
-            "doi": null,
-            "authors": [
-              {
-                "name": "Vorland, CJ."
-              },
-              {
-                "name": "Martin, BR."
-              },
-              {
-                "name": "Armstrong, C."
-              },
-              {
-                "name": "Radcliffe, S."
-              },
-              {
-                "name": "Moe, SM."
-              },
-              {
-                "name": "Hill Gallant, KM."
-              }
-            ]
-          }
-        ],
-        "component_role": "poster"
-      }
-    ],
-    "merged_catalog_ids": [
-      "work-63b8979e1798",
-      "work-8b612da0bfe2"
-    ],
-    "id": "work-63b8979e1798",
-    "typeLabel": "Conference abstract",
-    "primary": "nutrition",
-    "themes": [
-      "nutrition"
-    ],
-    "subthemes": [
-      "nutrition-phosphorus"
-    ],
-    "tags": [
-      "Phosphorus",
-      "Laboratory methods"
-    ],
-    "summary": "Compares digestion methods for measuring phosphorus in fecal and dietary samples.",
-    "isPaper": false,
-    "active": true,
-    "preprint": false,
-    "status": "Work in progress",
-    "short": "Comparison of Digestion Methods for Phosphorus Analysis of Fecal and Diet Samples",
-    "takeaway": "Compares digestion methods for measuring phosphorus in fecal and dietary samples.",
-    "venueLabel": "The FASEB Journal",
-    "isShip": true,
-    "componentCount": 1,
-    "role": "First author",
-    "n": "098"
+    "n": "088"
   },
   {
     "catalog_id": "work-684e1c9aabb8",
@@ -198158,7 +195871,7 @@
     "isShip": false,
     "componentCount": 1,
     "role": "Coauthor",
-    "n": "099"
+    "n": "089"
   },
   {
     "catalog_id": "work-76a327612876",
@@ -199612,641 +197325,6 @@
     "isShip": false,
     "componentCount": 0,
     "role": "First author",
-    "n": "100"
-  },
-  {
-    "catalog_id": "work-1ed434973ec4",
-    "title": "Contribution of dietary fat to high‐density lipoprotein triglyceride during nocturnal hypertriglyceridemia (821.12)",
-    "doi": "10.1096/fasebj.28.1_supplement.821.12",
-    "openalex_id": "https://openalex.org/W1509555401",
-    "year": 2014,
-    "date": "2014-04-01",
-    "type": "conference-abstract",
-    "venue": "The FASEB Journal",
-    "publisher": "Wiley",
-    "volume": "28",
-    "issue": "S1",
-    "pages": null,
-    "authors": [
-      {
-        "name": "Colby Vorland",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0003-4225-372X",
-        "openalex_id": "https://openalex.org/A5074473858",
-        "display_name": "Colby J. Vorland",
-        "order": 1,
-        "position": "first",
-        "is_corresponding": false,
-        "affiliations": [
-          "Food and Nutrition University of Wisconsin Stout Menomonie WI United States"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I1921588",
-            "display_name": "University of Wisconsin–Stout",
-            "ror": "https://ror.org/01gb8pc70",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I1921588"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Food and Nutrition University of Wisconsin Stout Menomonie WI United States",
-            "institution_ids": [
-              "https://openalex.org/I1921588"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Kerry Peterson",
-        "given": null,
-        "family": null,
-        "orcid": null,
-        "openalex_id": "https://openalex.org/A5006619522",
-        "display_name": "Kerry D. Peterson",
-        "order": 2,
-        "position": "last",
-        "is_corresponding": false,
-        "affiliations": [
-          "Food and Nutrition University of Wisconsin Stout Menomonie WI United States"
-        ],
-        "institutions": [
-          {
-            "id": "https://openalex.org/I1921588",
-            "display_name": "University of Wisconsin–Stout",
-            "ror": "https://ror.org/01gb8pc70",
-            "country_code": "US",
-            "type": "education",
-            "lineage": [
-              "https://openalex.org/I1921588"
-            ]
-          }
-        ],
-        "affiliation_mapping": [
-          {
-            "raw_affiliation_string": "Food and Nutrition University of Wisconsin Stout Menomonie WI United States",
-            "institution_ids": [
-              "https://openalex.org/I1921588"
-            ]
-          }
-        ],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      }
-    ],
-    "author_list_complete": true,
-    "url": "https://doi.org/10.1096/fasebj.28.1_supplement.821.12",
-    "source_names": [
-      "OpenAlex",
-      "CV"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [
-      "cv-poster-21"
-    ],
-    "classification": {
-      "primary": "nutrition",
-      "themes": [
-        "nutrition"
-      ],
-      "subthemes": [
-        "nutrition-diet"
-      ],
-      "applications": [
-        "Lipid metabolism",
-        "Obesity"
-      ],
-      "summary": "A conference abstract quantifying the contribution of dietary fat to HDL triglyceride during nocturnal hypertriglyceridemia.",
-      "study_group": "hdl-triglyceride",
-      "relationship": null,
-      "target_doi": null,
-      "confidence": "high",
-      "note": null,
-      "openalex_id": "https://openalex.org/W1509555401",
-      "id": "W1509555401",
-      "type": "conference-abstract",
-      "classification_basis": "Editorial judgment based on the saved title and abstract, with stated exceptions; not an OpenAlex subject label.",
-      "source_urls": [
-        "https://api.openalex.org/works/W1509555401"
-      ],
-      "counting_note": "Distinct public output; count according to its output type, not automatically as a journal paper.",
-      "primarySubtheme": "nutrition-diet",
-      "rationale": "Reports experimental nutrition research on dietary fat and lipoprotein metabolism."
-    },
-    "versions": [],
-    "related": [],
-    "keywords": [
-      {
-        "id": "https://openalex.org/keywords/chylomicron",
-        "display_name": "Chylomicron",
-        "score": 0.9299994707107544
-      },
-      {
-        "id": "https://openalex.org/keywords/triglyceride",
-        "display_name": "Triglyceride",
-        "score": 0.7284637689590454
-      },
-      {
-        "id": "https://openalex.org/keywords/cholesterylester-transfer-protein",
-        "display_name": "Cholesterylester transfer protein",
-        "score": 0.7158783078193665
-      },
-      {
-        "id": "https://openalex.org/keywords/very-low-density-lipoprotein",
-        "display_name": "Very low-density lipoprotein",
-        "score": 0.7151457071304321
-      },
-      {
-        "id": "https://openalex.org/keywords/hypertriglyceridemia",
-        "display_name": "Hypertriglyceridemia",
-        "score": 0.6366584897041321
-      },
-      {
-        "id": "https://openalex.org/keywords/chemistry",
-        "display_name": "Chemistry",
-        "score": 0.6067011952400208
-      },
-      {
-        "id": "https://openalex.org/keywords/endocrinology",
-        "display_name": "Endocrinology",
-        "score": 0.6033086776733398
-      },
-      {
-        "id": "https://openalex.org/keywords/internal-medicine",
-        "display_name": "Internal medicine",
-        "score": 0.5950134992599487
-      },
-      {
-        "id": "https://openalex.org/keywords/cholesterol",
-        "display_name": "Cholesterol",
-        "score": 0.5376327037811279
-      },
-      {
-        "id": "https://openalex.org/keywords/meal",
-        "display_name": "Meal",
-        "score": 0.5162491798400879
-      },
-      {
-        "id": "https://openalex.org/keywords/lipoprotein",
-        "display_name": "Lipoprotein",
-        "score": 0.462516188621521
-      },
-      {
-        "id": "https://openalex.org/keywords/food-science",
-        "display_name": "Food science",
-        "score": 0.33140137791633606
-      },
-      {
-        "id": "https://openalex.org/keywords/biochemistry",
-        "display_name": "Biochemistry",
-        "score": 0.3004029393196106
-      },
-      {
-        "id": "https://openalex.org/keywords/biology",
-        "display_name": "Biology",
-        "score": 0.23507994413375854
-      },
-      {
-        "id": "https://openalex.org/keywords/medicine",
-        "display_name": "Medicine",
-        "score": 0.14408978819847107
-      }
-    ],
-    "mesh": [],
-    "topics": [
-      {
-        "id": "https://openalex.org/T12465",
-        "display_name": "Cancer, Lipids, and Metabolism",
-        "score": 0.9993000030517578,
-        "subfield": {
-          "id": "https://openalex.org/subfields/1306",
-          "display_name": "Cancer Research"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/13",
-          "display_name": "Biochemistry, Genetics and Molecular Biology"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/1",
-          "display_name": "Life Sciences"
-        }
-      },
-      {
-        "id": "https://openalex.org/T13430",
-        "display_name": "Lipid metabolism and disorders",
-        "score": 0.9990000128746033,
-        "subfield": {
-          "id": "https://openalex.org/subfields/2705",
-          "display_name": "Cardiology and Cardiovascular Medicine"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/27",
-          "display_name": "Medicine"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/4",
-          "display_name": "Health Sciences"
-        }
-      },
-      {
-        "id": "https://openalex.org/T12964",
-        "display_name": "Diet, Metabolism, and Disease",
-        "score": 0.9930999875068665,
-        "subfield": {
-          "id": "https://openalex.org/subfields/2712",
-          "display_name": "Endocrinology, Diabetes and Metabolism"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/27",
-          "display_name": "Medicine"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/4",
-          "display_name": "Health Sciences"
-        }
-      }
-    ],
-    "primary_topic": {
-      "id": "https://openalex.org/T12465",
-      "display_name": "Cancer, Lipids, and Metabolism",
-      "score": 0.9993000030517578,
-      "subfield": {
-        "id": "https://openalex.org/subfields/1306",
-        "display_name": "Cancer Research"
-      },
-      "field": {
-        "id": "https://openalex.org/fields/13",
-        "display_name": "Biochemistry, Genetics and Molecular Biology"
-      },
-      "domain": {
-        "id": "https://openalex.org/domains/1",
-        "display_name": "Life Sciences"
-      }
-    },
-    "concepts": [
-      {
-        "id": "https://openalex.org/C11772777",
-        "wikidata": "https://www.wikidata.org/wiki/Q423126",
-        "display_name": "Chylomicron",
-        "level": 5,
-        "score": 0.9299994707107544
-      },
-      {
-        "id": "https://openalex.org/C2778913445",
-        "wikidata": "https://www.wikidata.org/wiki/Q186319",
-        "display_name": "Triglyceride",
-        "level": 3,
-        "score": 0.7284637689590454
-      },
-      {
-        "id": "https://openalex.org/C45505151",
-        "wikidata": "https://www.wikidata.org/wiki/Q424706",
-        "display_name": "Cholesterylester transfer protein",
-        "level": 4,
-        "score": 0.7158783078193665
-      },
-      {
-        "id": "https://openalex.org/C8243546",
-        "wikidata": "https://www.wikidata.org/wiki/Q419074",
-        "display_name": "Very low-density lipoprotein",
-        "level": 4,
-        "score": 0.7151457071304321
-      },
-      {
-        "id": "https://openalex.org/C2776919658",
-        "wikidata": "https://www.wikidata.org/wiki/Q1467339",
-        "display_name": "Hypertriglyceridemia",
-        "level": 4,
-        "score": 0.6366584897041321
-      },
-      {
-        "id": "https://openalex.org/C185592680",
-        "wikidata": "https://www.wikidata.org/wiki/Q2329",
-        "display_name": "Chemistry",
-        "level": 0,
-        "score": 0.6067011952400208
-      },
-      {
-        "id": "https://openalex.org/C134018914",
-        "wikidata": "https://www.wikidata.org/wiki/Q162606",
-        "display_name": "Endocrinology",
-        "level": 1,
-        "score": 0.6033086776733398
-      },
-      {
-        "id": "https://openalex.org/C126322002",
-        "wikidata": "https://www.wikidata.org/wiki/Q11180",
-        "display_name": "Internal medicine",
-        "level": 1,
-        "score": 0.5950134992599487
-      },
-      {
-        "id": "https://openalex.org/C2778163477",
-        "wikidata": "https://www.wikidata.org/wiki/Q43656",
-        "display_name": "Cholesterol",
-        "level": 2,
-        "score": 0.5376327037811279
-      },
-      {
-        "id": "https://openalex.org/C2778345441",
-        "wikidata": "https://www.wikidata.org/wiki/Q6460735",
-        "display_name": "Meal",
-        "level": 2,
-        "score": 0.5162491798400879
-      },
-      {
-        "id": "https://openalex.org/C2780072125",
-        "wikidata": "https://www.wikidata.org/wiki/Q28350",
-        "display_name": "Lipoprotein",
-        "level": 3,
-        "score": 0.462516188621521
-      },
-      {
-        "id": "https://openalex.org/C31903555",
-        "wikidata": "https://www.wikidata.org/wiki/Q1637030",
-        "display_name": "Food science",
-        "level": 1,
-        "score": 0.33140137791633606
-      },
-      {
-        "id": "https://openalex.org/C55493867",
-        "wikidata": "https://www.wikidata.org/wiki/Q7094",
-        "display_name": "Biochemistry",
-        "level": 1,
-        "score": 0.3004029393196106
-      },
-      {
-        "id": "https://openalex.org/C86803240",
-        "wikidata": "https://www.wikidata.org/wiki/Q420",
-        "display_name": "Biology",
-        "level": 0,
-        "score": 0.23507994413375854
-      },
-      {
-        "id": "https://openalex.org/C71924100",
-        "wikidata": "https://www.wikidata.org/wiki/Q11190",
-        "display_name": "Medicine",
-        "level": 0,
-        "score": 0.14408978819847107
-      }
-    ],
-    "citation_counts": {
-      "openalex": 0,
-      "retrieved_at": "2026-09-12T02:12:44.491823+00:00",
-      "counts_by_year": []
-    },
-    "open_access": {
-      "is_oa": false,
-      "oa_status": "closed",
-      "oa_url": null,
-      "any_repository_has_fulltext": false
-    },
-    "license": null,
-    "language": "en",
-    "referenced_works": [],
-    "related_works": [
-      "https://openalex.org/W2030852040",
-      "https://openalex.org/W1412933058",
-      "https://openalex.org/W2023660959",
-      "https://openalex.org/W2014012508",
-      "https://openalex.org/W2994762437",
-      "https://openalex.org/W2336561929",
-      "https://openalex.org/W2244422104",
-      "https://openalex.org/W3025015218",
-      "https://openalex.org/W3130527310",
-      "https://openalex.org/W24976608"
-    ],
-    "all_dois": [
-      "10.1096/fasebj.28.1_supplement.821.12"
-    ],
-    "scholar_entries": [],
-    "open_science": [],
-    "abstract_available": true,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "OpenAlex",
-        "url": "https://doi.org/10.1096/fasebj.28.1_supplement.821.12",
-        "title": "Contribution of dietary fat to high‐density lipoprotein triglyceride during nocturnal hypertriglyceridemia (821.12)",
-        "doi": "10.1096/fasebj.28.1_supplement.821.12",
-        "year": 2014,
-        "openalex_id": "https://openalex.org/W1509555401"
-      },
-      {
-        "name": "CV, 22 February 2026",
-        "url": null,
-        "title": "Contribution of Dietary Fat to High-Density Lipoprotein Triglyceride During Nocturnal Hypertriglyceridemia",
-        "doi": null,
-        "year": 2014,
-        "openalex_id": null,
-        "page": 11
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "OpenAlex",
-        "doi": "10.1096/fasebj.28.1_supplement.821.12",
-        "authors": [
-          {
-            "name": "Colby Vorland",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0003-4225-372X",
-            "openalex_id": "https://openalex.org/A5074473858",
-            "display_name": "Colby J. Vorland",
-            "order": 1,
-            "position": "first",
-            "is_corresponding": false,
-            "affiliations": [
-              "Food and Nutrition University of Wisconsin Stout Menomonie WI United States"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I1921588",
-                "display_name": "University of Wisconsin–Stout",
-                "ror": "https://ror.org/01gb8pc70",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I1921588"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Food and Nutrition University of Wisconsin Stout Menomonie WI United States",
-                "institution_ids": [
-                  "https://openalex.org/I1921588"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Kerry Peterson",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5006619522",
-            "display_name": "Kerry D. Peterson",
-            "order": 2,
-            "position": "last",
-            "is_corresponding": false,
-            "affiliations": [
-              "Food and Nutrition University of Wisconsin Stout Menomonie WI United States"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I1921588",
-                "display_name": "University of Wisconsin–Stout",
-                "ror": "https://ror.org/01gb8pc70",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I1921588"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Food and Nutrition University of Wisconsin Stout Menomonie WI United States",
-                "institution_ids": [
-                  "https://openalex.org/I1921588"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          }
-        ]
-      },
-      {
-        "source": "CV, 22 February 2026",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Vorland, CJ."
-          },
-          {
-            "name": "Peterson, KD."
-          }
-        ]
-      }
-    ],
-    "components": [
-      {
-        "catalog_id": "work-2e22eb1b43c5",
-        "title": "Contribution of Dietary Fat to High-Density Lipoprotein Triglyceride During Nocturnal Hypertriglyceridemia",
-        "doi": null,
-        "year": 2014,
-        "type": "poster",
-        "venue": "Experimental Biology meeting, San Diego, CA",
-        "authors": [
-          {
-            "name": "Vorland, CJ."
-          },
-          {
-            "name": "Peterson, KD."
-          }
-        ],
-        "author_list_complete": true,
-        "author_names_expanded": false,
-        "urls": [],
-        "source_names": [
-          "CV"
-        ],
-        "cv_numbers": [],
-        "cv_ids": [
-          "cv-poster-21"
-        ],
-        "classification": {
-          "primary": "nutrition",
-          "themes": [
-            "nutrition"
-          ],
-          "subthemes": [
-            "nutrition-diet"
-          ],
-          "summary": null,
-          "confidence": "moderate",
-          "evidenceBasis": "Title and supplied CV classification.",
-          "primarySubtheme": "nutrition-diet",
-          "rationale": "Reports experimental nutrition research on dietary fat and lipoprotein metabolism."
-        },
-        "versions": [],
-        "related": [],
-        "metadata_notes": [],
-        "status": "presented-as-listed-in-cv",
-        "status_note": null,
-        "all_dois": [],
-        "scholar_entries": [],
-        "open_science": [],
-        "abstract_available": false,
-        "metadata_retrieved": "2026-09-11",
-        "sources": [
-          {
-            "name": "CV, 22 February 2026",
-            "url": null,
-            "title": "Contribution of Dietary Fat to High-Density Lipoprotein Triglyceride During Nocturnal Hypertriglyceridemia",
-            "doi": null,
-            "year": 2014,
-            "openalex_id": null,
-            "page": 11
-          }
-        ],
-        "source_author_lists": [
-          {
-            "source": "CV, 22 February 2026",
-            "doi": null,
-            "authors": [
-              {
-                "name": "Vorland, CJ."
-              },
-              {
-                "name": "Peterson, KD."
-              }
-            ]
-          }
-        ],
-        "component_role": "poster"
-      }
-    ],
-    "merged_catalog_ids": [
-      "work-1ed434973ec4",
-      "work-2e22eb1b43c5"
-    ],
-    "id": "work-1ed434973ec4",
-    "typeLabel": "Conference abstract",
-    "primary": "nutrition",
-    "themes": [
-      "nutrition"
-    ],
-    "subthemes": [
-      "nutrition-diet"
-    ],
-    "tags": [
-      "Lipid metabolism",
-      "Obesity"
-    ],
-    "summary": "A conference abstract quantifying the contribution of dietary fat to HDL triglyceride during nocturnal hypertriglyceridemia.",
-    "isPaper": false,
-    "active": true,
-    "preprint": false,
-    "status": "Work in progress",
-    "short": "Contribution of dietary fat to high‐density lipoprotein triglyceride during nocturnal hypertriglyceridemia (821.12)",
-    "takeaway": "A conference abstract quantifying the contribution of dietary fat to HDL triglyceride during nocturnal hypertriglyceridemia.",
-    "venueLabel": "The FASEB Journal",
-    "isShip": true,
-    "componentCount": 1,
-    "role": "First author",
-    "n": "101"
+    "n": "090"
   }
 ]

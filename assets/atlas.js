@@ -648,7 +648,7 @@ function makeSpatialFeatures() {
       html+=section('Contact','<a class="ea-open-link" href="mailto:cvorland@iu.edu">cvorland@iu.edu</a>');
     } else {
       kicker.textContent='Overview / '+works.length+' research outputs · '+tools.length+' tools';
-      html='<h2 class="ea-panel-title">Explore the research.</h2>';
+      html='<h2 class="ea-panel-title">Explore my research.</h2>';
       html+=section('Research themes',themes.map(t=>'<button type="button" class="ea-panel-item" data-theme="'+t.id+'"><span class="ea-item-index">'+t.index+'</span><span class="ea-item-name">'+esc(t.title)+'<span class="ea-item-meta">'+themeCount(t.id)+'</span></span><span aria-hidden="true">↗</span></button>').join(''));
       html+='<p class="ea-small-copy">Publications and software, connected by research theme. Island areas reflect primary paper counts.</p>';
       if(ships.length)html+=section('Work in progress','<p class="ea-small-copy">Explore ongoing research and its associated materials.</p>'+themes.filter(t=>shipsForTheme(t.id).length).map(t=>'<button type="button" class="ea-panel-item" data-theme="'+t.id+'"><span class="ea-item-name">'+esc(t.title)+'<span class="ea-item-meta">'+projectCount(shipsForTheme(t.id).length)+'</span></span><span aria-hidden="true">↗</span></button>').join(''));

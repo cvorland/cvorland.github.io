@@ -709,6 +709,7 @@ function makeSpatialFeatures() {
     state.kind=kind;state.selected=id||null;
     state.nav=kind==='tool'||kind==='tools'?'tools':kind==='about'?'about':'research';
     renderList();renderPanel();renderSelection(!savedCamera&&previousPlace!==state.island+'|'+state.district);
+    if(!isMobile())inspector.scrollTo({top:0,behavior:'instant'});
     if(savedCamera){cancelAnimationFrame(frame);camera=savedCamera;paint();}
     live.textContent=statusText();
     if(mobileDetail)openMobileSheet();
@@ -781,15 +782,29 @@ function makeSpatialFeatures() {
     // Preserve the activated city button between identical renders.
     if(mobileCities.dataset.markup!==markup){mobileCities.innerHTML=markup;mobileCities.dataset.markup=markup;}
   }
+  let inspectorFrame=0;
+  function fitInspector(){
+    cancelAnimationFrame(inspectorFrame);
+    inspectorFrame=requestAnimationFrame(()=>{
+      if(isMobile()){inspector.style.removeProperty('--ea-panel-height');return;}
+      const top=Math.max(16,inspector.getBoundingClientRect().top);
+      inspector.style.setProperty('--ea-panel-height',Math.max(0,window.innerHeight-top-16)+'px');
+    });
+  }
+  window.addEventListener('scroll',fitInspector,{passive:true});
+  window.addEventListener('resize',fitInspector);
+  inspector.addEventListener('scroll',dismissTooltip,{passive:true});
+  if(document.fonts)document.fonts.ready.then(fitInspector);
   function configureMobile(){
     root.dataset.mobile=String(isMobile());
+    inspector.tabIndex=isMobile()?-1:0;
     mobileContext.hidden=!isMobile();mobileSoftware.hidden=!isMobile();
     if(isMobile()){sheet.append(inspector);renderMobile();}
     else{
       closeMobileSheet(false);setExpanded(false);inspectorHome.append(inspector);syncBodyLock();
       mobileCities.hidden=true;root.querySelectorAll('.ea-mobile-control').forEach(b=>b.hidden=true);
     }
-    dismissTooltip();renderList();renderPanel();renderSelection();
+    dismissTooltip();renderList();renderPanel();renderSelection();fitInspector();
   }
   islandSelect.addEventListener('change',()=>select(islandSelect.value?'theme':'overview',islandSelect.value||undefined));
   sheet.addEventListener('cancel',event=>{event.preventDefault();closeMobileSheet();});

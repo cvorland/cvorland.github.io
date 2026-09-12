@@ -1,0 +1,588 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=DM+Sans:wght@400;500&family=Instrument+Serif&display=swap');
+#vorland-atlas {
+  --atlas-bg:#0b131b; --atlas-ink:#f4f1e8; --atlas-muted:#a3b4bf; --atlas-line:#2b3d48;
+  --atlas-cyan:#84d9dc; --atlas-gold:#e4d47c; --atlas-blue:#95b6ef;
+  --atlas-panel:#f3f0e8; --atlas-panel-ink:#172832; --atlas-panel-muted:#52616a;
+  font-family:"DM Sans",Arial,sans-serif; color:var(--atlas-ink); background:var(--atlas-bg);
+  color-scheme:dark; padding:0; width:100%; box-sizing:border-box; text-align:left;
+  border-radius:4px; overflow:clip; isolation:isolate;
+}
+#vorland-atlas *,#vorland-atlas *::before,#vorland-atlas *::after {box-sizing:border-box}
+#vorland-atlas [hidden]{display:none!important}
+#vorland-atlas button,#vorland-atlas a,#vorland-atlas input {font:inherit}
+#vorland-atlas button {cursor:pointer;color:inherit}
+#vorland-atlas button:disabled {cursor:default}
+#vorland-atlas a {color:inherit}
+#vorland-atlas button:focus-visible,#vorland-atlas a:focus-visible {outline:2px solid var(--atlas-cyan);outline-offset:4px}
+#vorland-atlas h1,#vorland-atlas h2,#vorland-atlas h3,#vorland-atlas p {margin:0}
+#vorland-atlas .ea-chrome {padding:23px 30px 19px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--atlas-line)}
+#vorland-atlas .ea-brand {display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+#vorland-atlas .ea-brand-mark {width:21px;height:21px;border:1px solid var(--atlas-cyan);border-radius:50%;box-shadow:inset 0 0 0 5px var(--atlas-bg),inset 0 0 0 6px #476e78;display:inline-block}
+#vorland-atlas .ea-nav {display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+#vorland-atlas .ea-nav button,#vorland-atlas .ea-nav a {background:none;border:0;padding:3px 0;text-decoration:none;font-size:12px;color:#c6d3d9}
+#vorland-atlas .ea-nav button[aria-pressed=true] {color:var(--atlas-cyan)}
+#vorland-atlas .ea-nav button:hover,#vorland-atlas .ea-nav a:hover {color:var(--atlas-ink)}
+#vorland-atlas .ea-hero {padding:28px 30px 22px;display:grid;grid-template-columns:1.17fr 1fr;gap:28px;align-items:end}
+#vorland-atlas h1 {font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;font-size:clamp(58px,8.8vw,91px);line-height:.95;font-weight:500;letter-spacing:-1.8px}
+#vorland-atlas .ea-position {font-size:11px;color:var(--atlas-muted);margin-top:14px;letter-spacing:.4px}
+#vorland-atlas .ea-intro {max-width:380px;padding-bottom:3px}
+#vorland-atlas .ea-intro h2 {font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:32px;line-height:1.12;letter-spacing:-.35px}
+#vorland-atlas .ea-intro p {font-size:12px;line-height:1.6;color:#bac8ce;margin-top:10px;max-width:335px}
+#vorland-atlas .ea-workspace {padding:0 24px 22px 24px;display:grid;grid-template-columns:minmax(0,1fr) 286px;gap:20px;align-items:start}
+#vorland-atlas .ea-explorer {min-width:0}
+#vorland-atlas .ea-toolbar {display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 6px 3px;min-height:49px}
+#vorland-atlas .ea-switch {display:flex;align-items:center;border:1px solid #42616c;border-radius:30px;padding:3px}
+#vorland-atlas .ea-switch button {border:0;background:none;color:var(--atlas-muted);font-size:12px;line-height:1;padding:9px 17px;border-radius:24px;transition:background .18s,color .18s}
+#vorland-atlas .ea-switch button[aria-pressed=true] {background:var(--atlas-cyan);color:#10272b}
+#vorland-atlas .ea-back {border:0;background:none;font-size:11px;color:#c9d1b3;padding:9px 0;min-height:32px}
+#vorland-atlas .ea-map {position:relative;width:100%;height:477px;margin-top:2px;background:radial-gradient(ellipse at 28% 25%,#776f2010 0,transparent 39%),radial-gradient(ellipse at 29% 74%,#1a7c7319 0,transparent 37%),radial-gradient(ellipse at 77% 49%,#36668918 0,transparent 40%)}
+#vorland-atlas .ea-map-svg {position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+#vorland-atlas .ea-land {transition:opacity .35s ease}
+#vorland-atlas .ea-contour {fill:none;stroke-width:.7;vector-effect:non-scaling-stroke}
+#vorland-atlas .ea-link {fill:none;stroke-width:1;transition:opacity .3s,stroke .3s;vector-effect:non-scaling-stroke}
+#vorland-atlas .ea-secondary {stroke-dasharray:3 6}
+#vorland-atlas .ea-topic {position:absolute;transform:translate(-50%,-50%);width:160px;min-height:80px;padding:13px 4px;border:0;background:radial-gradient(ellipse,#0b131bef 0%,#0b131baf 38%,transparent 73%);text-align:center;z-index:2}
+#vorland-atlas .ea-topic .ea-topic-number {font-size:11px;letter-spacing:1.8px;display:block;margin-bottom:6px;color:var(--tone)}
+#vorland-atlas .ea-topic .ea-topic-label {display:block;font-family:"Instrument Serif",Georgia,serif;font-size:25px;line-height:1.04;font-weight:400;transition:color .2s}
+#vorland-atlas .ea-topic .ea-topic-count {display:block;font-size:11px;color:#a1b3bf;margin-top:8px}
+#vorland-atlas .ea-topic[aria-pressed=true] .ea-topic-label,#vorland-atlas .ea-topic:hover .ea-topic-label {color:var(--tone)}
+#vorland-atlas .ea-node {position:absolute;transform:translate(-50%,-50%);width:44px;height:44px;padding:0;border:0;background:transparent;border-radius:50%;z-index:3;transition:opacity .25s}
+#vorland-atlas .ea-node-dot {position:absolute;left:15px;top:11px;width:13px;height:13px;border-radius:50%;border:1.5px solid var(--tone);background:#0a1821;transition:box-shadow .2s,background .2s,transform .2s}
+#vorland-atlas .ea-node-index {position:absolute;top:29px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:.6px;color:#c4d5db}
+#vorland-atlas .ea-node[data-preprint=true] .ea-node-dot {border-radius:2px;transform:rotate(45deg)}
+#vorland-atlas .ea-node[aria-pressed=true] .ea-node-dot,#vorland-atlas .ea-node:hover .ea-node-dot,#vorland-atlas .ea-node:focus-visible .ea-node-dot {background:var(--tone);box-shadow:0 0 0 5px #d1ecea11,0 0 22px var(--tone)}
+#vorland-atlas .ea-node[aria-pressed=true] .ea-node-index {color:var(--tone)}
+#vorland-atlas .ea-dim {opacity:.32}
+#vorland-atlas .ea-map-preview {height:33px;padding:0 6px;display:flex;align-items:center;font-size:11px;line-height:1.3;color:#cbd8db}
+#vorland-atlas .ea-map-preview span {color:var(--atlas-cyan);margin-right:8px;white-space:nowrap}
+#vorland-atlas .ea-legend {border-top:1px solid var(--atlas-line);padding:13px 6px 0;display:flex;align-items:center;gap:14px;flex-wrap:wrap;color:var(--atlas-muted);font-size:11px;line-height:1.6}
+#vorland-atlas .ea-key {display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+#vorland-atlas .ea-key-dot {width:7px;height:7px;border:1px solid #c3d6dc;border-radius:50%}
+#vorland-atlas .ea-key-diamond {width:7px;height:7px;border:1px solid #c3d6dc;transform:rotate(45deg)}
+#vorland-atlas .ea-legend-note {flex-basis:100%;color:#8ea2af;font-size:11px}
+#vorland-atlas .ea-inspector {background:var(--atlas-panel);color:var(--atlas-panel-ink);margin-top:12px;border-radius:5px;padding:23px 22px 20px;min-width:0;min-height:435px;transition:background .2s,color .2s;color-scheme:light}
+#vorland-atlas .ea-inspector a,#vorland-atlas .ea-inspector button {color:inherit}
+#vorland-atlas .ea-inspector button:focus-visible,#vorland-atlas .ea-inspector a:focus-visible {outline-color:#187887}
+#vorland-atlas .ea-panel-top {display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--atlas-panel-muted);min-height:24px;margin-bottom:16px}
+#vorland-atlas .ea-close {border:0;background:none;padding:2px 4px;font-size:18px!important;letter-spacing:0;line-height:1;min-width:28px;min-height:28px}
+#vorland-atlas .ea-panel-title {font-family:"Instrument Serif",Georgia,serif;font-size:34px!important;line-height:1.04;font-weight:400;letter-spacing:-.5px;margin-bottom:13px}
+#vorland-atlas .ea-panel-desc {font-family:"Instrument Serif",Georgia,serif;font-size:21px;line-height:1.24;letter-spacing:0}
+#vorland-atlas .ea-panel-section {border-top:1px solid #b7c0bd;margin-top:22px;padding-top:16px}
+#vorland-atlas .ea-eyebrow {font-size:11px;line-height:1.5;letter-spacing:1.5px;text-transform:uppercase;color:var(--atlas-panel-muted);margin-bottom:10px}
+#vorland-atlas .ea-panel-item {display:flex;align-items:center;gap:11px;width:100%;text-align:left;border:0;border-bottom:1px solid #b7c0bd78;background:none;padding:11px 0;font-size:12px;line-height:1.4}
+#vorland-atlas .ea-panel-item:last-child {border-bottom:0}
+#vorland-atlas .ea-item-index {font-size:11px;color:var(--atlas-panel-muted);flex:0 0 19px}
+#vorland-atlas .ea-item-name {flex:1}
+#vorland-atlas .ea-item-arrow {font-size:16px}
+#vorland-atlas .ea-panel-item:hover .ea-item-name {text-decoration:underline;text-underline-offset:3px}
+#vorland-atlas .ea-exact-title {font-size:12px;line-height:1.55;color:var(--atlas-panel-muted)}
+#vorland-atlas .ea-open-link {display:flex;align-items:center;justify-content:space-between;text-decoration:none;border-bottom:1px solid currentColor;font-size:12px;padding:10px 0;margin-top:14px;gap:10px}
+#vorland-atlas .ea-related-themes {display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+#vorland-atlas .ea-related-themes button {background:none;border:1px solid #93a5a7;border-radius:3px;font-size:11px;padding:6px 8px;text-align:left}
+#vorland-atlas .ea-small-copy {color:var(--atlas-panel-muted);font-size:11px;line-height:1.6;margin-top:12px}
+#vorland-atlas .ea-tools {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--atlas-line);margin:0 30px;padding:22px 0 20px}
+#vorland-atlas .ea-tool {min-width:0;display:flex;gap:12px;text-align:left;padding:2px 17px;border:0;background:none;border-right:1px solid var(--atlas-line);align-items:flex-start}
+#vorland-atlas .ea-tool:first-child {padding-left:0}
+#vorland-atlas .ea-tool:last-child {border-right:0;padding-right:0}
+#vorland-atlas .ea-tool[aria-pressed=true] .ea-tool-name,#vorland-atlas .ea-tool:hover .ea-tool-name {color:var(--atlas-cyan)}
+#vorland-atlas .ea-tool-no {color:var(--atlas-cyan);font-size:11px;padding-top:6px;letter-spacing:1px}
+#vorland-atlas .ea-tool-name {font-family:"Instrument Serif",Georgia,serif;font-size:22px;line-height:1.15;display:block}
+#vorland-atlas .ea-tool-purpose {font-size:11px;line-height:1.5;color:var(--atlas-muted);display:block;margin-top:6px}
+#vorland-atlas .ea-footer {display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid var(--atlas-line);padding:13px 30px;color:#95a8b5;font-size:11px;letter-spacing:.5px}
+#vorland-atlas .ea-footer a {text-decoration:none}
+#vorland-atlas .ea-list {padding:16px 6px 0;min-height:477px}
+#vorland-atlas .ea-list-group {margin-bottom:21px}
+#vorland-atlas .ea-list-group-title {font-size:12px;color:var(--tone);letter-spacing:.3px;margin:0 0 7px;display:flex;gap:9px;align-items:center}
+#vorland-atlas .ea-list-row {display:flex;width:100%;gap:10px;align-items:center;text-align:left;border:0;border-bottom:1px solid #29414d;background:none;padding:11px 2px;min-height:43px}
+#vorland-atlas .ea-list-row[aria-pressed=true] {background:#83dadd10}
+#vorland-atlas .ea-list-row .ea-item-index {color:#9eb9c7}
+#vorland-atlas .ea-list-row .ea-item-name {font-size:12px;line-height:1.35}
+#vorland-atlas .ea-list-row .ea-year {font-size:11px;color:#a9bdc6;white-space:nowrap}
+#vorland-atlas .ea-list-row:hover .ea-item-name {color:var(--atlas-cyan)}
+#vorland-atlas .ea-compact-map {display:none}
+#vorland-atlas .ea-sr {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#vorland-atlas[data-labels=sans] .ea-topic-label {font-family:"DM Sans",Arial,sans-serif;font-size:19px}
+#vorland-atlas[data-paper=false] {--atlas-panel:#172831;--atlas-panel-ink:#f3f0e8;--atlas-panel-muted:#adbec6}
+#vorland-atlas[data-paper=false] .ea-inspector {color-scheme:dark}
+@media(min-width:1100px) {
+  #vorland-atlas .ea-workspace {grid-template-columns:minmax(0,1fr) 320px}
+  #vorland-atlas .ea-map {height:510px}
+}
+@media(max-width:790px) {
+  #vorland-atlas .ea-chrome {padding:18px 22px}
+  #vorland-atlas .ea-hero {padding:25px 22px 19px;gap:20px}
+  #vorland-atlas .ea-hero h1 {font-size:68px}
+  #vorland-atlas .ea-intro h2 {font-size:27px}
+  #vorland-atlas .ea-workspace {grid-template-columns:minmax(0,1fr) 250px;padding:0 16px 22px;gap:12px}
+  #vorland-atlas .ea-inspector {padding:20px 18px}
+  #vorland-atlas .ea-map {height:460px}
+  #vorland-atlas .ea-topic {width:137px}
+  #vorland-atlas .ea-topic .ea-topic-label {font-size:22px}
+}
+@media(max-width:740px) {
+  #vorland-atlas .ea-brand {font-size:11px;letter-spacing:1px}
+  #vorland-atlas .ea-brand-mark {display:none}
+  #vorland-atlas .ea-nav {gap:14px}
+  #vorland-atlas .ea-nav button,#vorland-atlas .ea-nav a {font-size:11px}
+  #vorland-atlas .ea-hero {grid-template-columns:1fr;gap:20px}
+  #vorland-atlas .ea-hero h1 {font-size:76px}
+  #vorland-atlas .ea-position {font-size:11px}
+  #vorland-atlas .ea-intro {max-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+  #vorland-atlas .ea-intro p {margin-top:1px;font-size:11px}
+  #vorland-atlas .ea-workspace {grid-template-columns:1fr;padding:0 18px 20px}
+  #vorland-atlas .ea-map {height:470px}
+  #vorland-atlas .ea-inspector {min-height:0;margin-top:10px;padding:23px}
+  #vorland-atlas .ea-tools {margin:0 22px}
+  #vorland-atlas .ea-tool {padding:2px 12px}
+  #vorland-atlas .ea-tool-name {font-size:20px}
+  #vorland-atlas .ea-tool-no {display:none}
+  #vorland-atlas .ea-footer {padding:13px 22px}
+}
+@media(max-width:390px) {
+  #vorland-atlas .ea-chrome {padding:16px;gap:10px}
+  #vorland-atlas .ea-nav {gap:12px}
+  #vorland-atlas .ea-nav a {display:none}
+  #vorland-atlas .ea-hero {padding:24px 16px 15px}
+  #vorland-atlas .ea-hero h1 {font-size:65px}
+  #vorland-atlas .ea-intro {grid-template-columns:1fr;gap:7px}
+  #vorland-atlas .ea-intro p {max-width:270px}
+  #vorland-atlas .ea-map {display:none}
+  #vorland-atlas .ea-map-preview {display:none}
+  #vorland-atlas .ea-compact-map {display:block;padding:16px 5px}
+  #vorland-atlas .ea-compact-theme {border-left:1px solid var(--tone);padding:0 0 0 13px;margin:0 0 23px}
+  #vorland-atlas .ea-compact-title {background:none;border:0;padding:3px 0 10px;font-family:"Instrument Serif",Georgia,serif;font-size:25px;color:var(--tone);text-align:left}
+  #vorland-atlas .ea-workspace {padding:0 12px 18px}
+  #vorland-atlas .ea-tools {grid-template-columns:1fr;padding:10px 0;margin:0 20px}
+  #vorland-atlas .ea-tool {border-right:0;border-bottom:1px solid var(--atlas-line);padding:14px 0!important}
+  #vorland-atlas .ea-tool:last-child {border-bottom:0}
+  #vorland-atlas .ea-tool-no {display:block}
+  #vorland-atlas .ea-tool-name {font-size:23px}
+  #vorland-atlas .ea-tool-purpose {margin-top:3px}
+}
+@media(prefers-reduced-motion:reduce) {
+  #vorland-atlas *,#vorland-atlas *::before,#vorland-atlas *::after {transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+/* Island edition: a continuous camera, coastlines, and a complete theme index. */
+#vorland-atlas .ea-workspace {grid-template-columns:minmax(0,1fr) 280px;gap:19px}
+#vorland-atlas .ea-map {height:510px;overflow:hidden;background:radial-gradient(ellipse at 40% 46%,#19333a33,transparent 66%);border-radius:4px}
+#vorland-atlas .ea-map-svg {overflow:hidden}
+#vorland-atlas .ea-island-hit {position:absolute;z-index:2;border:0;padding:0;background:transparent;cursor:zoom-in;transition:opacity .2s}
+#vorland-atlas .ea-island-hit:hover {background:#d0eeed09}
+#vorland-atlas .ea-island-label {position:absolute;z-index:4;transform:translate(-50%,-50%);background:radial-gradient(ellipse,#0b131bee 15%,#0b131b99 48%,transparent 73%);border:0;text-align:center;padding:17px 6px;width:170px;cursor:zoom-in;transition:opacity .2s}
+#vorland-atlas .ea-island-label strong {display:block;font-family:"Instrument Serif",Georgia,serif;font-size:26px;line-height:1.06;font-weight:400;color:var(--atlas-ink)}
+#vorland-atlas .ea-island-label small {display:block;color:var(--tone);font-size:11px;letter-spacing:.4px;margin-top:9px}
+#vorland-atlas .ea-island-label:hover strong {color:var(--tone)}
+#vorland-atlas .ea-zoom-label {position:absolute;top:8px;left:10px;right:10px;text-align:center;z-index:5;pointer-events:none}
+#vorland-atlas .ea-zoom-label span {display:block;color:var(--atlas-muted);font-size:11px;letter-spacing:1.1px;margin-bottom:5px;text-transform:uppercase}
+#vorland-atlas .ea-zoom-label strong {font-family:"Instrument Serif",Georgia,serif;font-size:30px;font-weight:400;line-height:1.1;color:var(--tone)}
+#vorland-atlas .ea-node {z-index:6;transition:opacity .18s}
+#vorland-atlas .ea-node-label {display:none}
+#vorland-atlas[data-island=true] .ea-node {width:134px;height:61px;display:flex;align-items:center;gap:8px;border-radius:0;text-align:left;background:radial-gradient(ellipse,#0b131be8 20%,#0b131b80 55%,transparent 76%);padding:4px}
+#vorland-atlas[data-island=true] .ea-node-dot {position:relative;left:auto;top:auto;flex:0 0 11px;width:11px;height:11px}
+#vorland-atlas[data-island=true] .ea-node-index {display:none}
+#vorland-atlas[data-island=true] .ea-node-label {display:block;font-size:11px;line-height:1.3;color:var(--atlas-ink);max-width:108px}
+#vorland-atlas[data-island=true] .ea-node-label small {display:block;font-size:11px;color:var(--atlas-muted);margin-top:3px}
+#vorland-atlas .ea-back {font-size:12px;display:flex;align-items:center;gap:8px;min-height:40px}
+#vorland-atlas .ea-back:disabled {color:var(--atlas-muted)}
+#vorland-atlas .ea-inspector {min-height:360px}
+#vorland-atlas .ea-panel-item {align-items:start;gap:9px;padding:13px 0}
+#vorland-atlas .ea-item-meta {display:block;margin-top:5px;color:var(--atlas-panel-muted);font-size:11px;line-height:1.4}
+#vorland-atlas .ea-panel-title {font-size:31px!important}
+#vorland-atlas .ea-panel-section {margin-top:18px}
+#vorland-atlas .ea-panel-top {letter-spacing:.8px}
+#vorland-atlas .ea-map-preview {height:auto;min-height:35px;padding:5px 6px;line-height:1.5}
+#vorland-atlas .ea-list-row .ea-item-name {line-height:1.45}
+#vorland-atlas .ea-compact-map {display:none!important}
+#vorland-atlas .ea-close {min-width:36px;min-height:36px}
+#vorland-atlas .ea-list-group-title button {font:inherit;color:inherit;background:transparent;border:0;padding:7px 0;text-align:left}
+#vorland-atlas .ea-breadcrumb {font-size:11px;color:var(--atlas-muted);margin-bottom:10px}
+#vorland-atlas .ea-shared {font-size:11px;color:var(--atlas-panel-muted);margin-top:7px;line-height:1.45}
+#vorland-atlas .ea-island-index {margin:0 30px 28px;padding-top:23px;border-top:1px solid var(--atlas-line)}
+#vorland-atlas .ea-index-heading {display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:16px}
+#vorland-atlas .ea-index-heading h2 {font-family:"Instrument Serif",Georgia,serif;font-size:28px;font-weight:400;line-height:1.1}
+#vorland-atlas .ea-index-heading span {font-size:11px;color:var(--atlas-muted);white-space:nowrap}
+#vorland-atlas .ea-index-grid {display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+#vorland-atlas .ea-index-grid .ea-list-row {align-items:start;padding:16px 0}
+#vorland-atlas .ea-index-grid .ea-item-meta {color:var(--atlas-muted)}
+#vorland-atlas[data-labels=sans] .ea-island-label strong {font-family:"DM Sans",Arial,sans-serif;font-size:19px}
+#vorland-atlas[data-labels=sans] .ea-zoom-label strong {font-family:"DM Sans",Arial,sans-serif;font-size:23px}
+#vorland-atlas[data-island=true][data-pin-labels=true] .ea-node {width:108px;height:56px;display:flex;border-radius:0;padding:4px}
+#vorland-atlas[data-island=true][data-pin-labels=true] .ea-node-label {display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;max-width:83px;font-size:11px;line-height:1.25;overflow-wrap:anywhere}
+#vorland-atlas[data-island=true][data-pin-labels=true] .ea-node-label small {display:none}
+#vorland-atlas[data-island=true][data-pin-labels=false] .ea-node {width:44px;height:44px;display:block;border-radius:50%;padding:0}
+#vorland-atlas[data-island=true][data-pin-labels=false] .ea-node-dot {position:absolute;left:16px;top:9px;width:12px;height:12px}
+#vorland-atlas[data-island=true][data-pin-labels=false] .ea-node-index {display:block;top:27px}
+#vorland-atlas[data-island=true][data-pin-labels=false] .ea-node-label {display:none}
+@media(max-width:900px) {
+  #vorland-atlas .ea-workspace {grid-template-columns:minmax(0,1fr) 248px;gap:12px}
+  #vorland-atlas .ea-island-label {width:145px}
+  #vorland-atlas .ea-island-label strong {font-size:23px}
+  #vorland-atlas[data-island=true] .ea-node {width:110px}
+  #vorland-atlas[data-island=true] .ea-node-label {max-width:84px}
+}
+@media(max-width:740px) {
+  #vorland-atlas .ea-workspace {grid-template-columns:1fr}
+  #vorland-atlas .ea-island-index {margin:0 22px 23px}
+  #vorland-atlas .ea-index-grid {grid-template-columns:1fr}
+  #vorland-atlas .ea-map {height:520px}
+  #vorland-atlas .ea-inspector {min-height:0}
+  #vorland-atlas .ea-island-label {width:160px}
+  #vorland-atlas .ea-island-label strong {font-size:26px}
+  #vorland-atlas[data-island=true] .ea-node {width:130px}
+  #vorland-atlas[data-island=true] .ea-node-label {max-width:104px}
+}
+@media(max-width:430px) {
+  #vorland-atlas .ea-map {height:460px;display:block}
+  #vorland-atlas .ea-map-preview {display:flex}
+  #vorland-atlas .ea-island-label {width:128px;padding:13px 2px}
+  #vorland-atlas .ea-island-label strong {font-size:22px}
+  #vorland-atlas[data-island=true] .ea-node {width:44px;height:44px;display:block;border-radius:50%;padding:0}
+  #vorland-atlas[data-island=true] .ea-node-dot {position:absolute;left:16px;top:9px;width:12px;height:12px}
+  #vorland-atlas[data-island=true] .ea-node-index {display:block;top:27px}
+  #vorland-atlas[data-island=true] .ea-node-label {display:none}
+  #vorland-atlas .ea-zoom-label strong {font-size:25px}
+}
+@media(pointer:coarse) {
+  #vorland-atlas .ea-close {min-width:44px;min-height:44px}
+  #vorland-atlas .ea-nav button,#vorland-atlas .ea-nav a {min-height:44px;display:inline-flex;align-items:center}
+  #vorland-atlas .ea-related-themes button {min-height:44px}
+}
+/* Cities are subthemes; featured works are deliberately chosen landmarks. */
+#vorland-atlas {--atlas-bg:#09121a;background:radial-gradient(ellipse at 76% 46%,#0b1720,#09121a 74%)}
+#vorland-atlas .ea-map {background:radial-gradient(ellipse at 50% 48%,#0a192133,transparent 73%)}
+#vorland-atlas .ea-island-label {background:radial-gradient(ellipse,#09121ad9 16%,#09121a7d 44%,transparent 75%)}
+#vorland-atlas .ea-island-label strong {text-shadow:0 2px 9px #040b12}
+#vorland-atlas .ea-island-label small {font-size:11px;letter-spacing:1px}
+#vorland-atlas .ea-toolbar {flex-wrap:wrap;gap:8px 12px}
+#vorland-atlas .ea-map-navigation {display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+#vorland-atlas .ea-up {border:0;background:none;padding:8px 0;min-height:40px;font-size:12px;color:var(--atlas-cyan);text-align:left}
+#vorland-atlas .ea-city {position:absolute;transform:translate(-50%,-50%);z-index:7;width:120px;height:64px;border:0;padding:0;background:radial-gradient(ellipse,#09121aea 20%,#09121a99 50%,transparent 76%);text-align:center;cursor:pointer}
+#vorland-atlas .ea-city-dot {display:block;width:10px;height:10px;border:1.3px solid var(--tone);border-radius:50%;margin:0 auto 6px;background:#0b1921;box-shadow:0 0 0 4px #a0d9e611}
+#vorland-atlas .ea-city-name {display:block;font-family:"DM Sans",Arial,sans-serif;font-size:12px;line-height:1.15;font-weight:500;color:#e9eeee}
+#vorland-atlas .ea-city-count {display:block;font-size:11px;line-height:1.15;color:var(--atlas-muted);margin-top:5px}
+#vorland-atlas .ea-city:hover .ea-city-dot,#vorland-atlas .ea-city:focus-visible .ea-city-dot {background:var(--tone);box-shadow:0 0 0 4px #d5eeee1c,0 0 18px var(--tone)}
+#vorland-atlas .ea-city[data-featured=true] .ea-city-dot {background:var(--tone);box-shadow:0 0 0 4px #d5eeee12,0 0 17px var(--tone)}
+#vorland-atlas .ea-node[data-featured=true] .ea-node-dot {background:var(--tone);box-shadow:0 0 0 4px #d5eeee20,0 0 19px var(--tone)}
+#vorland-atlas .ea-featured-label {font-size:11px;letter-spacing:.8px;text-transform:uppercase;display:block;margin-bottom:8px;color:#667335}
+#vorland-atlas .ea-index-grid .ea-featured {border-bottom-color:#adc87977}
+#vorland-atlas .ea-index-grid .ea-featured .ea-item-index {color:#d5df8d}
+#vorland-atlas .ea-island-index .ea-index-heading {flex-wrap:wrap}
+#vorland-atlas .ea-island-index .ea-list-group {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;margin-top:26px}
+#vorland-atlas .ea-island-index .ea-list-group-title {grid-column:1/-1}
+#vorland-atlas .ea-island-index .ea-list-row {align-items:start;padding:15px 0}
+#vorland-atlas .ea-island-index .ea-featured-label,#vorland-atlas[data-paper=false] .ea-featured-label {color:#c9df98}
+#vorland-atlas .ea-key-paper {display:none}
+#vorland-atlas[data-district=true] .ea-key-paper {display:inline-flex}
+#vorland-atlas[data-district=true] .ea-key-city {display:none}
+#vorland-atlas .ea-landmark-key {width:7px;height:7px;border-radius:50%;background:#d5df8d;box-shadow:0 0 0 3px #c7d88a33;margin:0 3px}
+#vorland-atlas .ea-legend-note {line-height:1.5}
+@media(max-width:740px) {#vorland-atlas .ea-island-index .ea-list-group {grid-template-columns:1fr}}
+@media(max-width:430px) {
+  #vorland-atlas .ea-city {width:112px;height:64px}
+  #vorland-atlas .ea-city-name {font-size:11px;line-height:1.2}
+  #vorland-atlas .ea-city-count {font-size:11px}
+  #vorland-atlas .ea-up,#vorland-atlas .ea-back {font-size:11px}
+}
+@media(pointer:coarse) {#vorland-atlas .ea-up,#vorland-atlas .ea-back {min-height:44px}}
+/* Light seas, original dark terrain. Island art retains its source colors. */
+#vorland-atlas[data-background=ivory] {--atlas-bg:#f5f3ec;--atlas-light-panel:#fffdf8}
+#vorland-atlas[data-background=white] {--atlas-bg:#fbfcfd;--atlas-light-panel:#ffffff}
+#vorland-atlas[data-background]:not([data-background=dark]) {
+  --atlas-ink:#172832;--atlas-muted:#586b72;--atlas-line:#ced6d3;
+  --atlas-cyan:#176b73;--atlas-gold:#796824;--atlas-blue:#3f627d;
+  background:var(--atlas-bg);color-scheme:light;
+}
+#vorland-atlas[data-background]:not([data-background=dark])[data-paper=true] {--atlas-panel:var(--atlas-light-panel)}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-map {background:none}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-nav button,
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-nav a {color:#445c65}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-nav button[aria-pressed=true] {color:var(--atlas-cyan)}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-nav button:hover,
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-nav a:hover {color:var(--atlas-ink)}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-intro p,
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-map-preview {color:#455d67}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-back {color:#4c613b}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-back:disabled {color:var(--atlas-muted)}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-switch {border-color:#9aafaf}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-switch button[aria-pressed=true] {background:#175e65;color:#ffffff}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-inspector {box-shadow:0 0 0 1px var(--atlas-line)}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-zoom-label strong {color:var(--atlas-ink)}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-list-group-title,
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-compact-title {color:var(--atlas-cyan)}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-list-row {border-bottom-color:var(--atlas-line)}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-list-row[aria-pressed=true] {background:#176b730b}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-list-row .ea-item-index,
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-list-row .ea-year,
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-footer,
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-legend-note {color:var(--atlas-muted)}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-key-dot,
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-key-diamond {border-color:#526e79}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-landmark-key {background:#78813b;box-shadow:0 0 0 3px #78813b21}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-island-index .ea-featured-label {color:#667335}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-index-grid .ea-featured .ea-item-index {color:#667335}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-route {stroke:#365c6b;stroke-opacity:.4}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-island-label {background:none}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-island-label[data-theme=automation] {width:144px;padding:8px 2px}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-island-label[data-theme=automation] strong {font-size:22px}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-island-label[data-theme=automation] small {letter-spacing:.2px}
+#vorland-atlas[data-background]:not([data-background=dark])[data-labels=sans] .ea-island-label[data-theme=automation] strong {font-size:17px}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-island-label strong,
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-node-label {color:#f4f1e8}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-island-label:hover strong {color:var(--tone)}
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-city-count,
+#vorland-atlas[data-background]:not([data-background=dark]) .ea-node-label small {color:#b9cdd4}
+/* Quantitative research map marks; every building is one paper. */
+#vorland-atlas {
+  --city-roof: #36565b;
+  --city-wall: #1b343c;
+  --city-wall-shade: #112831;
+  --city-edge: #cadfd5;
+  --city-ridge: #8aada6;
+  --city-street: #799c99;
+  --city-gold: #e4d47c;
+}
+#vorland-atlas .ea-city-mark {
+  display: block;
+  width: var(--city-size, 104px);
+  height: auto;
+  overflow: visible;
+  pointer-events: none;
+}
+#vorland-atlas .ea-paper-building {
+  display: block;
+  width: var(--paper-building-size, 39px);
+  height: auto;
+  overflow: visible;
+  pointer-events: none;
+}
+#vorland-atlas .ea-city-street {
+  fill: none;
+  stroke: var(--city-street);
+  stroke-width: .75;
+  stroke-linecap: round;
+  opacity: .54;
+}
+#vorland-atlas .ea-city-street-main { stroke-width: 1.2; opacity: .7; }
+#vorland-atlas .ea-city-plaza {
+  fill: #1a3339;
+  stroke: var(--city-street);
+  stroke-width: .65;
+}
+#vorland-atlas .ea-city-plaza-line { fill: none; stroke: #71938b; stroke-width: .6; }
+#vorland-atlas .ea-city-building { stroke-linejoin: round; }
+#vorland-atlas .ea-building-shadow { fill: #020e17; opacity: .8; }
+#vorland-atlas .ea-building-wall {
+  fill: var(--city-wall);
+  stroke: var(--city-edge);
+  stroke-width: .7;
+}
+#vorland-atlas .ea-building-wall-shade {
+  fill: var(--city-wall-shade);
+  stroke: var(--city-edge);
+  stroke-width: .6;
+}
+#vorland-atlas .ea-building-roof {
+  fill: var(--city-roof);
+  stroke: var(--city-edge);
+  stroke-width: .85;
+}
+#vorland-atlas .ea-building-ridge { fill: none; stroke: var(--city-ridge); stroke-width: .65; }
+#vorland-atlas .ea-building-window { fill: none; stroke: #d5ce9e; stroke-width: 1; opacity: .78; }
+#vorland-atlas .ea-building-tower-shadow { fill: #06131c; opacity: .7; }
+#vorland-atlas .ea-building-tower {
+  fill: #41625c;
+  stroke: var(--city-gold);
+  stroke-width: .85;
+}
+#vorland-atlas .ea-building-tower-side { fill: #263f3e; stroke: none; }
+#vorland-atlas .ea-building-dome {
+  fill: var(--city-gold);
+  stroke: #fff0b5;
+  stroke-width: .7;
+}
+#vorland-atlas .ea-building-dome-rib { fill: none; stroke: #7c814f; stroke-width: .65; }
+#vorland-atlas .ea-building-lamp { fill: none; stroke: #fff1bd; stroke-width: 1.45; }
+#vorland-atlas .ea-city-building-featured .ea-building-roof { stroke: var(--city-gold); }
+#vorland-atlas .ea-building-scaffold {
+  fill: none;
+  stroke: var(--city-gold);
+  stroke-width: .8;
+  stroke-dasharray: 2 2;
+  opacity: .85;
+}
+#vorland-atlas .ea-paper-building-draft .ea-building-roof { fill: #294449; }
+
+#vorland-atlas {--city-size:100px;--paper-building-size:41px}
+#vorland-atlas .ea-map {height:620px;cursor:grab}
+#vorland-atlas .ea-map[data-dragging=true] {cursor:grabbing}
+#vorland-atlas .ea-map-zoom {position:absolute;left:10px;bottom:9px;z-index:10;display:flex;align-items:center;gap:2px;padding:3px;background:#11222a;border:1px solid #34515c;border-radius:4px}
+#vorland-atlas .ea-map-zoom button {min-width:34px;min-height:34px;background:transparent;border:0;color:#d9e8e8;padding:5px 9px;font-size:14px}
+#vorland-atlas .ea-map-zoom button[data-zoom=fit] {font-size:11px;border-left:1px solid #34515c}
+#vorland-atlas .ea-map-zoom button:hover {background:#84d9dc18}
+#vorland-atlas .ea-city-group {position:absolute;transform:translate(-50%,-50%);z-index:7;width:128px;height:114px}
+#vorland-atlas .ea-city-group .ea-city {position:relative;transform:none;left:auto;top:auto;width:128px;height:114px;display:flex;flex-direction:column;align-items:center;justify-content:start;background:radial-gradient(ellipse,#09121abb 15%,transparent 73%);padding:0;border-radius:3px}
+#vorland-atlas .ea-city-group .ea-city-mark {margin:0 auto -2px;flex:none;transition:filter .2s}
+#vorland-atlas .ea-city-group .ea-city-name {font-size:11px;line-height:1.15;max-width:122px;text-shadow:0 1px 4px #07121a,0 0 8px #07121a}
+#vorland-atlas .ea-city-group .ea-city-count {margin-top:4px;font-size:11px;line-height:1.15;color:#b9cdd4;text-shadow:0 1px 4px #07121a}
+#vorland-atlas .ea-city-group .ea-city:hover .ea-city-mark {filter:brightness(1.3)}
+#vorland-atlas .ea-landmark-entry {position:absolute;left:27px;top:-5px;width:44px;height:44px;border:0;border-radius:5px;padding:0;background:transparent;font-size:0;z-index:8}
+#vorland-atlas .ea-landmark-entry span {display:none}
+#vorland-atlas .ea-landmark-entry:hover {background:#e4d47c15}
+#vorland-atlas .ea-city-roads {position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+#vorland-atlas .ea-city-roads path {fill:none;stroke:#9cbeba;stroke-width:.8;opacity:.3}
+#vorland-atlas[data-district=true] .ea-city-roads path {stroke-width:1.5;opacity:.45}
+#vorland-atlas[data-island=true] .ea-node,
+#vorland-atlas[data-island=true][data-pin-labels=true] .ea-node {width:104px;height:82px;display:flex;flex-direction:column;align-items:center;justify-content:start;gap:0;padding:0;text-align:center;background:radial-gradient(ellipse,#09121ad9 10%,#09121a55 52%,transparent 74%)}
+#vorland-atlas[data-island=true][data-pin-labels=true] .ea-node .ea-paper-building {margin-top:-3px;flex:none}
+#vorland-atlas[data-island=true][data-pin-labels=true] .ea-node .ea-node-label {max-width:103px;font-size:11px;line-height:1.15;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;color:#eef1ed;text-shadow:0 1px 6px #061019}
+#vorland-atlas[data-island=true][data-pin-labels=false] .ea-node {width:48px;height:58px;display:flex;flex-direction:column;align-items:center;justify-content:start;padding:0;border-radius:3px;gap:0}
+#vorland-atlas[data-island=true][data-pin-labels=false] .ea-node .ea-node-index {position:static;display:block;color:#d5e6e6;font-size:11px;line-height:1.1;margin-top:-2px}
+#vorland-atlas[data-island=true][data-pin-labels=false] .ea-node .ea-node-label {display:none}
+#vorland-atlas .ea-node:hover .ea-paper-building,
+#vorland-atlas .ea-node[aria-pressed=true] .ea-paper-building {filter:brightness(1.45) drop-shadow(0 0 5px #e4d47c55)}
+#vorland-atlas .ea-expedition {position:absolute;transform:translate(-50%,-50%) scale(var(--ship-scale,1));z-index:8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;width:48px;height:56px;border:0;border-radius:3px;background:radial-gradient(ellipse,#09121a 8%,#09121a99 45%,transparent 73%);color:#8bc7ce;padding:3px;line-height:1.1}
+#vorland-atlas .ea-expedition svg {width:33px;height:33px;stroke-width:1.1}
+#vorland-atlas .ea-expedition-icon {display:grid;place-items:center;width:42px;height:36px}
+#vorland-atlas .ea-expedition-icon svg {transform:scale(1.7)}
+#vorland-atlas .ea-expedition small {white-space:nowrap}
+#vorland-atlas .ea-expedition strong {position:absolute;bottom:100%;width:max-content;max-width:130px;padding:4px 6px;border-radius:3px;background:#09121a;font-size:11px;font-weight:500;color:#dbe8e6;opacity:0;pointer-events:none}
+#vorland-atlas .ea-expedition:hover strong,#vorland-atlas .ea-expedition:focus-visible strong {opacity:1}
+#vorland-atlas .ea-expedition:hover,#vorland-atlas .ea-expedition:focus-visible {z-index:9}
+#vorland-atlas .ea-expedition small {font-size:11px;color:#a1b7c0}
+#vorland-atlas .ea-expedition:hover {color:#e4d47c}
+#vorland-atlas .ea-expedition::after {content:'';position:absolute;top:33px;left:13px;width:28px;height:9px;border-bottom:1px solid #84bfc933;border-radius:50%;transform:rotate(-17deg);pointer-events:none}
+#vorland-atlas .ea-voyage-item {padding:11px 0;border-bottom:1px solid #a6b6b455;font-size:12px;line-height:1.35}
+#vorland-atlas .ea-voyage-item small {display:block;font-size:11px;color:var(--atlas-panel-muted);margin-top:4px}
+#vorland-atlas .ea-demo-tag {font-size:11px;color:var(--atlas-panel-muted);margin-left:5px}
+#vorland-atlas .ea-legend .ea-landmark-key {border-radius:1px;height:10px;width:6px}
+#vorland-atlas .ea-key-ship {display:inline-flex;align-items:center;gap:5px}
+#vorland-atlas .ea-key-ship svg {width:14px;height:14px}
+@media(max-width:430px){
+  #vorland-atlas .ea-map {height:410px}
+  #vorland-atlas[data-island=true] .ea-map {height:500px}
+  #vorland-atlas .ea-island-label[data-theme=automation] {width:106px;padding:6px 1px}
+  #vorland-atlas .ea-island-label[data-theme=automation] strong {font-size:18px}
+  #vorland-atlas .ea-island-label[data-theme=automation] small {letter-spacing:.1px}
+  #vorland-atlas {--city-size:87px}
+  #vorland-atlas .ea-city-group,#vorland-atlas .ea-city-group .ea-city {width:120px;height:109px}
+  #vorland-atlas .ea-city-group .ea-city-name {max-width:118px}
+  #vorland-atlas .ea-landmark-entry {left:23px;top:-6px}
+}
+@media(pointer:coarse){#vorland-atlas .ea-map-zoom button {min-width:44px;min-height:44px}}
+
+#vorland-atlas .ea-chrome {justify-content:flex-end;padding:17px 30px 15px}
+#vorland-atlas .ea-nav {gap:20px;justify-content:flex-end}
+#vorland-atlas .ea-nav .ea-social-link {font-size:11px;color:#a8c2cb}
+#vorland-atlas .ea-nav .ea-social-link:first-of-type {margin-left:4px}
+#vorland-atlas .ea-hero {grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:25px;padding-top:29px;padding-bottom:23px;align-items:center}
+#vorland-atlas .ea-hero h1 {display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 11px;font-size:clamp(58px,8.6vw,86px);line-height:1}
+#vorland-atlas .ea-name {white-space:nowrap}
+#vorland-atlas .ea-degree {font-family:'DM Sans',Arial,sans-serif;font-size:28px;font-weight:400;letter-spacing:-.5px;color:#cadbdc;white-space:nowrap}
+#vorland-atlas .ea-position {font-size:11px;line-height:1.6;margin-top:13px;max-width:545px}
+#vorland-atlas .ea-intro {max-width:100%;padding:0}
+#vorland-atlas .ea-intro p {font-size:14px;line-height:1.65;color:#c8d8df;margin:0;max-width:330px}
+#vorland-atlas .ea-software-type {display:block;font-size:11px;line-height:1.3;font-weight:500;text-transform:uppercase;letter-spacing:1px;color:#93dbde;margin-bottom:5px}
+#vorland-atlas .ea-software-row {border-left:2px solid #5da9b1;padding-left:12px!important;gap:12px}
+#vorland-atlas .ea-software-row .ea-item-meta {color:var(--atlas-muted);margin-top:7px;line-height:1.5}
+#vorland-atlas .ea-software-name {display:block;font-size:15px;line-height:1.3}
+#vorland-atlas .ea-software-row .ea-item-arrow {font-size:15px;color:#84d9dc;padding:8px 0}
+#vorland-atlas .ea-inspector .ea-software-type {color:#27727a}
+#vorland-atlas[data-paper=false] .ea-inspector .ea-software-type {color:#93dbde}
+#vorland-atlas .ea-software-pin {position:absolute;transform:translate(-50%,-50%);width:104px;height:82px;z-index:8;display:flex;flex-direction:column;align-items:center;justify-content:start;border:0;padding:0;border-radius:4px;background:radial-gradient(ellipse,#09121ae0 12%,#09121a66 48%,transparent 73%);text-align:center}
+#vorland-atlas .ea-software-pin .ea-paper-building {width:35px;margin-top:-5px}
+#vorland-atlas .ea-software-pin .ea-building-roof {fill:#276c72;stroke:#a2eff0}
+#vorland-atlas .ea-software-pin .ea-software-type {font-size:11px;letter-spacing:.8px;margin:-1px 0 3px}
+#vorland-atlas .ea-tool-short {display:none}
+#vorland-atlas .ea-island-label small {letter-spacing:.15px}
+#vorland-atlas .ea-software-pin strong {font-size:11px;line-height:1.2;font-weight:500;color:#e0f6f3;max-width:103px}
+#vorland-atlas .ea-software-pin[aria-pressed=true],#vorland-atlas .ea-software-pin:hover {box-shadow:0 0 0 1px #85d9de66}
+#vorland-atlas[data-pin-labels=false] .ea-software-pin {width:48px;height:62px}
+#vorland-atlas[data-pin-labels=false] .ea-software-pin .ea-software-type {display:none}
+#vorland-atlas[data-pin-labels=false] .ea-software-pin strong {font-size:11px;max-width:60px}
+#vorland-atlas[data-pin-labels=false] .ea-software-pin .ea-tool-full {display:none}
+#vorland-atlas[data-pin-labels=false] .ea-software-pin .ea-tool-short {display:block}
+#vorland-atlas[data-has-papers=false] .ea-key-paper {display:none!important}
+#vorland-atlas .ea-key-software {width:9px;height:9px;background:#276c72;border:1px solid #a2eff0;border-radius:1px}
+@media(max-width:790px){
+  #vorland-atlas .ea-hero {grid-template-columns:1fr;gap:15px}
+  #vorland-atlas .ea-intro {display:block}
+  #vorland-atlas .ea-intro p {max-width:530px;font-size:13px}
+}
+@media(max-width:430px){
+  #vorland-atlas .ea-chrome {padding:15px 16px}
+  #vorland-atlas .ea-nav {gap:9px;justify-content:flex-start}
+  #vorland-atlas .ea-nav a {display:inline-flex}
+  #vorland-atlas .ea-hero {padding:22px 16px 14px}
+  #vorland-atlas .ea-hero h1 {font-size:52px;gap:4px 8px;letter-spacing:-1.1px}
+  #vorland-atlas .ea-degree {font-size:22px}
+  #vorland-atlas .ea-intro p {font-size:12px}
+  #vorland-atlas[data-pin-labels=false] .ea-software-pin {width:48px;height:62px}
+  #vorland-atlas[data-pin-labels=false] .ea-software-pin .ea-software-type {display:none}
+  #vorland-atlas[data-pin-labels=false] .ea-software-pin strong {font-size:11px;max-width:60px}
+  #vorland-atlas[data-pin-labels=false] .ea-software-pin .ea-tool-full {display:none}
+  #vorland-atlas[data-pin-labels=false] .ea-software-pin .ea-tool-short {display:block}
+}
+
+#vorland-atlas .ea-tool-showcase {padding-bottom:19px;margin-bottom:21px;border-bottom:1px solid #a8b6b477}
+#vorland-atlas .ea-tool-showcase h2 {font-family:'Instrument Serif',Georgia,serif;font-size:31px;line-height:1.1;font-weight:400;margin:0 0 14px;color:var(--atlas-panel-ink)}
+#vorland-atlas .ea-launch-item {padding:13px 0;border-bottom:1px solid #a8b6b44d}
+#vorland-atlas .ea-launch-item:last-child {border-bottom:0;padding-bottom:0}
+#vorland-atlas .ea-launch-link {display:block;text-decoration:none;color:var(--atlas-panel-ink)}
+#vorland-atlas .ea-launch-heading {display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:9px}
+#vorland-atlas .ea-launch-history {font-family:'DM Sans',Arial,sans-serif;font-size:11px;line-height:1.4;color:var(--atlas-panel-muted);white-space:nowrap}
+#vorland-atlas .ea-launch-release {display:block;font-size:11px;line-height:1.4;color:var(--atlas-panel-muted);margin-top:5px}
+#vorland-atlas .ea-tool-history {font-size:11px;line-height:1.5;color:var(--atlas-panel-muted);margin:8px 0 14px}
+#vorland-atlas .ea-launch-link strong {display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-family:'Instrument Serif',Georgia,serif;font-size:24px;line-height:1.15;font-weight:400}
+#vorland-atlas .ea-launch-link strong span {font-family:'DM Sans',Arial,sans-serif;font-size:15px;color:#287985}
+#vorland-atlas .ea-launch-link:hover strong {color:#287985}
+#vorland-atlas .ea-launch-purpose {display:block;font-size:11px;line-height:1.5;color:var(--atlas-panel-muted);margin:6px 0}
+#vorland-atlas .ea-launch-context {background:transparent;border:0;border-bottom:1px solid #508d9266;padding:4px 0;font-size:11px;color:#27737c!important;text-align:left}
+#vorland-atlas[data-overview=false] .ea-tool-showcase {padding-bottom:12px;margin-bottom:15px}
+#vorland-atlas[data-overview=false] .ea-tool-showcase h2 {font-family:'DM Sans',Arial,sans-serif;font-size:11px;line-height:1.3;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;color:var(--atlas-panel-muted)}
+#vorland-atlas[data-overview=false] .ea-launch-item {padding:6px 0}
+#vorland-atlas[data-overview=false] .ea-launch-link strong {font-family:'DM Sans',Arial,sans-serif;font-size:12px;line-height:1.4}
+#vorland-atlas[data-overview=false] .ea-launch-purpose,#vorland-atlas[data-overview=false] .ea-launch-context {display:none}
+#vorland-atlas[data-paper=false] .ea-launch-link strong span,#vorland-atlas[data-paper=false] .ea-launch-context {color:#91dfe4!important}
+#vorland-atlas .ea-spatial-features {position:absolute;inset:0;pointer-events:none;z-index:9}
+#vorland-atlas .ea-spatial-city,#vorland-atlas .ea-spatial-building {position:absolute;transform:translate(-50%,-50%);pointer-events:auto;width:40px;height:40px;padding:0;border:0;border-radius:5px;background:transparent;color:#e7f4ed;text-align:center}
+#vorland-atlas .ea-spatial-city {width:46px;height:44px}
+#vorland-atlas .ea-spatial-city:hover,#vorland-atlas .ea-spatial-city:focus-visible {box-shadow:0 0 0 1px #a3e0df99;background:#a3e0df11}
+#vorland-atlas .ea-spatial-building {width:32px;height:32px;z-index:2}
+#vorland-atlas .ea-spatial-building:hover,#vorland-atlas .ea-spatial-building:focus-visible,#vorland-atlas .ea-spatial-building[aria-pressed=true] {box-shadow:0 0 0 1px #e9e19c;background:#e9e19c1c}
+#vorland-atlas .ea-spatial-name {position:absolute;left:50%;top:100%;transform:translateX(-50%);width:134px;font-size:11px;line-height:1.3;text-shadow:0 1px 4px #07121a,0 0 8px #07121a;background:radial-gradient(ellipse,#09121aef 10%,#09121a55 50%,transparent 75%);padding:4px;pointer-events:none;display:none}
+#vorland-atlas .ea-spatial-city:hover .ea-spatial-name,#vorland-atlas .ea-spatial-city:focus-visible .ea-spatial-name {display:block}
+#vorland-atlas .ea-city-building-software .ea-building-roof {fill:#277e86;stroke:#a2f3f4}
+#vorland-atlas .ea-city-building-software .ea-building-window {stroke:#a2f3f4}
+#vorland-atlas .ea-map-zoom {z-index:12}
+#vorland-atlas .ea-zoom-label {pointer-events:none}
+@media(max-width:740px){
+  #vorland-atlas .ea-inspector {order:-1}
+  #vorland-atlas[data-overview=true] .ea-tool-showcase h2 {font-size:28px}
+  #vorland-atlas[data-overview=true] .ea-launch-link strong {font-size:23px}
+}
+@media(max-width:430px){
+  #vorland-atlas .ea-map,#vorland-atlas[data-island=true] .ea-map {height:460px}
+}
+@media(pointer:coarse){
+  #vorland-atlas .ea-spatial-building {width:44px;height:44px}
+  #vorland-atlas .ea-launch-context {min-height:44px}
+}
+
+
+html{color-scheme:dark;scroll-behavior:smooth}body{margin:0;background:#0b131b}a{color:inherit}button,input,select{font:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #84d9dc;outline-offset:4px}[hidden]{display:none!important}
+.skip-link{position:absolute;left:16px;top:-80px;z-index:1000;background:#f3f0e8;color:#172832;padding:14px}.skip-link:focus{top:12px}
+#vorland-atlas{max-width:1600px;margin:auto;border-radius:0;overflow:clip;min-height:100vh}
+#vorland-atlas .ea-chrome{justify-content:flex-end}#vorland-atlas .ea-nav{gap:18px}#vorland-atlas .ea-nav a{font-size:14px;text-decoration:none}#vorland-atlas .ea-nav a[aria-current=page]{color:#84d9dc}
+#vorland-atlas .ea-hero{padding:40px 40px 28px}#vorland-atlas .ea-intro p{font-size:16px;max-width:440px}#vorland-atlas .ea-position{font-size:13px;line-height:1.6}
+#vorland-atlas .ea-workspace{grid-template-columns:minmax(0,1fr) 330px;gap:28px;padding:0 32px 32px}#vorland-atlas .ea-map{height:690px}#vorland-atlas .ea-panel-desc{font-size:18px}#vorland-atlas .ea-small-copy{font-size:14px;line-height:1.65}#vorland-atlas .ea-item-meta{font-size:12px;line-height:1.5}#vorland-atlas .ea-item-name{font-size:15px}#vorland-atlas .ea-launch-purpose,#vorland-atlas .ea-launch-context,#vorland-atlas .ea-launch-history,#vorland-atlas .ea-launch-release{font-size:12px}
+#vorland-atlas .ea-tooltip{position:fixed;z-index:100;max-width:min(330px,calc(100vw - 24px));padding:12px 14px;background:#eff4ee;color:#142b35;border:1px solid #a8ccc9;border-radius:5px;font-size:14px;line-height:1.5;box-shadow:0 10px 35px #0005;pointer-events:none}
+#vorland-atlas .ea-footer{font-size:13px;line-height:1.6;padding:22px 32px}#vorland-atlas .ea-exact-title{font-size:16px;line-height:1.65}
+#vorland-atlas .page-content{max-width:1000px;margin:auto;padding:55px 32px 80px}#vorland-atlas .page-content h1{font-family:'Instrument Serif',Georgia,serif;font-size:64px;letter-spacing:-1px;line-height:1.1;margin-bottom:25px}#vorland-atlas .page-content h2{font-family:'Instrument Serif',Georgia,serif;font-size:34px;font-weight:400;margin:36px 0 18px}#vorland-atlas .page-content h3{font-size:22px;font-weight:500;margin:24px 0 12px}#vorland-atlas .page-content p,#vorland-atlas .page-content li{font-size:17px;line-height:1.8;margin-bottom:18px}#vorland-atlas .page-content a{color:#91dfe4;text-underline-offset:4px}#vorland-atlas .page-content .lede{font-size:22px;max-width:800px}
+#vorland-atlas .tool-block{padding:30px 0;border-top:1px solid #2b3d48}#vorland-atlas .tool-block h2{margin:0 0 12px}#vorland-atlas .tool-date{font-size:14px;color:#a3b4bf;margin-left:15px;font-family:'DM Sans',Arial,sans-serif}#vorland-atlas .public-link{display:inline-block;border-bottom:1px solid #84d9dc;padding:7px 0;text-decoration:none;margin-right:20px}
+#vorland-atlas details{font-size:14px;line-height:1.6;margin:16px 0}#vorland-atlas summary{cursor:pointer;padding:8px 0}#vorland-atlas .ea-inspector details a{color:#226b77}
+@media(min-width:1250px){#vorland-atlas .ea-map{height:760px}#vorland-atlas h1{font-size:110px}#vorland-atlas .ea-hero{grid-template-columns:1.4fr 1fr}}
+@media(max-width:900px){#vorland-atlas .ea-workspace{grid-template-columns:minmax(0,1fr) 290px;gap:18px;padding:0 20px 25px}#vorland-atlas .ea-nav{gap:14px}#vorland-atlas .ea-hero{padding:30px 25px}#vorland-atlas .ea-intro p{font-size:15px}}
+@media(max-width:740px){#vorland-atlas .ea-workspace{display:flex;flex-direction:column}#vorland-atlas .ea-explorer,#vorland-atlas .ea-inspector{width:100%}#vorland-atlas .ea-hero{display:block}#vorland-atlas .ea-intro{margin-top:22px}#vorland-atlas .ea-intro p{max-width:100%}#vorland-atlas .ea-map{height:570px}#vorland-atlas .page-content{padding:35px 22px 60px}#vorland-atlas .page-content h1{font-size:48px}#vorland-atlas .tool-date{display:block;margin:10px 0}#vorland-atlas .ea-nav a{font-size:13px}#vorland-atlas .ea-footer{display:block}#vorland-atlas .ea-footer a{display:inline-block;margin-top:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+#vorland-atlas .ea-coming-soon,#vorland-atlas .ea-coming-soon strong,#vorland-atlas .ea-coming-soon h2{color:#7b898f}#vorland-atlas .ea-coming-soon .ea-launch-history{color:#66767d}#vorland-atlas .ea-coming-soon .ea-launch-purpose{color:#6b797f}#vorland-atlas .page-content .ea-coming-soon{color:#a3b0b7}

@@ -1,0 +1,77 @@
+/* Publication navigation, metadata, and verified open-science resources. */
+#vorland-atlas .catalog-controls{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px;margin:32px 0 20px}
+#vorland-atlas .catalog-controls label{font-size:14px;display:grid;gap:8px;color:#c4d3d8}
+#vorland-atlas .catalog-controls input,#vorland-atlas .catalog-controls select{width:100%;min-width:0;background:#14232d;border:1px solid #425965;color:#eef1ed;border-radius:5px;padding:12px;font-size:16px}
+#vorland-atlas .catalog-downloads{font-size:14px;line-height:1.8}
+#vorland-atlas .research-record{padding:26px 0;border-bottom:1px solid #33444e}
+#vorland-atlas .research-record h2{font-family:'Instrument Serif',Georgia,serif;font-size:28px;line-height:1.28;margin:8px 0 12px}
+#vorland-atlas .research-record h2 a{color:#edf2ea;text-decoration:none}
+#vorland-atlas .research-record h2 a:hover{color:#84d9dc}
+#vorland-atlas .record-meta,#vorland-atlas .page-content .record-meta{font-size:14px;line-height:1.65;color:#aabfc9;margin:6px 0}
+#vorland-atlas .page-content .record-title{font-size:46px;line-height:1.14;margin:18px 0 24px;overflow-wrap:anywhere}
+#vorland-atlas .record-authors{font-size:16px;line-height:1.8;color:#c9d7dc}
+#vorland-atlas .record-authors strong,#vorland-atlas .record-meta strong{font-weight:500;color:#e5ede9}
+#vorland-atlas .record-note{font-size:14px;color:#d5cb94}
+#vorland-atlas .back-link{display:inline-block;margin-bottom:28px;font-size:14px}
+#vorland-atlas .metadata-grid{display:grid;grid-template-columns:180px minmax(0,1fr);gap:13px 24px;font-size:16px;line-height:1.6}
+#vorland-atlas .metadata-grid dt{color:#a3b4bf}#vorland-atlas .metadata-grid dd{margin:0;overflow-wrap:anywhere}
+#vorland-atlas .open-science{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:12px 0}
+#vorland-atlas .science-link{display:inline-flex;align-items:center;justify-content:center;position:relative;width:36px;height:36px;color:#91dfe4;border:1px solid #547980;border-radius:4px;text-decoration:none}
+#vorland-atlas .science-link img{width:19px;height:19px;filter:invert(83%) sepia(16%) saturate(764%) hue-rotate(136deg)}
+#vorland-atlas .science-link:hover,#vorland-atlas .science-link:focus-visible{background:#203945;border-color:#8bd9db}
+#vorland-atlas .science-label{display:none;position:absolute;bottom:calc(100% + 6px);left:0;width:max-content;max-width:230px;background:#edf3ee;color:#19313b;border:1px solid #8cafad;padding:8px 10px;font-size:13px;line-height:1.4;border-radius:4px;z-index:30;pointer-events:none}
+#vorland-atlas .science-link:hover .science-label,#vorland-atlas .science-link:focus-visible .science-label{display:block}
+#vorland-atlas .science-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:#b2c4cb;margin:20px 0}
+#vorland-atlas .science-legend span{display:inline-flex;align-items:center;gap:6px}
+#vorland-atlas .science-legend img{width:17px;height:17px;filter:invert(85%)}
+#vorland-atlas .ea-inspector .science-link{border-color:#91aeb0;color:#1c6470}
+#vorland-atlas .ea-inspector .science-link img{filter:invert(30%) sepia(22%) saturate(1123%) hue-rotate(143deg)}
+#vorland-atlas .ea-inspector .science-link:hover{background:#dae9e4}
+#vorland-atlas .ea-listed-work{display:flex;align-items:center;gap:12px;border-bottom:1px solid #344854}
+#vorland-atlas .ea-listed-work .ea-list-row{flex:1;border-bottom:0;min-width:0}
+#vorland-atlas .ea-listed-work .open-science{flex-shrink:0;max-width:132px;justify-content:flex-end}
+#vorland-atlas .ea-expedition-icon img{width:32px;height:32px;filter:invert(85%) sepia(12%) saturate(725%) hue-rotate(134deg)}
+#vorland-atlas .ea-planned-building{opacity:.42}
+@media(max-width:740px){#vorland-atlas .catalog-controls{grid-template-columns:1fr 1fr}#vorland-atlas .catalog-controls label:first-child{grid-column:1/-1}#vorland-atlas .page-content .record-title{font-size:34px}#vorland-atlas .metadata-grid{grid-template-columns:1fr;gap:5px}#vorland-atlas .metadata-grid dd{margin-bottom:14px}#vorland-atlas .ea-listed-work{display:block}#vorland-atlas .ea-listed-work .open-science{max-width:100%;justify-content:flex-start;margin-left:35px}}
+@media(pointer:coarse){#vorland-atlas .science-link{width:44px;height:44px}}
+
+#vorland-atlas .ea-panel-publication{padding-bottom:6px;border-bottom:1px solid #b5c1c5}
+#vorland-atlas .ea-panel-publication .ea-panel-item{border-bottom:0}
+#vorland-atlas .ea-panel-publication .open-science{margin:0 0 12px 30px}
+
+/* Primary homes and secondary connections share a publication identity. */
+#vorland-atlas .ea-building-secondary .ea-building-roof,#vorland-atlas .ea-building-secondary .ea-building-wall,#vorland-atlas .ea-building-secondary .ea-building-wall-shade{fill:#0d202b;fill-opacity:.25;stroke:#8cbec8;stroke-width:.8}
+#vorland-atlas .ea-building-secondary .ea-building-shadow,#vorland-atlas .ea-building-secondary .ea-building-window{opacity:0}
+#vorland-atlas .ea-work-highlight .ea-building-roof,#vorland-atlas .ea-work-highlight .ea-building-wall,#vorland-atlas .ea-work-highlight .ea-building-wall-shade{stroke:#fbecac;stroke-width:1.4;fill:#365965;fill-opacity:.8}
+#vorland-atlas .ea-spatial-building.ea-work-highlight{box-shadow:0 0 0 1px #ebdf98;background:#eddb8d20}
+#vorland-atlas .ea-overlap-routes{pointer-events:none}
+#vorland-atlas .ea-overlap-routes path{fill:none;stroke:#e7dc9b;stroke-width:1.4;stroke-dasharray:4 5;opacity:.85;vector-effect:non-scaling-stroke}
+#vorland-atlas .ea-overlap-routes circle{fill:none;stroke:#e7dc9b;stroke-width:1;vector-effect:non-scaling-stroke}
+#vorland-atlas .ea-route-label rect{fill:#101e29;fill-opacity:.97;stroke:#a99f72;stroke-width:1;vector-effect:non-scaling-stroke}
+#vorland-atlas .ea-route-label text{fill:#f1e8b9;font-family:"DM Sans",Arial,sans-serif;font-weight:500}
+#vorland-atlas .ea-overlap-routes .ea-route-label-leader{stroke-dasharray:none;stroke-width:1;opacity:.8}
+#vorland-atlas .ea-secondary-key{width:13px;height:13px;border:1px solid #8cbec8;display:inline-block;background:transparent}
+#vorland-atlas .ea-island-label{width:180px}
+#vorland-atlas .ea-island-label small{font-size:12px;line-height:1.5;letter-spacing:0}
+#vorland-atlas .ea-island-label:focus-visible strong{color:var(--tone)}
+#vorland-atlas .ea-ships{position:absolute;inset:0;pointer-events:none}
+#vorland-atlas .ea-ships .ea-expedition{pointer-events:auto}
+#vorland-atlas .ea-expedition strong,#vorland-atlas .ea-expedition small{font-size:12px}
+#vorland-atlas .component-record{padding:16px 0;border-top:1px solid #344854}
+#vorland-atlas .component-record summary{font-size:16px;line-height:1.6;cursor:pointer}
+#vorland-atlas .component-record .record-authors{font-size:14px}
+#vorland-atlas .component-record h3{font-size:20px;line-height:1.4;margin:12px 0}
+/* Bibliographic details stay complete in every descriptive publication view. */
+#vorland-atlas .ea-citation{display:block;margin:9px 0 3px;font-family:'DM Sans',Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;white-space:normal;overflow-wrap:anywhere}
+#vorland-atlas .ea-citation-venue,#vorland-atlas .ea-citation-authors{display:block;color:#b6cbd5}
+#vorland-atlas .ea-citation-authors{margin-top:5px}
+#vorland-atlas .ea-citation-authors strong{font-weight:600;color:#edf2ee}
+#vorland-atlas .ea-inspector .ea-citation-venue,#vorland-atlas .ea-inspector .ea-citation-authors{color:#435963}
+#vorland-atlas .ea-inspector .ea-citation-authors strong{color:#19343e}
+#vorland-atlas .ea-item-name{min-width:0;overflow-wrap:anywhere}
+#vorland-atlas .ea-list-row .ea-item-name{font-size:15px}
+#vorland-atlas .ea-listed-work{align-items:flex-start}
+#vorland-atlas .ea-map-preview{display:block;white-space:pre-line;font-size:14px;line-height:1.6;max-height:190px;overflow-y:auto;overflow-wrap:anywhere;padding:10px 6px}
+#vorland-atlas .ea-tooltip{width:440px;max-width:calc(100vw - 24px);max-height:min(440px,calc(100vh - 24px));overflow:auto;overscroll-behavior:contain;white-space:pre-line;overflow-wrap:anywhere;pointer-events:auto}
+#vorland-atlas .record-authors{overflow-wrap:anywhere}
+@media(max-width:740px){#vorland-atlas .ea-island-label{width:135px}#vorland-atlas .ea-island-label strong{font-size:21px}#vorland-atlas .ea-island-label small{font-size:12px}}

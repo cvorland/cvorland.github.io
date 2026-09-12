@@ -9,7 +9,7 @@
   const featuredWhy = window.VORLAND.featuredDescriptions;
   const themes = window.VORLAND.themes;
   const tools = [
-    {id:'lazy',title:'Lazy Scholar',since:'2013',status:'Free browser extension',description:'A free browser extension that brings research context to the paper you are reading.',detail:'Find accessible full text, collect citations, and surface contextual signals such as corrections, retractions, and post-publication discussion.',themes:['automation','reproducibility'],url:'https://chromewebstore.google.com/detail/lazy-scholar/fpbdcofpbclblalghaepibbagkkgpkak',link:'View the extension'},
+    {id:'lazy',title:'Lazy Scholar',since:'2013',status:'Free browser extension',description:'A free browser extension that brings research context to the paper you are reading.',detail:'Find accessible full text, collect citations, and surface contextual signals such as corrections, retractions, and post-publication discussion.',themes:['automation','reproducibility'],url:'https://lazyscholar.org/',link:'Visit Lazy Scholar'},
     {id:'maarvin',title:'MAARVIN.ai',since:'2020',launched:'2026',status:'Invite-only beta',description:'Inspect a finding. Follow it back to the evidence.',detail:'Statistical, design, reference, and reporting checks link to source material in scientific PDFs to support expert review.',themes:['integrity','automation'],url:'https://maarvin.ai/',link:'Explore MAARVIN.ai'},
     {id:'writing',title:'I Should Be Writing',since:'2017',status:'Writing without AI',description:'A silly little website for writing without AI.',detail:'Set a timer or a word-count goal, then do the writing yourself. Track progress or write alongside others.',themes:['automation'],url:'https://ishouldbewriting.net/',link:'Start writing'},
     {id:'metaresearch',title:'metaresearch.ai',status:'Coming soon',comingSoon:true,description:'Software to facilitate meta-research projects.',detail:'Coming soon.',themes:['automation'],url:null,link:null}
@@ -22,6 +22,7 @@
   const ships=window.VORLAND.ships||[];
   root.querySelector('.ea-key-ship').hidden=!ships.length;
   const shipsForTheme=id=>ships.filter(ship=>ship.theme===id);
+  const projectCount=count=>count+' '+(count===1?'project':'projects');
   let hoveredWork=null,hoveredTheme=null;
   /* Atlas map marks. Insert in the atlas script's existing local scope. */
 function cityMark(count, featured) {
@@ -650,7 +651,7 @@ function makeSpatialFeatures() {
       html='<h2 class="ea-panel-title">Explore the research.</h2>';
       html+=section('Research themes',themes.map(t=>'<button type="button" class="ea-panel-item" data-theme="'+t.id+'"><span class="ea-item-index">'+t.index+'</span><span class="ea-item-name">'+esc(t.title)+'<span class="ea-item-meta">'+themeCount(t.id)+'</span></span><span aria-hidden="true">↗</span></button>').join(''));
       html+='<p class="ea-small-copy">Publications and software, connected by research theme. Island areas reflect primary paper counts.</p>';
-      if(ships.length)html+=section('Work in progress','<p class="ea-small-copy">'+ships.length+' ships carry standalone conference abstracts, posters, and manually selected work. Hover or select a ship to explore its evidence.</p>'+themes.filter(t=>shipsForTheme(t.id).length).map(t=>'<button type="button" class="ea-panel-item" data-theme="'+t.id+'"><span class="ea-item-name">'+esc(t.title)+'<span class="ea-item-meta">'+shipsForTheme(t.id).length+' ships</span></span><span aria-hidden="true">↗</span></button>').join(''));
+      if(ships.length)html+=section('Work in progress','<p class="ea-small-copy">Explore ongoing research and its associated materials.</p>'+themes.filter(t=>shipsForTheme(t.id).length).map(t=>'<button type="button" class="ea-panel-item" data-theme="'+t.id+'"><span class="ea-item-name">'+esc(t.title)+'<span class="ea-item-meta">'+projectCount(shipsForTheme(t.id).length)+'</span></span><span aria-hidden="true">↗</span></button>').join(''));
     }
     panel.innerHTML=html;
   }
@@ -778,7 +779,7 @@ function makeSpatialFeatures() {
     root.querySelector('[data-mobile-action=exit]').hidden=!expanded;
     mobileCities.hidden=!t||state.view!=='map'||expanded;
     up.hidden=!d;
-    const markup=t?districtsFor(t.id).map(city=>'<button type="button" data-district="'+city.id+'" aria-pressed="'+(state.district===city.id)+'">'+esc(city.title)+'<small>'+districtCount(city)+'</small></button>').join('')+'<div class="ea-mobile-work-links"><button type="button" data-mobile-action="browse">Browse '+(d?'this theme':'island')+' in List →</button><button type="button" data-work="'+featured[t.id]+'">✦ Featured work</button>'+(shipsForTheme(t.id).length?'<button type="button" data-mobile-action="ships">Work in progress · '+shipsForTheme(t.id).length+' ships</button>':'')+'</div>':'';
+    const markup=t?districtsFor(t.id).map(city=>'<button type="button" data-district="'+city.id+'" aria-pressed="'+(state.district===city.id)+'">'+esc(city.title)+'<small>'+districtCount(city)+'</small></button>').join('')+'<div class="ea-mobile-work-links"><button type="button" data-mobile-action="browse">Browse '+(d?'this theme':'island')+' in List →</button><button type="button" data-work="'+featured[t.id]+'">✦ Featured work</button>'+(shipsForTheme(t.id).length?'<button type="button" data-mobile-action="ships">Work in progress · '+projectCount(shipsForTheme(t.id).length)+'</button>':'')+'</div>':'';
     // Preserve the activated city button between identical renders.
     if(mobileCities.dataset.markup!==markup){mobileCities.innerHTML=markup;mobileCities.dataset.markup=markup;}
   }

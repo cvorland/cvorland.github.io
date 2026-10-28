@@ -1,5 +1,1928 @@
 [
   {
+    "catalog_id": "work-313c9a9aa771",
+    "classification": {
+      "primary": "automation",
+      "themes": [
+        "automation",
+        "integrity"
+      ],
+      "subthemes": [
+        "automation-review",
+        "integrity-assessment"
+      ],
+      "applications": [
+        "Clinical trials",
+        "Large language models",
+        "Knowledge graphs"
+      ],
+      "summary": "Describes LLM-assisted tools and provenance records for producing transparent research-integrity assessments of clinical trials.",
+      "study_group": "inspect-ai",
+      "relationship": null,
+      "target_doi": null,
+      "confidence": "high",
+      "note": null,
+      "openalex_id": "https://openalex.org/W7202150568",
+      "id": "W7202150568",
+      "type": "conference-paper",
+      "classification_basis": "Editorial judgment based on the saved title and abstract, with stated exceptions; not an OpenAlex subject label.",
+      "source_urls": [
+        "https://api.openalex.org/works/W7202150568"
+      ],
+      "counting_note": "Distinct public output; count according to its output type, not automatically as a journal paper.",
+      "primarySubtheme": "automation-review",
+      "rationale": "Develops or evaluates computational assistance for research-integrity and trustworthiness assessment.",
+      "sourceUrl": "https://link.springer.com/chapter/10.1007/978-3-032-42026-8_24"
+    },
+    "related": [],
+    "open_science": [
+      {
+        "kind": "preprint",
+        "url": "https://doi.org/10.48550/arxiv.2608.07202",
+        "label": "Preprint",
+        "source_url": "https://api.openalex.org/works/W7202150568",
+        "evidence": "Public preprint record in the saved source catalogue. No final journal article identified as of retrieval.",
+        "verified_at": "2026-09-12T02:41:33.503631+00:00",
+        "verification": "source-metadata",
+        "doi": "10.48550/arxiv.2608.07202",
+        "doi_aliases": [
+          "10.48550/arxiv.2608.07202"
+        ],
+        "aliases": [
+          "https://doi.org/10.48550/arxiv.2608.07202"
+        ]
+      },
+      {
+        "kind": "data",
+        "url": "https://github.com/RIPE-Observatory/RIPE-KG/tree/v1.0.0",
+        "label": "RIPE-KG assessment data (version 1.0.0)",
+        "evidence": "The manuscript links RIPE-KG and describes 140 assessments. Retrieved version 1.0.0 assessments/assessments.json parses to 140 assessment records and 15 reviewer records, matching the described release; repository inventory and README confirm public assessment export. Current main contains a later 1.1.0 dataset, so this link selects the manuscript-associated snapshot.",
+        "files": [
+          "assessments/assessments.json"
+        ],
+        "source_url": "https://arxiv.org/html/2608.07202v1",
+        "verification": "manuscript-links-and-inspected-versioned-repository-files",
+        "verified_at": "2026-10-24T09:08:59.960565+00:00"
+      },
+      {
+        "kind": "code",
+        "url": "https://github.com/RIPE-Observatory/INSPECT-AI_open_source/tree/v1.0.0",
+        "label": "INSPECT-AI source code (version 1.0.0)",
+        "evidence": "The manuscript explicitly links INSPECT-AI version 1.0.0 LLM_GUIDE.md. The complete tagged tree contains the API, UI and assessment engine; LLM guide and packages/python/core/checks/retraction_detection.py retrieved and inspected as text without executing downloaded code.",
+        "files": [
+          "LLM_GUIDE.md",
+          "packages/python/core/checks/retraction_detection.py"
+        ],
+        "source_url": "https://arxiv.org/html/2608.07202v1",
+        "verification": "manuscript-links-and-inspected-versioned-repository-files",
+        "verified_at": "2026-10-24T09:08:59.960565+00:00"
+      },
+      {
+        "kind": "materials",
+        "url": "https://github.com/RIPE-Observatory/RIPE-O/tree/v1.0.0",
+        "label": "RIPE-O ontology (version 1.0.0)",
+        "evidence": "The manuscript explicitly identifies RIPE-O as its ontology resource. Retrieved release/1.0.0/ontology.ttl declares the RIPE-O ontology, version 1.0.0 URI and CC BY 4.0 license.",
+        "files": [
+          "release/1.0.0/ontology.ttl"
+        ],
+        "source_url": "https://arxiv.org/html/2608.07202v1",
+        "verification": "manuscript-links-and-inspected-versioned-repository-files",
+        "verified_at": "2026-10-24T09:08:59.960565+00:00"
+      }
+    ],
+    "language": null,
+    "doi": "10.1007/978-3-032-42026-8_24",
+    "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-Assisted Tools and Provenance Knowledge Graphs",
+    "authors": [
+      {
+        "name": "Milan Markovic",
+        "printed_metadata_name": "Markovic, Milan",
+        "given": "Milan",
+        "family": "Markovic",
+        "orcid": "https://orcid.org/0000-0002-5477-287X",
+        "affiliations": [
+          "Interdisciplinary Institute, University of Aberdeen",
+          "University of Aberdeen"
+        ]
+      },
+      {
+        "name": "Goutham Indukuri",
+        "printed_metadata_name": "Indukuri, Goutham",
+        "given": "Goutham",
+        "family": "Indukuri",
+        "orcid": "https://orcid.org/0009-0005-2520-5007",
+        "affiliations": [
+          "University of Aberdeen"
+        ]
+      },
+      {
+        "name": "Somayajulu Sripada",
+        "printed_metadata_name": "Sripada, Somayajulu",
+        "given": "Somayajulu",
+        "family": "Sripada",
+        "orcid": "https://orcid.org/0000-0002-5428-8383",
+        "affiliations": [
+          "University of Aberdeen"
+        ]
+      },
+      {
+        "name": "Colby J. Vorland",
+        "printed_metadata_name": "Vorland, Colby J.",
+        "given": "Colby J.",
+        "family": "Vorland",
+        "orcid": "https://orcid.org/0000-0003-4225-372X",
+        "affiliations": [
+          "Indiana University"
+        ]
+      },
+      {
+        "name": "Jack Wilkinson",
+        "printed_metadata_name": "Wilkinson, Jack",
+        "given": "Jack",
+        "family": "Wilkinson",
+        "orcid": "https://orcid.org/0000-0003-3513-4677",
+        "affiliations": [
+          "University of Manchester"
+        ]
+      },
+      {
+        "name": "Clare Robertson",
+        "printed_metadata_name": "Robertson, Clare",
+        "given": "Clare",
+        "family": "Robertson",
+        "orcid": "https://orcid.org/0000-0001-6019-6795",
+        "affiliations": [
+          "University of Aberdeen"
+        ]
+      },
+      {
+        "name": "Mark Bolland",
+        "printed_metadata_name": "Bolland, Mark",
+        "given": "Mark",
+        "family": "Bolland",
+        "orcid": "https://orcid.org/0000-0003-0465-2674",
+        "affiliations": [
+          "University of Auckland"
+        ]
+      },
+      {
+        "name": "Andrew Grey",
+        "printed_metadata_name": "Grey, Andrew",
+        "given": "Andrew",
+        "family": "Grey",
+        "orcid": "https://orcid.org/0000-0002-7803-0096",
+        "affiliations": [
+          "University of Auckland"
+        ]
+      },
+      {
+        "name": "Miriam Brazzelli",
+        "printed_metadata_name": "Brazzelli, Miriam",
+        "given": "Miriam",
+        "family": "Brazzelli",
+        "orcid": "https://orcid.org/0000-0002-7576-6751",
+        "affiliations": [
+          "University of Aberdeen"
+        ]
+      },
+      {
+        "name": "Alison Avenell",
+        "printed_metadata_name": "Avenell, Alison",
+        "given": "Alison",
+        "family": "Avenell",
+        "orcid": "https://orcid.org/0000-0003-4813-5628",
+        "affiliations": [
+          "University of Aberdeen"
+        ]
+      }
+    ],
+    "author_list_complete": true,
+    "type": "conference-paper",
+    "book_title": "The Semantic Web – ISWC 2026",
+    "series": "Lecture Notes in Computer Science",
+    "volume": "17127",
+    "pages": "511-529",
+    "publisher": "Springer, Cham",
+    "isbn": "978-3-032-42026-8",
+    "year": 2027,
+    "year_precision": "formal publisher citation/book year",
+    "publication_date": "2026-10-23",
+    "date_precision": "day",
+    "publication_date_meaning": "First Online / Published date stated on publisher page and Crossref; formal print year is2027",
+    "conference_title": "International Semantic Web Conference",
+    "conference_acronym": "ISWC",
+    "conference_year": 2026,
+    "conference_location": "Bari, Italy",
+    "conference_start": "2026-10-25",
+    "conference_end": "2026-10-29",
+    "version_status": "published full proceedings paper",
+    "date": "2026-10-23",
+    "venue": "The Semantic Web – ISWC 2026",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-42026-8_24",
+    "openalex_id": "https://openalex.org/W7202150568",
+    "status_note": "Full conference paper published online on 23 October 2026. The publisher assigns a 2027 citation year to the ISWC 2026 proceedings volume; the arXiv preprint is retained below.",
+    "versions": [],
+    "cv_ids": [],
+    "cv_numbers": [],
+    "scholar_entries": [
+      {
+        "scholar_id": "V3AGJWp-ZtQC",
+        "year": 2026,
+        "citations": null,
+        "cv_match": null,
+        "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs",
+        "title_truncated": false,
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:V3AGJWp-ZtQC",
+        "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
+        "note": "Null citations means blank display; do not infer a measured zero."
+      }
+    ],
+    "all_dois": [
+      "10.1007/978-3-032-42026-8_24",
+      "10.48550/arxiv.2608.07202"
+    ],
+    "metadata_retrieved": "2026-10-24T09:09:36.942623+00:00",
+    "sources": [
+      {
+        "name": "Publisher",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-032-42026-8_24",
+        "doi": "10.1007/978-3-032-42026-8_24",
+        "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-Assisted Tools and Provenance Knowledge Graphs",
+        "year": 2027,
+        "retrieved_at": "2026-10-24T09:09:36.942623+00:00",
+        "evidence": "Publisher chapter and arXiv manuscript have the same ten ordered authors and distinctive INSPECT-AI / RIPE-O / RIPE-KG work: 140 expert assessments of 95 randomized trial publications. Both describe the same provenance knowledge graph and permanent resource w3id.org/ripe."
+      },
+      {
+        "name": "OpenAlex",
+        "url": "https://doi.org/10.48550/arxiv.2608.07202",
+        "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs",
+        "doi": "10.48550/arxiv.2608.07202",
+        "year": 2026,
+        "openalex_id": "https://openalex.org/W7202150568"
+      },
+      {
+        "name": "OpenAlex",
+        "url": "https://arxiv.org/abs/2608.07202",
+        "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs",
+        "doi": null,
+        "year": 2026,
+        "openalex_id": "https://openalex.org/W7202231264"
+      }
+    ],
+    "source_names": [
+      "Publisher",
+      "OpenAlex",
+      "Google Scholar"
+    ],
+    "components": [
+      {
+        "catalog_id": "version-938848582034",
+        "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs",
+        "doi": "10.48550/arxiv.2608.07202",
+        "openalex_id": "https://openalex.org/W7202150568",
+        "year": 2026,
+        "date": "2026-08-07",
+        "type": "preprint",
+        "venue": "arXiv (Cornell University)",
+        "publisher": "Cornell University",
+        "volume": null,
+        "issue": null,
+        "pages": null,
+        "authors": [
+          {
+            "name": "Markovic, Milan",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0002-5477-287X",
+            "openalex_id": "https://openalex.org/A5001900239",
+            "display_name": "Milan Marković",
+            "order": 1,
+            "position": "first",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Indukuri, Goutham",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0009-0005-2520-5007",
+            "openalex_id": "https://openalex.org/A5138598861",
+            "display_name": "Goutham Indukuri",
+            "order": 2,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Sripada, Somayajulu",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5143205275",
+            "display_name": "Somayajulu Sripada",
+            "order": 3,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Vorland, Colby J.",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0003-4225-372X",
+            "openalex_id": "https://openalex.org/A5074473858",
+            "display_name": "Colby J. Vorland",
+            "order": 4,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Wilkinson, Jack",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5146353484",
+            "display_name": "Jack Wilkinson",
+            "order": 5,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Robertson, Clare",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0001-6019-6795",
+            "openalex_id": "https://openalex.org/A5005990980",
+            "display_name": "Clare Robertson",
+            "order": 6,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Bolland, Mark",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5146377196",
+            "display_name": "Mark Bolland",
+            "order": 7,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Grey, Andrew",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0002-7803-0096",
+            "openalex_id": "https://openalex.org/A5136189983",
+            "display_name": "Andrew Grey",
+            "order": 8,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Brazzelli, Miriam",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5133824367",
+            "display_name": "Miriam Brazzelli",
+            "order": 9,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Avenell, Alison",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5146344675",
+            "display_name": "Alison Avenell",
+            "order": 10,
+            "position": "last",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          }
+        ],
+        "author_list_complete": true,
+        "url": "https://doi.org/10.48550/arxiv.2608.07202",
+        "source_names": [
+          "OpenAlex",
+          "Google Scholar"
+        ],
+        "cv_numbers": [],
+        "cv_ids": [],
+        "classification": {
+          "primary": "automation",
+          "themes": [
+            "automation",
+            "integrity"
+          ],
+          "subthemes": [
+            "automation-review",
+            "integrity-assessment"
+          ],
+          "applications": [
+            "Clinical trials",
+            "Large language models",
+            "Knowledge graphs"
+          ],
+          "summary": "Describes LLM-assisted tools and provenance records for producing transparent research-integrity assessments of clinical trials.",
+          "study_group": "inspect-ai",
+          "relationship": null,
+          "target_doi": null,
+          "confidence": "high",
+          "note": null,
+          "openalex_id": "https://openalex.org/W7202150568",
+          "id": "W7202150568",
+          "type": "preprint",
+          "classification_basis": "Editorial judgment based on the saved title and abstract, with stated exceptions; not an OpenAlex subject label.",
+          "source_urls": [
+            "https://api.openalex.org/works/W7202150568"
+          ],
+          "counting_note": "Distinct public output; count according to its output type, not automatically as a journal paper.",
+          "primarySubtheme": "automation-review",
+          "rationale": "Develops or evaluates computational assistance for research-integrity and trustworthiness assessment."
+        },
+        "versions": [],
+        "related": [],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/clinical-trial",
+            "display_name": "Clinical trial",
+            "score": 0.5394999980926514
+          },
+          {
+            "id": "https://openalex.org/keywords/data-integrity",
+            "display_name": "Data integrity",
+            "score": 0.5224000215530396
+          },
+          {
+            "id": "https://openalex.org/keywords/systematic-review",
+            "display_name": "Systematic review",
+            "score": 0.5065000057220459
+          },
+          {
+            "id": "https://openalex.org/keywords/research-integrity",
+            "display_name": "Research integrity",
+            "score": 0.49399998784065247
+          },
+          {
+            "id": "https://openalex.org/keywords/ontology",
+            "display_name": "Ontology",
+            "score": 0.4562000036239624
+          },
+          {
+            "id": "https://openalex.org/keywords/clinical-research",
+            "display_name": "Clinical research",
+            "score": 0.3880999982357025
+          },
+          {
+            "id": "https://openalex.org/keywords/quality",
+            "display_name": "Quality (philosophy)",
+            "score": 0.3880000114440918
+          },
+          {
+            "id": "https://openalex.org/keywords/randomized-controlled-trial",
+            "display_name": "Randomized controlled trial",
+            "score": 0.3776000142097473
+          }
+        ],
+        "mesh": [],
+        "topics": [
+          {
+            "id": "https://openalex.org/T11986",
+            "display_name": "Scientific Computing and Data Management",
+            "score": 0.3154999911785126,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1802",
+              "display_name": "Information Systems and Management"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/18",
+              "display_name": "Decision Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T10206",
+            "display_name": "Meta-analysis and systematic reviews",
+            "score": 0.21160000562667847,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1804",
+              "display_name": "Statistics, Probability and Uncertainty"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/18",
+              "display_name": "Decision Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T11492",
+            "display_name": "Academic integrity and plagiarism",
+            "score": 0.10080000013113022,
+            "subfield": {
+              "id": "https://openalex.org/subfields/3311",
+              "display_name": "Safety Research"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/33",
+              "display_name": "Social Sciences"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          }
+        ],
+        "primary_topic": {
+          "id": "https://openalex.org/T11986",
+          "display_name": "Scientific Computing and Data Management",
+          "score": 0.3154999911785126,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1802",
+            "display_name": "Information Systems and Management"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/18",
+            "display_name": "Decision Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        "concepts": [
+          {
+            "id": "https://openalex.org/C535046627",
+            "wikidata": "https://www.wikidata.org/wiki/Q30612",
+            "display_name": "Clinical trial",
+            "level": 2,
+            "score": 0.5394999980926514
+          },
+          {
+            "id": "https://openalex.org/C33762810",
+            "wikidata": "https://www.wikidata.org/wiki/Q461671",
+            "display_name": "Data integrity",
+            "level": 2,
+            "score": 0.5224000215530396
+          },
+          {
+            "id": "https://openalex.org/C189708586",
+            "wikidata": "https://www.wikidata.org/wiki/Q1504425",
+            "display_name": "Systematic review",
+            "level": 3,
+            "score": 0.5065000057220459
+          },
+          {
+            "id": "https://openalex.org/C2994190893",
+            "wikidata": "https://www.wikidata.org/wiki/Q91248609",
+            "display_name": "Research integrity",
+            "level": 2,
+            "score": 0.49399998784065247
+          },
+          {
+            "id": "https://openalex.org/C25810664",
+            "wikidata": "https://www.wikidata.org/wiki/Q44325",
+            "display_name": "Ontology",
+            "level": 2,
+            "score": 0.4562000036239624
+          },
+          {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.4348999857902527
+          },
+          {
+            "id": "https://openalex.org/C502991105",
+            "wikidata": "https://www.wikidata.org/wiki/Q5133849",
+            "display_name": "Clinical research",
+            "level": 2,
+            "score": 0.3880999982357025
+          },
+          {
+            "id": "https://openalex.org/C2779530757",
+            "wikidata": "https://www.wikidata.org/wiki/Q1207505",
+            "display_name": "Quality (philosophy)",
+            "level": 2,
+            "score": 0.3880000114440918
+          },
+          {
+            "id": "https://openalex.org/C168563851",
+            "wikidata": "https://www.wikidata.org/wiki/Q1436668",
+            "display_name": "Randomized controlled trial",
+            "level": 2,
+            "score": 0.3776000142097473
+          },
+          {
+            "id": "https://openalex.org/C177264268",
+            "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+            "display_name": "Set (abstract data type)",
+            "level": 2,
+            "score": 0.374099999666214
+          },
+          {
+            "id": "https://openalex.org/C2522767166",
+            "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+            "display_name": "Data science",
+            "level": 1,
+            "score": 0.3628000020980835
+          },
+          {
+            "id": "https://openalex.org/C71924100",
+            "wikidata": "https://www.wikidata.org/wiki/Q11190",
+            "display_name": "Medicine",
+            "level": 0,
+            "score": 0.35120001435279846
+          },
+          {
+            "id": "https://openalex.org/C141330323",
+            "wikidata": "https://www.wikidata.org/wiki/Q2354820",
+            "display_name": "Evidence-based practice",
+            "level": 3,
+            "score": 0.3508000075817108
+          },
+          {
+            "id": "https://openalex.org/C2993209047",
+            "wikidata": "https://www.wikidata.org/wiki/Q91248609",
+            "display_name": "Scientific integrity",
+            "level": 2,
+            "score": 0.3441999852657318
+          },
+          {
+            "id": "https://openalex.org/C56739046",
+            "wikidata": "https://www.wikidata.org/wiki/Q192060",
+            "display_name": "Knowledge management",
+            "level": 1,
+            "score": 0.33160001039505005
+          },
+          {
+            "id": "https://openalex.org/C98045186",
+            "wikidata": "https://www.wikidata.org/wiki/Q205663",
+            "display_name": "Process (computing)",
+            "level": 2,
+            "score": 0.32269999384880066
+          },
+          {
+            "id": "https://openalex.org/C2779473830",
+            "wikidata": "https://www.wikidata.org/wiki/Q1540899",
+            "display_name": "MEDLINE",
+            "level": 2,
+            "score": 0.3059999942779541
+          },
+          {
+            "id": "https://openalex.org/C153997805",
+            "wikidata": "https://www.wikidata.org/wiki/Q42240",
+            "display_name": "Research ethics",
+            "level": 2,
+            "score": 0.296999990940094
+          },
+          {
+            "id": "https://openalex.org/C187191949",
+            "wikidata": "https://www.wikidata.org/wiki/Q1138496",
+            "display_name": "Profiling (computer programming)",
+            "level": 2,
+            "score": 0.2969000041484833
+          },
+          {
+            "id": "https://openalex.org/C49290038",
+            "wikidata": "https://www.wikidata.org/wiki/Q2994654",
+            "display_name": "Consolidated Standards of Reporting Trials",
+            "level": 3,
+            "score": 0.2858999967575073
+          },
+          {
+            "id": "https://openalex.org/C2779318504",
+            "wikidata": "https://www.wikidata.org/wiki/Q1438035",
+            "display_name": "Research design",
+            "level": 2,
+            "score": 0.2768999934196472
+          },
+          {
+            "id": "https://openalex.org/C124101348",
+            "wikidata": "https://www.wikidata.org/wiki/Q172491",
+            "display_name": "Data mining",
+            "level": 1,
+            "score": 0.27230000495910645
+          },
+          {
+            "id": "https://openalex.org/C130963320",
+            "wikidata": "https://www.wikidata.org/wiki/Q1401207",
+            "display_name": "Root cause analysis",
+            "level": 2,
+            "score": 0.27129998803138733
+          },
+          {
+            "id": "https://openalex.org/C19648533",
+            "wikidata": "https://www.wikidata.org/wiki/Q691640",
+            "display_name": "Evidence-based medicine",
+            "level": 3,
+            "score": 0.25220000743865967
+          }
+        ],
+        "citation_counts": {
+          "openalex": 0,
+          "retrieved_at": "2026-09-12T02:12:44.491823+00:00",
+          "counts_by_year": []
+        },
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://doi.org/10.48550/arxiv.2608.07202",
+          "any_repository_has_fulltext": true
+        },
+        "license": "cc-by",
+        "language": null,
+        "referenced_works": [],
+        "related_works": [],
+        "all_dois": [
+          "10.48550/arxiv.2608.07202"
+        ],
+        "scholar_entries": [
+          {
+            "scholar_id": "V3AGJWp-ZtQC",
+            "year": 2026,
+            "citations": null,
+            "cv_match": null,
+            "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs",
+            "title_truncated": false,
+            "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:V3AGJWp-ZtQC",
+            "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
+            "note": "Null citations means blank display; do not infer a measured zero."
+          }
+        ],
+        "open_science": [
+          {
+            "kind": "preprint",
+            "url": "https://doi.org/10.48550/arxiv.2608.07202",
+            "label": "Preprint",
+            "source_url": "https://api.openalex.org/works/W7202150568",
+            "evidence": "Public preprint record in the saved source catalogue. No final journal article identified as of retrieval.",
+            "verified_at": "2026-09-12T02:41:33.503631+00:00",
+            "verification": "source-metadata",
+            "doi": "10.48550/arxiv.2608.07202",
+            "doi_aliases": [
+              "10.48550/arxiv.2608.07202"
+            ],
+            "aliases": [
+              "https://doi.org/10.48550/arxiv.2608.07202"
+            ]
+          }
+        ],
+        "abstract_available": true,
+        "metadata_retrieved": "2026-09-11",
+        "sources": [
+          {
+            "name": "OpenAlex",
+            "url": "https://doi.org/10.48550/arxiv.2608.07202",
+            "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs",
+            "doi": "10.48550/arxiv.2608.07202",
+            "year": 2026,
+            "openalex_id": "https://openalex.org/W7202150568"
+          },
+          {
+            "name": "OpenAlex",
+            "url": "https://arxiv.org/abs/2608.07202",
+            "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs",
+            "doi": null,
+            "year": 2026,
+            "openalex_id": "https://openalex.org/W7202231264"
+          }
+        ],
+        "source_author_lists": [
+          {
+            "source": "OpenAlex",
+            "doi": "10.48550/arxiv.2608.07202",
+            "authors": [
+              {
+                "name": "Markovic, Milan",
+                "given": null,
+                "family": null,
+                "orcid": "https://orcid.org/0000-0002-5477-287X",
+                "openalex_id": "https://openalex.org/A5001900239",
+                "display_name": "Milan Marković",
+                "order": 1,
+                "position": "first",
+                "is_corresponding": false,
+                "affiliations": [],
+                "institutions": [],
+                "affiliation_mapping": [],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Indukuri, Goutham",
+                "given": null,
+                "family": null,
+                "orcid": "https://orcid.org/0009-0005-2520-5007",
+                "openalex_id": "https://openalex.org/A5138598861",
+                "display_name": "Goutham Indukuri",
+                "order": 2,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [],
+                "institutions": [],
+                "affiliation_mapping": [],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Sripada, Somayajulu",
+                "given": null,
+                "family": null,
+                "orcid": null,
+                "openalex_id": "https://openalex.org/A5143205275",
+                "display_name": "Somayajulu Sripada",
+                "order": 3,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [],
+                "institutions": [],
+                "affiliation_mapping": [],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Vorland, Colby J.",
+                "given": null,
+                "family": null,
+                "orcid": "https://orcid.org/0000-0003-4225-372X",
+                "openalex_id": "https://openalex.org/A5074473858",
+                "display_name": "Colby J. Vorland",
+                "order": 4,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [],
+                "institutions": [],
+                "affiliation_mapping": [],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Wilkinson, Jack",
+                "given": null,
+                "family": null,
+                "orcid": null,
+                "openalex_id": "https://openalex.org/A5146353484",
+                "display_name": "Jack Wilkinson",
+                "order": 5,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [],
+                "institutions": [],
+                "affiliation_mapping": [],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Robertson, Clare",
+                "given": null,
+                "family": null,
+                "orcid": "https://orcid.org/0000-0001-6019-6795",
+                "openalex_id": "https://openalex.org/A5005990980",
+                "display_name": "Clare Robertson",
+                "order": 6,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [],
+                "institutions": [],
+                "affiliation_mapping": [],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Bolland, Mark",
+                "given": null,
+                "family": null,
+                "orcid": null,
+                "openalex_id": "https://openalex.org/A5146377196",
+                "display_name": "Mark Bolland",
+                "order": 7,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [],
+                "institutions": [],
+                "affiliation_mapping": [],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Grey, Andrew",
+                "given": null,
+                "family": null,
+                "orcid": "https://orcid.org/0000-0002-7803-0096",
+                "openalex_id": "https://openalex.org/A5136189983",
+                "display_name": "Andrew Grey",
+                "order": 8,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [],
+                "institutions": [],
+                "affiliation_mapping": [],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Brazzelli, Miriam",
+                "given": null,
+                "family": null,
+                "orcid": null,
+                "openalex_id": "https://openalex.org/A5133824367",
+                "display_name": "Miriam Brazzelli",
+                "order": 9,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [],
+                "institutions": [],
+                "affiliation_mapping": [],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Avenell, Alison",
+                "given": null,
+                "family": null,
+                "orcid": null,
+                "openalex_id": "https://openalex.org/A5146344675",
+                "display_name": "Alison Avenell",
+                "order": 10,
+                "position": "last",
+                "is_corresponding": false,
+                "affiliations": [],
+                "institutions": [],
+                "affiliation_mapping": [],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              }
+            ]
+          },
+          {
+            "source": "OpenAlex",
+            "doi": null,
+            "authors": [
+              {
+                "name": "Markovic, Milan",
+                "given": null,
+                "family": null,
+                "orcid": "https://orcid.org/0000-0002-5477-287X",
+                "openalex_id": "https://openalex.org/A5001900239",
+                "display_name": "Milan Marković",
+                "order": 1,
+                "position": "first",
+                "is_corresponding": false,
+                "affiliations": [
+                  "Department of Computing Science , University of Aberdeen , UK",
+                  "Interdisciplinary Institute , University of Aberdeen , UK"
+                ],
+                "institutions": [
+                  {
+                    "id": "https://openalex.org/I195460627",
+                    "display_name": "University of Aberdeen",
+                    "ror": "https://ror.org/016476m91",
+                    "country_code": "GB",
+                    "type": "education",
+                    "lineage": [
+                      "https://openalex.org/I195460627"
+                    ]
+                  }
+                ],
+                "affiliation_mapping": [
+                  {
+                    "raw_affiliation_string": "Department of Computing Science , University of Aberdeen , UK",
+                    "institution_ids": [
+                      "https://openalex.org/I195460627"
+                    ]
+                  },
+                  {
+                    "raw_affiliation_string": "Interdisciplinary Institute , University of Aberdeen , UK",
+                    "institution_ids": [
+                      "https://openalex.org/I195460627"
+                    ]
+                  }
+                ],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Indukuri, Goutham",
+                "given": null,
+                "family": null,
+                "orcid": "https://orcid.org/0009-0005-2520-5007",
+                "openalex_id": "https://openalex.org/A5138598861",
+                "display_name": "Goutham Indukuri",
+                "order": 2,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [],
+                "institutions": [],
+                "affiliation_mapping": [],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Sripada, Somayajulu",
+                "given": null,
+                "family": null,
+                "orcid": null,
+                "openalex_id": "https://openalex.org/A5143205275",
+                "display_name": "Somayajulu Sripada",
+                "order": 3,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [
+                  "Department of Computing Science , University of Aberdeen , UK"
+                ],
+                "institutions": [
+                  {
+                    "id": "https://openalex.org/I195460627",
+                    "display_name": "University of Aberdeen",
+                    "ror": "https://ror.org/016476m91",
+                    "country_code": "GB",
+                    "type": "education",
+                    "lineage": [
+                      "https://openalex.org/I195460627"
+                    ]
+                  }
+                ],
+                "affiliation_mapping": [
+                  {
+                    "raw_affiliation_string": "Department of Computing Science , University of Aberdeen , UK",
+                    "institution_ids": [
+                      "https://openalex.org/I195460627"
+                    ]
+                  }
+                ],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Vorland, Colby J.",
+                "given": null,
+                "family": null,
+                "orcid": "https://orcid.org/0000-0003-4225-372X",
+                "openalex_id": "https://openalex.org/A5074473858",
+                "display_name": "Colby J. Vorland",
+                "order": 4,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [
+                  "Department of Epidemiology and Biostatistics , Indiana University , USA"
+                ],
+                "institutions": [
+                  {
+                    "id": "https://openalex.org/I592451",
+                    "display_name": "Indiana University",
+                    "ror": "https://ror.org/01kg8sb98",
+                    "country_code": "US",
+                    "type": "education",
+                    "lineage": [
+                      "https://openalex.org/I592451"
+                    ]
+                  }
+                ],
+                "affiliation_mapping": [
+                  {
+                    "raw_affiliation_string": "Department of Epidemiology and Biostatistics , Indiana University , USA",
+                    "institution_ids": [
+                      "https://openalex.org/I592451"
+                    ]
+                  }
+                ],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Wilkinson, Jack",
+                "given": null,
+                "family": null,
+                "orcid": null,
+                "openalex_id": "https://openalex.org/A5146353484",
+                "display_name": "Jack Wilkinson",
+                "order": 5,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [
+                  "Centre for Biostatistics , University of Manchester , UK"
+                ],
+                "institutions": [
+                  {
+                    "id": "https://openalex.org/I28407311",
+                    "display_name": "University of Manchester",
+                    "ror": "https://ror.org/027m9bs27",
+                    "country_code": "GB",
+                    "type": "education",
+                    "lineage": [
+                      "https://openalex.org/I28407311"
+                    ]
+                  }
+                ],
+                "affiliation_mapping": [
+                  {
+                    "raw_affiliation_string": "Centre for Biostatistics , University of Manchester , UK",
+                    "institution_ids": [
+                      "https://openalex.org/I28407311"
+                    ]
+                  }
+                ],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Robertson, Clare",
+                "given": null,
+                "family": null,
+                "orcid": "https://orcid.org/0000-0001-6019-6795",
+                "openalex_id": "https://openalex.org/A5005990980",
+                "display_name": "Clare Robertson",
+                "order": 6,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [
+                  "Aberdeen Centre for Evaluation , University of Aberdeen , UK"
+                ],
+                "institutions": [
+                  {
+                    "id": "https://openalex.org/I195460627",
+                    "display_name": "University of Aberdeen",
+                    "ror": "https://ror.org/016476m91",
+                    "country_code": "GB",
+                    "type": "education",
+                    "lineage": [
+                      "https://openalex.org/I195460627"
+                    ]
+                  }
+                ],
+                "affiliation_mapping": [
+                  {
+                    "raw_affiliation_string": "Aberdeen Centre for Evaluation , University of Aberdeen , UK",
+                    "institution_ids": [
+                      "https://openalex.org/I195460627"
+                    ]
+                  }
+                ],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Bolland, Mark",
+                "given": null,
+                "family": null,
+                "orcid": null,
+                "openalex_id": "https://openalex.org/A5146377196",
+                "display_name": "Mark Bolland",
+                "order": 7,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [
+                  "Department of Medicine , University of Auckland , NZ"
+                ],
+                "institutions": [
+                  {
+                    "id": "https://openalex.org/I154130895",
+                    "display_name": "University of Auckland",
+                    "ror": "https://ror.org/03b94tp07",
+                    "country_code": "NZ",
+                    "type": "education",
+                    "lineage": [
+                      "https://openalex.org/I154130895"
+                    ]
+                  }
+                ],
+                "affiliation_mapping": [
+                  {
+                    "raw_affiliation_string": "Department of Medicine , University of Auckland , NZ",
+                    "institution_ids": [
+                      "https://openalex.org/I154130895"
+                    ]
+                  }
+                ],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Grey, Andrew",
+                "given": null,
+                "family": null,
+                "orcid": "https://orcid.org/0000-0002-7803-0096",
+                "openalex_id": "https://openalex.org/A5136189983",
+                "display_name": "Andrew Grey",
+                "order": 8,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [
+                  "Department of Medicine , University of Auckland , NZ"
+                ],
+                "institutions": [
+                  {
+                    "id": "https://openalex.org/I154130895",
+                    "display_name": "University of Auckland",
+                    "ror": "https://ror.org/03b94tp07",
+                    "country_code": "NZ",
+                    "type": "education",
+                    "lineage": [
+                      "https://openalex.org/I154130895"
+                    ]
+                  }
+                ],
+                "affiliation_mapping": [
+                  {
+                    "raw_affiliation_string": "Department of Medicine , University of Auckland , NZ",
+                    "institution_ids": [
+                      "https://openalex.org/I154130895"
+                    ]
+                  }
+                ],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Brazzelli, Miriam",
+                "given": null,
+                "family": null,
+                "orcid": null,
+                "openalex_id": "https://openalex.org/A5133824367",
+                "display_name": "Miriam Brazzelli",
+                "order": 9,
+                "position": "middle",
+                "is_corresponding": false,
+                "affiliations": [
+                  "Aberdeen Centre for Evaluation , University of Aberdeen , UK"
+                ],
+                "institutions": [
+                  {
+                    "id": "https://openalex.org/I195460627",
+                    "display_name": "University of Aberdeen",
+                    "ror": "https://ror.org/016476m91",
+                    "country_code": "GB",
+                    "type": "education",
+                    "lineage": [
+                      "https://openalex.org/I195460627"
+                    ]
+                  }
+                ],
+                "affiliation_mapping": [
+                  {
+                    "raw_affiliation_string": "Aberdeen Centre for Evaluation , University of Aberdeen , UK",
+                    "institution_ids": [
+                      "https://openalex.org/I195460627"
+                    ]
+                  }
+                ],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              },
+              {
+                "name": "Avenell, Alison",
+                "given": null,
+                "family": null,
+                "orcid": null,
+                "openalex_id": "https://openalex.org/A5146344675",
+                "display_name": "Alison Avenell",
+                "order": 10,
+                "position": "last",
+                "is_corresponding": false,
+                "affiliations": [
+                  "Aberdeen Centre for Evaluation , University of Aberdeen , UK"
+                ],
+                "institutions": [
+                  {
+                    "id": "https://openalex.org/I195460627",
+                    "display_name": "University of Aberdeen",
+                    "ror": "https://ror.org/016476m91",
+                    "country_code": "GB",
+                    "type": "education",
+                    "lineage": [
+                      "https://openalex.org/I195460627"
+                    ]
+                  }
+                ],
+                "affiliation_mapping": [
+                  {
+                    "raw_affiliation_string": "Aberdeen Centre for Evaluation , University of Aberdeen , UK",
+                    "institution_ids": [
+                      "https://openalex.org/I195460627"
+                    ]
+                  }
+                ],
+                "raw_orcid": null,
+                "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+              }
+            ]
+          }
+        ],
+        "component_role": "preprint"
+      }
+    ],
+    "merged_catalog_ids": [
+      "work-313c9a9aa771",
+      "version-938848582034"
+    ],
+    "source_author_lists": [
+      {
+        "source": "OpenAlex",
+        "doi": "10.48550/arxiv.2608.07202",
+        "authors": [
+          {
+            "name": "Markovic, Milan",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0002-5477-287X",
+            "openalex_id": "https://openalex.org/A5001900239",
+            "display_name": "Milan Marković",
+            "order": 1,
+            "position": "first",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Indukuri, Goutham",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0009-0005-2520-5007",
+            "openalex_id": "https://openalex.org/A5138598861",
+            "display_name": "Goutham Indukuri",
+            "order": 2,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Sripada, Somayajulu",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5143205275",
+            "display_name": "Somayajulu Sripada",
+            "order": 3,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Vorland, Colby J.",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0003-4225-372X",
+            "openalex_id": "https://openalex.org/A5074473858",
+            "display_name": "Colby J. Vorland",
+            "order": 4,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Wilkinson, Jack",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5146353484",
+            "display_name": "Jack Wilkinson",
+            "order": 5,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Robertson, Clare",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0001-6019-6795",
+            "openalex_id": "https://openalex.org/A5005990980",
+            "display_name": "Clare Robertson",
+            "order": 6,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Bolland, Mark",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5146377196",
+            "display_name": "Mark Bolland",
+            "order": 7,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Grey, Andrew",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0002-7803-0096",
+            "openalex_id": "https://openalex.org/A5136189983",
+            "display_name": "Andrew Grey",
+            "order": 8,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Brazzelli, Miriam",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5133824367",
+            "display_name": "Miriam Brazzelli",
+            "order": 9,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Avenell, Alison",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5146344675",
+            "display_name": "Alison Avenell",
+            "order": 10,
+            "position": "last",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          }
+        ]
+      },
+      {
+        "source": "OpenAlex",
+        "doi": null,
+        "authors": [
+          {
+            "name": "Markovic, Milan",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0002-5477-287X",
+            "openalex_id": "https://openalex.org/A5001900239",
+            "display_name": "Milan Marković",
+            "order": 1,
+            "position": "first",
+            "is_corresponding": false,
+            "affiliations": [
+              "Department of Computing Science , University of Aberdeen , UK",
+              "Interdisciplinary Institute , University of Aberdeen , UK"
+            ],
+            "institutions": [
+              {
+                "id": "https://openalex.org/I195460627",
+                "display_name": "University of Aberdeen",
+                "ror": "https://ror.org/016476m91",
+                "country_code": "GB",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I195460627"
+                ]
+              }
+            ],
+            "affiliation_mapping": [
+              {
+                "raw_affiliation_string": "Department of Computing Science , University of Aberdeen , UK",
+                "institution_ids": [
+                  "https://openalex.org/I195460627"
+                ]
+              },
+              {
+                "raw_affiliation_string": "Interdisciplinary Institute , University of Aberdeen , UK",
+                "institution_ids": [
+                  "https://openalex.org/I195460627"
+                ]
+              }
+            ],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Indukuri, Goutham",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0009-0005-2520-5007",
+            "openalex_id": "https://openalex.org/A5138598861",
+            "display_name": "Goutham Indukuri",
+            "order": 2,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [],
+            "institutions": [],
+            "affiliation_mapping": [],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Sripada, Somayajulu",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5143205275",
+            "display_name": "Somayajulu Sripada",
+            "order": 3,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [
+              "Department of Computing Science , University of Aberdeen , UK"
+            ],
+            "institutions": [
+              {
+                "id": "https://openalex.org/I195460627",
+                "display_name": "University of Aberdeen",
+                "ror": "https://ror.org/016476m91",
+                "country_code": "GB",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I195460627"
+                ]
+              }
+            ],
+            "affiliation_mapping": [
+              {
+                "raw_affiliation_string": "Department of Computing Science , University of Aberdeen , UK",
+                "institution_ids": [
+                  "https://openalex.org/I195460627"
+                ]
+              }
+            ],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Vorland, Colby J.",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0003-4225-372X",
+            "openalex_id": "https://openalex.org/A5074473858",
+            "display_name": "Colby J. Vorland",
+            "order": 4,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [
+              "Department of Epidemiology and Biostatistics , Indiana University , USA"
+            ],
+            "institutions": [
+              {
+                "id": "https://openalex.org/I592451",
+                "display_name": "Indiana University",
+                "ror": "https://ror.org/01kg8sb98",
+                "country_code": "US",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I592451"
+                ]
+              }
+            ],
+            "affiliation_mapping": [
+              {
+                "raw_affiliation_string": "Department of Epidemiology and Biostatistics , Indiana University , USA",
+                "institution_ids": [
+                  "https://openalex.org/I592451"
+                ]
+              }
+            ],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Wilkinson, Jack",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5146353484",
+            "display_name": "Jack Wilkinson",
+            "order": 5,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [
+              "Centre for Biostatistics , University of Manchester , UK"
+            ],
+            "institutions": [
+              {
+                "id": "https://openalex.org/I28407311",
+                "display_name": "University of Manchester",
+                "ror": "https://ror.org/027m9bs27",
+                "country_code": "GB",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I28407311"
+                ]
+              }
+            ],
+            "affiliation_mapping": [
+              {
+                "raw_affiliation_string": "Centre for Biostatistics , University of Manchester , UK",
+                "institution_ids": [
+                  "https://openalex.org/I28407311"
+                ]
+              }
+            ],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Robertson, Clare",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0001-6019-6795",
+            "openalex_id": "https://openalex.org/A5005990980",
+            "display_name": "Clare Robertson",
+            "order": 6,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [
+              "Aberdeen Centre for Evaluation , University of Aberdeen , UK"
+            ],
+            "institutions": [
+              {
+                "id": "https://openalex.org/I195460627",
+                "display_name": "University of Aberdeen",
+                "ror": "https://ror.org/016476m91",
+                "country_code": "GB",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I195460627"
+                ]
+              }
+            ],
+            "affiliation_mapping": [
+              {
+                "raw_affiliation_string": "Aberdeen Centre for Evaluation , University of Aberdeen , UK",
+                "institution_ids": [
+                  "https://openalex.org/I195460627"
+                ]
+              }
+            ],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Bolland, Mark",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5146377196",
+            "display_name": "Mark Bolland",
+            "order": 7,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [
+              "Department of Medicine , University of Auckland , NZ"
+            ],
+            "institutions": [
+              {
+                "id": "https://openalex.org/I154130895",
+                "display_name": "University of Auckland",
+                "ror": "https://ror.org/03b94tp07",
+                "country_code": "NZ",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I154130895"
+                ]
+              }
+            ],
+            "affiliation_mapping": [
+              {
+                "raw_affiliation_string": "Department of Medicine , University of Auckland , NZ",
+                "institution_ids": [
+                  "https://openalex.org/I154130895"
+                ]
+              }
+            ],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Grey, Andrew",
+            "given": null,
+            "family": null,
+            "orcid": "https://orcid.org/0000-0002-7803-0096",
+            "openalex_id": "https://openalex.org/A5136189983",
+            "display_name": "Andrew Grey",
+            "order": 8,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [
+              "Department of Medicine , University of Auckland , NZ"
+            ],
+            "institutions": [
+              {
+                "id": "https://openalex.org/I154130895",
+                "display_name": "University of Auckland",
+                "ror": "https://ror.org/03b94tp07",
+                "country_code": "NZ",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I154130895"
+                ]
+              }
+            ],
+            "affiliation_mapping": [
+              {
+                "raw_affiliation_string": "Department of Medicine , University of Auckland , NZ",
+                "institution_ids": [
+                  "https://openalex.org/I154130895"
+                ]
+              }
+            ],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Brazzelli, Miriam",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5133824367",
+            "display_name": "Miriam Brazzelli",
+            "order": 9,
+            "position": "middle",
+            "is_corresponding": false,
+            "affiliations": [
+              "Aberdeen Centre for Evaluation , University of Aberdeen , UK"
+            ],
+            "institutions": [
+              {
+                "id": "https://openalex.org/I195460627",
+                "display_name": "University of Aberdeen",
+                "ror": "https://ror.org/016476m91",
+                "country_code": "GB",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I195460627"
+                ]
+              }
+            ],
+            "affiliation_mapping": [
+              {
+                "raw_affiliation_string": "Aberdeen Centre for Evaluation , University of Aberdeen , UK",
+                "institution_ids": [
+                  "https://openalex.org/I195460627"
+                ]
+              }
+            ],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          },
+          {
+            "name": "Avenell, Alison",
+            "given": null,
+            "family": null,
+            "orcid": null,
+            "openalex_id": "https://openalex.org/A5146344675",
+            "display_name": "Alison Avenell",
+            "order": 10,
+            "position": "last",
+            "is_corresponding": false,
+            "affiliations": [
+              "Aberdeen Centre for Evaluation , University of Aberdeen , UK"
+            ],
+            "institutions": [
+              {
+                "id": "https://openalex.org/I195460627",
+                "display_name": "University of Aberdeen",
+                "ror": "https://ror.org/016476m91",
+                "country_code": "GB",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I195460627"
+                ]
+              }
+            ],
+            "affiliation_mapping": [
+              {
+                "raw_affiliation_string": "Aberdeen Centre for Evaluation , University of Aberdeen , UK",
+                "institution_ids": [
+                  "https://openalex.org/I195460627"
+                ]
+              }
+            ],
+            "raw_orcid": null,
+            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
+          }
+        ]
+      }
+    ],
+    "id": "inspect",
+    "typeLabel": "Conference paper",
+    "primary": "automation",
+    "themes": [
+      "automation",
+      "integrity"
+    ],
+    "subthemes": [
+      "automation-review",
+      "integrity-assessment"
+    ],
+    "tags": [
+      "Clinical trials",
+      "Large language models",
+      "Knowledge graphs"
+    ],
+    "summary": "Describes LLM-assisted tools and provenance records for producing transparent research-integrity assessments of clinical trials.",
+    "isPaper": true,
+    "active": true,
+    "preprint": false,
+    "status": "Published",
+    "short": "Keeping integrity checks inspectable",
+    "takeaway": "Describes LLM-assisted tools and provenance records for producing transparent research-integrity assessments of clinical trials.",
+    "venueLabel": "The Semantic Web – ISWC 2026",
+    "isShip": false,
+    "componentCount": 1,
+    "role": "Coauthor",
+    "n": "001"
+  },
+  {
     "catalog_id": "work-7fd8dae2884c",
     "title": "\"Shaking the ladder\" reveals how analytic choices can influence associations in nutrition epidemiology: beef intake and coronary heart disease as a case study",
     "doi": "10.1080/10408398.2025.2525459",
@@ -6881,7 +8804,7 @@
     "isShip": false,
     "componentCount": 5,
     "role": "First author",
-    "n": "001"
+    "n": "002"
   },
   {
     "catalog_id": "work-0905f98d201a",
@@ -10098,7 +12021,7 @@
     "isShip": true,
     "componentCount": 2,
     "role": "Coauthor",
-    "n": "002"
+    "n": "003"
   },
   {
     "catalog_id": "work-433481a9a119",
@@ -11834,7 +13757,7 @@
     "isShip": false,
     "componentCount": 2,
     "role": "First author",
-    "n": "003"
+    "n": "004"
   },
   {
     "catalog_id": "work-88e37055e2fc",
@@ -16545,7 +18468,7 @@
     "isShip": false,
     "componentCount": 3,
     "role": "Coauthor",
-    "n": "004"
+    "n": "005"
   },
   {
     "catalog_id": "work-a1c585aa98d3",
@@ -17285,7 +19208,19 @@
     "all_dois": [
       "10.31222/osf.io/7u58q_v1"
     ],
-    "scholar_entries": [],
+    "scholar_entries": [
+      {
+        "scholar_id": "wbdj-CoPYUoC",
+        "title": "Assessments of Credibility in the Social and Behavioral Sciences",
+        "year": 2026,
+        "citations": 3,
+        "title_truncated": false,
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&sortby=pubdate&citation_for_view=RBKn7cAAAAAJ:wbdj-CoPYUoC",
+        "source": "Google Scholar exact profile, complete 93-row browser review on 2026-10-24",
+        "retrieved_at": "2026-10-24T09:09:36.942623+00:00",
+        "note": "Detail page links directly to the existing MetaArXiv preprint 7u58q. The abbreviated Scholar byline is not substituted for the manuscript byline."
+      }
+    ],
     "open_science": [
       {
         "kind": "preprint",
@@ -21919,1129 +23854,6 @@
     "short": "Assessments of Credibility in the Social and Behavioral Sciences",
     "takeaway": "Examines ways to assess the credibility, repeatability, and trustworthiness of findings in the social and behavioral sciences.",
     "venueLabel": "Open Science Framework",
-    "isShip": false,
-    "componentCount": 0,
-    "role": "Coauthor",
-    "n": "005"
-  },
-  {
-    "catalog_id": "work-313c9a9aa771",
-    "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs",
-    "doi": "10.48550/arxiv.2608.07202",
-    "openalex_id": "https://openalex.org/W7202150568",
-    "year": 2026,
-    "date": "2026-08-07",
-    "type": "preprint",
-    "venue": "arXiv (Cornell University)",
-    "publisher": "Cornell University",
-    "volume": null,
-    "issue": null,
-    "pages": null,
-    "authors": [
-      {
-        "name": "Markovic, Milan",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0002-5477-287X",
-        "openalex_id": "https://openalex.org/A5001900239",
-        "display_name": "Milan Marković",
-        "order": 1,
-        "position": "first",
-        "is_corresponding": false,
-        "affiliations": [],
-        "institutions": [],
-        "affiliation_mapping": [],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Indukuri, Goutham",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0009-0005-2520-5007",
-        "openalex_id": "https://openalex.org/A5138598861",
-        "display_name": "Goutham Indukuri",
-        "order": 2,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [],
-        "institutions": [],
-        "affiliation_mapping": [],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Sripada, Somayajulu",
-        "given": null,
-        "family": null,
-        "orcid": null,
-        "openalex_id": "https://openalex.org/A5143205275",
-        "display_name": "Somayajulu Sripada",
-        "order": 3,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [],
-        "institutions": [],
-        "affiliation_mapping": [],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Vorland, Colby J.",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0003-4225-372X",
-        "openalex_id": "https://openalex.org/A5074473858",
-        "display_name": "Colby J. Vorland",
-        "order": 4,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [],
-        "institutions": [],
-        "affiliation_mapping": [],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Wilkinson, Jack",
-        "given": null,
-        "family": null,
-        "orcid": null,
-        "openalex_id": "https://openalex.org/A5146353484",
-        "display_name": "Jack Wilkinson",
-        "order": 5,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [],
-        "institutions": [],
-        "affiliation_mapping": [],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Robertson, Clare",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0001-6019-6795",
-        "openalex_id": "https://openalex.org/A5005990980",
-        "display_name": "Clare Robertson",
-        "order": 6,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [],
-        "institutions": [],
-        "affiliation_mapping": [],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Bolland, Mark",
-        "given": null,
-        "family": null,
-        "orcid": null,
-        "openalex_id": "https://openalex.org/A5146377196",
-        "display_name": "Mark Bolland",
-        "order": 7,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [],
-        "institutions": [],
-        "affiliation_mapping": [],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Grey, Andrew",
-        "given": null,
-        "family": null,
-        "orcid": "https://orcid.org/0000-0002-7803-0096",
-        "openalex_id": "https://openalex.org/A5136189983",
-        "display_name": "Andrew Grey",
-        "order": 8,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [],
-        "institutions": [],
-        "affiliation_mapping": [],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Brazzelli, Miriam",
-        "given": null,
-        "family": null,
-        "orcid": null,
-        "openalex_id": "https://openalex.org/A5133824367",
-        "display_name": "Miriam Brazzelli",
-        "order": 9,
-        "position": "middle",
-        "is_corresponding": false,
-        "affiliations": [],
-        "institutions": [],
-        "affiliation_mapping": [],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      },
-      {
-        "name": "Avenell, Alison",
-        "given": null,
-        "family": null,
-        "orcid": null,
-        "openalex_id": "https://openalex.org/A5146344675",
-        "display_name": "Alison Avenell",
-        "order": 10,
-        "position": "last",
-        "is_corresponding": false,
-        "affiliations": [],
-        "institutions": [],
-        "affiliation_mapping": [],
-        "raw_orcid": null,
-        "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-      }
-    ],
-    "author_list_complete": true,
-    "url": "https://doi.org/10.48550/arxiv.2608.07202",
-    "source_names": [
-      "OpenAlex",
-      "Google Scholar"
-    ],
-    "cv_numbers": [],
-    "cv_ids": [],
-    "classification": {
-      "primary": "automation",
-      "themes": [
-        "automation",
-        "integrity"
-      ],
-      "subthemes": [
-        "automation-review",
-        "integrity-assessment"
-      ],
-      "applications": [
-        "Clinical trials",
-        "Large language models",
-        "Knowledge graphs"
-      ],
-      "summary": "Describes LLM-assisted tools and provenance records for producing transparent research-integrity assessments of clinical trials.",
-      "study_group": "inspect-ai",
-      "relationship": null,
-      "target_doi": null,
-      "confidence": "high",
-      "note": null,
-      "openalex_id": "https://openalex.org/W7202150568",
-      "id": "W7202150568",
-      "type": "preprint",
-      "classification_basis": "Editorial judgment based on the saved title and abstract, with stated exceptions; not an OpenAlex subject label.",
-      "source_urls": [
-        "https://api.openalex.org/works/W7202150568"
-      ],
-      "counting_note": "Distinct public output; count according to its output type, not automatically as a journal paper.",
-      "primarySubtheme": "automation-review",
-      "rationale": "Develops or evaluates computational assistance for research-integrity and trustworthiness assessment."
-    },
-    "versions": [],
-    "related": [],
-    "keywords": [
-      {
-        "id": "https://openalex.org/keywords/clinical-trial",
-        "display_name": "Clinical trial",
-        "score": 0.5394999980926514
-      },
-      {
-        "id": "https://openalex.org/keywords/data-integrity",
-        "display_name": "Data integrity",
-        "score": 0.5224000215530396
-      },
-      {
-        "id": "https://openalex.org/keywords/systematic-review",
-        "display_name": "Systematic review",
-        "score": 0.5065000057220459
-      },
-      {
-        "id": "https://openalex.org/keywords/research-integrity",
-        "display_name": "Research integrity",
-        "score": 0.49399998784065247
-      },
-      {
-        "id": "https://openalex.org/keywords/ontology",
-        "display_name": "Ontology",
-        "score": 0.4562000036239624
-      },
-      {
-        "id": "https://openalex.org/keywords/clinical-research",
-        "display_name": "Clinical research",
-        "score": 0.3880999982357025
-      },
-      {
-        "id": "https://openalex.org/keywords/quality",
-        "display_name": "Quality (philosophy)",
-        "score": 0.3880000114440918
-      },
-      {
-        "id": "https://openalex.org/keywords/randomized-controlled-trial",
-        "display_name": "Randomized controlled trial",
-        "score": 0.3776000142097473
-      }
-    ],
-    "mesh": [],
-    "topics": [
-      {
-        "id": "https://openalex.org/T11986",
-        "display_name": "Scientific Computing and Data Management",
-        "score": 0.3154999911785126,
-        "subfield": {
-          "id": "https://openalex.org/subfields/1802",
-          "display_name": "Information Systems and Management"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/18",
-          "display_name": "Decision Sciences"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/2",
-          "display_name": "Social Sciences"
-        }
-      },
-      {
-        "id": "https://openalex.org/T10206",
-        "display_name": "Meta-analysis and systematic reviews",
-        "score": 0.21160000562667847,
-        "subfield": {
-          "id": "https://openalex.org/subfields/1804",
-          "display_name": "Statistics, Probability and Uncertainty"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/18",
-          "display_name": "Decision Sciences"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/2",
-          "display_name": "Social Sciences"
-        }
-      },
-      {
-        "id": "https://openalex.org/T11492",
-        "display_name": "Academic integrity and plagiarism",
-        "score": 0.10080000013113022,
-        "subfield": {
-          "id": "https://openalex.org/subfields/3311",
-          "display_name": "Safety Research"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/33",
-          "display_name": "Social Sciences"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/2",
-          "display_name": "Social Sciences"
-        }
-      }
-    ],
-    "primary_topic": {
-      "id": "https://openalex.org/T11986",
-      "display_name": "Scientific Computing and Data Management",
-      "score": 0.3154999911785126,
-      "subfield": {
-        "id": "https://openalex.org/subfields/1802",
-        "display_name": "Information Systems and Management"
-      },
-      "field": {
-        "id": "https://openalex.org/fields/18",
-        "display_name": "Decision Sciences"
-      },
-      "domain": {
-        "id": "https://openalex.org/domains/2",
-        "display_name": "Social Sciences"
-      }
-    },
-    "concepts": [
-      {
-        "id": "https://openalex.org/C535046627",
-        "wikidata": "https://www.wikidata.org/wiki/Q30612",
-        "display_name": "Clinical trial",
-        "level": 2,
-        "score": 0.5394999980926514
-      },
-      {
-        "id": "https://openalex.org/C33762810",
-        "wikidata": "https://www.wikidata.org/wiki/Q461671",
-        "display_name": "Data integrity",
-        "level": 2,
-        "score": 0.5224000215530396
-      },
-      {
-        "id": "https://openalex.org/C189708586",
-        "wikidata": "https://www.wikidata.org/wiki/Q1504425",
-        "display_name": "Systematic review",
-        "level": 3,
-        "score": 0.5065000057220459
-      },
-      {
-        "id": "https://openalex.org/C2994190893",
-        "wikidata": "https://www.wikidata.org/wiki/Q91248609",
-        "display_name": "Research integrity",
-        "level": 2,
-        "score": 0.49399998784065247
-      },
-      {
-        "id": "https://openalex.org/C25810664",
-        "wikidata": "https://www.wikidata.org/wiki/Q44325",
-        "display_name": "Ontology",
-        "level": 2,
-        "score": 0.4562000036239624
-      },
-      {
-        "id": "https://openalex.org/C41008148",
-        "wikidata": "https://www.wikidata.org/wiki/Q21198",
-        "display_name": "Computer science",
-        "level": 0,
-        "score": 0.4348999857902527
-      },
-      {
-        "id": "https://openalex.org/C502991105",
-        "wikidata": "https://www.wikidata.org/wiki/Q5133849",
-        "display_name": "Clinical research",
-        "level": 2,
-        "score": 0.3880999982357025
-      },
-      {
-        "id": "https://openalex.org/C2779530757",
-        "wikidata": "https://www.wikidata.org/wiki/Q1207505",
-        "display_name": "Quality (philosophy)",
-        "level": 2,
-        "score": 0.3880000114440918
-      },
-      {
-        "id": "https://openalex.org/C168563851",
-        "wikidata": "https://www.wikidata.org/wiki/Q1436668",
-        "display_name": "Randomized controlled trial",
-        "level": 2,
-        "score": 0.3776000142097473
-      },
-      {
-        "id": "https://openalex.org/C177264268",
-        "wikidata": "https://www.wikidata.org/wiki/Q1514741",
-        "display_name": "Set (abstract data type)",
-        "level": 2,
-        "score": 0.374099999666214
-      },
-      {
-        "id": "https://openalex.org/C2522767166",
-        "wikidata": "https://www.wikidata.org/wiki/Q2374463",
-        "display_name": "Data science",
-        "level": 1,
-        "score": 0.3628000020980835
-      },
-      {
-        "id": "https://openalex.org/C71924100",
-        "wikidata": "https://www.wikidata.org/wiki/Q11190",
-        "display_name": "Medicine",
-        "level": 0,
-        "score": 0.35120001435279846
-      },
-      {
-        "id": "https://openalex.org/C141330323",
-        "wikidata": "https://www.wikidata.org/wiki/Q2354820",
-        "display_name": "Evidence-based practice",
-        "level": 3,
-        "score": 0.3508000075817108
-      },
-      {
-        "id": "https://openalex.org/C2993209047",
-        "wikidata": "https://www.wikidata.org/wiki/Q91248609",
-        "display_name": "Scientific integrity",
-        "level": 2,
-        "score": 0.3441999852657318
-      },
-      {
-        "id": "https://openalex.org/C56739046",
-        "wikidata": "https://www.wikidata.org/wiki/Q192060",
-        "display_name": "Knowledge management",
-        "level": 1,
-        "score": 0.33160001039505005
-      },
-      {
-        "id": "https://openalex.org/C98045186",
-        "wikidata": "https://www.wikidata.org/wiki/Q205663",
-        "display_name": "Process (computing)",
-        "level": 2,
-        "score": 0.32269999384880066
-      },
-      {
-        "id": "https://openalex.org/C2779473830",
-        "wikidata": "https://www.wikidata.org/wiki/Q1540899",
-        "display_name": "MEDLINE",
-        "level": 2,
-        "score": 0.3059999942779541
-      },
-      {
-        "id": "https://openalex.org/C153997805",
-        "wikidata": "https://www.wikidata.org/wiki/Q42240",
-        "display_name": "Research ethics",
-        "level": 2,
-        "score": 0.296999990940094
-      },
-      {
-        "id": "https://openalex.org/C187191949",
-        "wikidata": "https://www.wikidata.org/wiki/Q1138496",
-        "display_name": "Profiling (computer programming)",
-        "level": 2,
-        "score": 0.2969000041484833
-      },
-      {
-        "id": "https://openalex.org/C49290038",
-        "wikidata": "https://www.wikidata.org/wiki/Q2994654",
-        "display_name": "Consolidated Standards of Reporting Trials",
-        "level": 3,
-        "score": 0.2858999967575073
-      },
-      {
-        "id": "https://openalex.org/C2779318504",
-        "wikidata": "https://www.wikidata.org/wiki/Q1438035",
-        "display_name": "Research design",
-        "level": 2,
-        "score": 0.2768999934196472
-      },
-      {
-        "id": "https://openalex.org/C124101348",
-        "wikidata": "https://www.wikidata.org/wiki/Q172491",
-        "display_name": "Data mining",
-        "level": 1,
-        "score": 0.27230000495910645
-      },
-      {
-        "id": "https://openalex.org/C130963320",
-        "wikidata": "https://www.wikidata.org/wiki/Q1401207",
-        "display_name": "Root cause analysis",
-        "level": 2,
-        "score": 0.27129998803138733
-      },
-      {
-        "id": "https://openalex.org/C19648533",
-        "wikidata": "https://www.wikidata.org/wiki/Q691640",
-        "display_name": "Evidence-based medicine",
-        "level": 3,
-        "score": 0.25220000743865967
-      }
-    ],
-    "citation_counts": {
-      "openalex": 0,
-      "retrieved_at": "2026-09-12T02:12:44.491823+00:00",
-      "counts_by_year": []
-    },
-    "open_access": {
-      "is_oa": true,
-      "oa_status": "green",
-      "oa_url": "https://doi.org/10.48550/arxiv.2608.07202",
-      "any_repository_has_fulltext": true
-    },
-    "license": "cc-by",
-    "language": null,
-    "referenced_works": [],
-    "related_works": [],
-    "all_dois": [
-      "10.48550/arxiv.2608.07202"
-    ],
-    "scholar_entries": [
-      {
-        "scholar_id": "V3AGJWp-ZtQC",
-        "year": 2026,
-        "citations": null,
-        "cv_match": null,
-        "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs",
-        "title_truncated": false,
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RBKn7cAAAAAJ&cstart=20&pagesize=80&citation_for_view=RBKn7cAAAAAJ:V3AGJWp-ZtQC",
-        "source": "Google Scholar, read through user-authorized Chrome session 2026-09-11 America/Indianapolis",
-        "note": "Null citations means blank display; do not infer a measured zero."
-      }
-    ],
-    "open_science": [
-      {
-        "kind": "preprint",
-        "url": "https://doi.org/10.48550/arxiv.2608.07202",
-        "label": "Preprint",
-        "source_url": "https://api.openalex.org/works/W7202150568",
-        "evidence": "Public preprint record in the saved source catalogue. No final journal article identified as of retrieval.",
-        "verified_at": "2026-09-12T02:41:33.503631+00:00",
-        "verification": "source-metadata",
-        "doi": "10.48550/arxiv.2608.07202",
-        "doi_aliases": [
-          "10.48550/arxiv.2608.07202"
-        ],
-        "aliases": [
-          "https://doi.org/10.48550/arxiv.2608.07202"
-        ]
-      }
-    ],
-    "abstract_available": true,
-    "metadata_retrieved": "2026-09-11",
-    "sources": [
-      {
-        "name": "OpenAlex",
-        "url": "https://doi.org/10.48550/arxiv.2608.07202",
-        "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs",
-        "doi": "10.48550/arxiv.2608.07202",
-        "year": 2026,
-        "openalex_id": "https://openalex.org/W7202150568"
-      },
-      {
-        "name": "OpenAlex",
-        "url": "https://arxiv.org/abs/2608.07202",
-        "title": "Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs",
-        "doi": null,
-        "year": 2026,
-        "openalex_id": "https://openalex.org/W7202231264"
-      }
-    ],
-    "source_author_lists": [
-      {
-        "source": "OpenAlex",
-        "doi": "10.48550/arxiv.2608.07202",
-        "authors": [
-          {
-            "name": "Markovic, Milan",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0002-5477-287X",
-            "openalex_id": "https://openalex.org/A5001900239",
-            "display_name": "Milan Marković",
-            "order": 1,
-            "position": "first",
-            "is_corresponding": false,
-            "affiliations": [],
-            "institutions": [],
-            "affiliation_mapping": [],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Indukuri, Goutham",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0009-0005-2520-5007",
-            "openalex_id": "https://openalex.org/A5138598861",
-            "display_name": "Goutham Indukuri",
-            "order": 2,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [],
-            "institutions": [],
-            "affiliation_mapping": [],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Sripada, Somayajulu",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5143205275",
-            "display_name": "Somayajulu Sripada",
-            "order": 3,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [],
-            "institutions": [],
-            "affiliation_mapping": [],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Vorland, Colby J.",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0003-4225-372X",
-            "openalex_id": "https://openalex.org/A5074473858",
-            "display_name": "Colby J. Vorland",
-            "order": 4,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [],
-            "institutions": [],
-            "affiliation_mapping": [],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Wilkinson, Jack",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5146353484",
-            "display_name": "Jack Wilkinson",
-            "order": 5,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [],
-            "institutions": [],
-            "affiliation_mapping": [],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Robertson, Clare",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0001-6019-6795",
-            "openalex_id": "https://openalex.org/A5005990980",
-            "display_name": "Clare Robertson",
-            "order": 6,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [],
-            "institutions": [],
-            "affiliation_mapping": [],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Bolland, Mark",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5146377196",
-            "display_name": "Mark Bolland",
-            "order": 7,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [],
-            "institutions": [],
-            "affiliation_mapping": [],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Grey, Andrew",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0002-7803-0096",
-            "openalex_id": "https://openalex.org/A5136189983",
-            "display_name": "Andrew Grey",
-            "order": 8,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [],
-            "institutions": [],
-            "affiliation_mapping": [],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Brazzelli, Miriam",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5133824367",
-            "display_name": "Miriam Brazzelli",
-            "order": 9,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [],
-            "institutions": [],
-            "affiliation_mapping": [],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Avenell, Alison",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5146344675",
-            "display_name": "Alison Avenell",
-            "order": 10,
-            "position": "last",
-            "is_corresponding": false,
-            "affiliations": [],
-            "institutions": [],
-            "affiliation_mapping": [],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          }
-        ]
-      },
-      {
-        "source": "OpenAlex",
-        "doi": null,
-        "authors": [
-          {
-            "name": "Markovic, Milan",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0002-5477-287X",
-            "openalex_id": "https://openalex.org/A5001900239",
-            "display_name": "Milan Marković",
-            "order": 1,
-            "position": "first",
-            "is_corresponding": false,
-            "affiliations": [
-              "Department of Computing Science , University of Aberdeen , UK",
-              "Interdisciplinary Institute , University of Aberdeen , UK"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I195460627",
-                "display_name": "University of Aberdeen",
-                "ror": "https://ror.org/016476m91",
-                "country_code": "GB",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I195460627"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Department of Computing Science , University of Aberdeen , UK",
-                "institution_ids": [
-                  "https://openalex.org/I195460627"
-                ]
-              },
-              {
-                "raw_affiliation_string": "Interdisciplinary Institute , University of Aberdeen , UK",
-                "institution_ids": [
-                  "https://openalex.org/I195460627"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Indukuri, Goutham",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0009-0005-2520-5007",
-            "openalex_id": "https://openalex.org/A5138598861",
-            "display_name": "Goutham Indukuri",
-            "order": 2,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [],
-            "institutions": [],
-            "affiliation_mapping": [],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Sripada, Somayajulu",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5143205275",
-            "display_name": "Somayajulu Sripada",
-            "order": 3,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Department of Computing Science , University of Aberdeen , UK"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I195460627",
-                "display_name": "University of Aberdeen",
-                "ror": "https://ror.org/016476m91",
-                "country_code": "GB",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I195460627"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Department of Computing Science , University of Aberdeen , UK",
-                "institution_ids": [
-                  "https://openalex.org/I195460627"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Vorland, Colby J.",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0003-4225-372X",
-            "openalex_id": "https://openalex.org/A5074473858",
-            "display_name": "Colby J. Vorland",
-            "order": 4,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Department of Epidemiology and Biostatistics , Indiana University , USA"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I592451",
-                "display_name": "Indiana University",
-                "ror": "https://ror.org/01kg8sb98",
-                "country_code": "US",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I592451"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Department of Epidemiology and Biostatistics , Indiana University , USA",
-                "institution_ids": [
-                  "https://openalex.org/I592451"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Wilkinson, Jack",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5146353484",
-            "display_name": "Jack Wilkinson",
-            "order": 5,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Centre for Biostatistics , University of Manchester , UK"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I28407311",
-                "display_name": "University of Manchester",
-                "ror": "https://ror.org/027m9bs27",
-                "country_code": "GB",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I28407311"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Centre for Biostatistics , University of Manchester , UK",
-                "institution_ids": [
-                  "https://openalex.org/I28407311"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Robertson, Clare",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0001-6019-6795",
-            "openalex_id": "https://openalex.org/A5005990980",
-            "display_name": "Clare Robertson",
-            "order": 6,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Aberdeen Centre for Evaluation , University of Aberdeen , UK"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I195460627",
-                "display_name": "University of Aberdeen",
-                "ror": "https://ror.org/016476m91",
-                "country_code": "GB",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I195460627"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Aberdeen Centre for Evaluation , University of Aberdeen , UK",
-                "institution_ids": [
-                  "https://openalex.org/I195460627"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Bolland, Mark",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5146377196",
-            "display_name": "Mark Bolland",
-            "order": 7,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Department of Medicine , University of Auckland , NZ"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I154130895",
-                "display_name": "University of Auckland",
-                "ror": "https://ror.org/03b94tp07",
-                "country_code": "NZ",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I154130895"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Department of Medicine , University of Auckland , NZ",
-                "institution_ids": [
-                  "https://openalex.org/I154130895"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Grey, Andrew",
-            "given": null,
-            "family": null,
-            "orcid": "https://orcid.org/0000-0002-7803-0096",
-            "openalex_id": "https://openalex.org/A5136189983",
-            "display_name": "Andrew Grey",
-            "order": 8,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Department of Medicine , University of Auckland , NZ"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I154130895",
-                "display_name": "University of Auckland",
-                "ror": "https://ror.org/03b94tp07",
-                "country_code": "NZ",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I154130895"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Department of Medicine , University of Auckland , NZ",
-                "institution_ids": [
-                  "https://openalex.org/I154130895"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Brazzelli, Miriam",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5133824367",
-            "display_name": "Miriam Brazzelli",
-            "order": 9,
-            "position": "middle",
-            "is_corresponding": false,
-            "affiliations": [
-              "Aberdeen Centre for Evaluation , University of Aberdeen , UK"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I195460627",
-                "display_name": "University of Aberdeen",
-                "ror": "https://ror.org/016476m91",
-                "country_code": "GB",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I195460627"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Aberdeen Centre for Evaluation , University of Aberdeen , UK",
-                "institution_ids": [
-                  "https://openalex.org/I195460627"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          },
-          {
-            "name": "Avenell, Alison",
-            "given": null,
-            "family": null,
-            "orcid": null,
-            "openalex_id": "https://openalex.org/A5146344675",
-            "display_name": "Alison Avenell",
-            "order": 10,
-            "position": "last",
-            "is_corresponding": false,
-            "affiliations": [
-              "Aberdeen Centre for Evaluation , University of Aberdeen , UK"
-            ],
-            "institutions": [
-              {
-                "id": "https://openalex.org/I195460627",
-                "display_name": "University of Aberdeen",
-                "ror": "https://ror.org/016476m91",
-                "country_code": "GB",
-                "type": "education",
-                "lineage": [
-                  "https://openalex.org/I195460627"
-                ]
-              }
-            ],
-            "affiliation_mapping": [
-              {
-                "raw_affiliation_string": "Aberdeen Centre for Evaluation , University of Aberdeen , UK",
-                "institution_ids": [
-                  "https://openalex.org/I195460627"
-                ]
-              }
-            ],
-            "raw_orcid": null,
-            "name_components_note": "OpenAlex does not provide structured given/family names; preserve printed name."
-          }
-        ]
-      }
-    ],
-    "components": [],
-    "merged_catalog_ids": [
-      "work-313c9a9aa771"
-    ],
-    "id": "inspect",
-    "typeLabel": "Preprint",
-    "primary": "automation",
-    "themes": [
-      "automation",
-      "integrity"
-    ],
-    "subthemes": [
-      "automation-review",
-      "integrity-assessment"
-    ],
-    "tags": [
-      "Clinical trials",
-      "Large language models",
-      "Knowledge graphs"
-    ],
-    "summary": "Describes LLM-assisted tools and provenance records for producing transparent research-integrity assessments of clinical trials.",
-    "isPaper": true,
-    "active": true,
-    "preprint": true,
-    "status": "Preprint · not peer reviewed",
-    "short": "Keeping integrity checks inspectable",
-    "takeaway": "Describes LLM-assisted tools and provenance records for producing transparent research-integrity assessments of clinical trials.",
-    "venueLabel": "arXiv (Cornell University)",
     "isShip": false,
     "componentCount": 0,
     "role": "Coauthor",
@@ -30166,7 +30978,7 @@
       "note": null,
       "openalex_id": "https://openalex.org/W7147114582",
       "id": "W7147114582",
-      "type": "preprint",
+      "type": "article",
       "classification_basis": "Editorial judgment based on the saved title and abstract, with stated exceptions; not an OpenAlex subject label.",
       "source_urls": [
         "https://api.openalex.org/works/W7147114582"
@@ -30174,10 +30986,19 @@
       "counting_note": "Distinct public output; count according to its output type, not automatically as a journal paper.",
       "primarySubtheme": "transparency-registration",
       "rationale": "Improves the completeness and consistency of clinical-trial outcome definitions; the saved contribution is guidance rather than software.",
-      "sourceUrl": "https://api.osf.io/v2/preprints/5wrsm/"
+      "sourceUrl": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005275"
     },
     "related": [],
     "open_science": [
+      {
+        "kind": "open-access",
+        "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005275",
+        "label": "Published article (open access)",
+        "evidence": "Full final publisher JATS inspected; CC BY 4.0 license, final DOI and complete 19-author byline verified.",
+        "source_url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005275",
+        "verification": "verified-publisher-full-text",
+        "verified_at": "2026-10-24T09:09:36.942623+00:00"
+      },
       {
         "kind": "preprint",
         "url": "https://doi.org/10.31222/osf.io/5wrsm_v2",
@@ -30202,77 +31023,256 @@
         "aliases": [
           "https://doi.org/10.31222/osf.io/5wrsm_v1"
         ]
+      },
+      {
+        "kind": "materials",
+        "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005275#sec031",
+        "label": "Supporting information",
+        "evidence": "All six publisher supplementary DOCX files were downloaded and document XML inspected: registry fields, worked outcome examples, framework comparison, metric definitions, time-point guidance and registry-field table. These are materials, not shared analysis code or a study dataset.",
+        "source_url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005275",
+        "verification": "verified-publisher-linked-files",
+        "verified_at": "2026-10-24T09:09:36.942623+00:00",
+        "files": [
+          {
+            "name": "Fields on ClinicalTrials.gov we reviewed to define outcomes and results. (DOCX)",
+            "url": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1005275.s002&type=supplementary"
+          },
+          {
+            "name": "Examples of incompletely defined and completely defined outcomes. (DOCX)",
+            "url": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1005275.s003&type=supplementary"
+          },
+          {
+            "name": "Frameworks for defining outcomes. A comparison of past and current frameworks for defining outcomes. (DOCX)",
+            "url": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1005275.s004&type=supplementary"
+          },
+          {
+            "name": "Common metrics describing values for individual participants in clinical trials. (DOCX)",
+            "url": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1005275.s005&type=supplementary"
+          },
+          {
+            "name": "Do's and don'ts when defining time points (adapted from ClinicalTrials.gov). (DOCX)",
+            "url": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1005275.s006&type=supplementary"
+          },
+          {
+            "name": "Outcome fields of 18 WHO recognized primary registers. (DOCX)",
+            "url": "https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1005275.s007&type=supplementary"
+          }
+        ]
       }
     ],
     "language": null,
     "title": "Guidance for defining outcomes in clinical trials",
-    "doi": "10.31222/osf.io/5wrsm_v2",
-    "openalex_id": "https://openalex.org/W7213414860",
-    "year": 2026,
-    "date": "2026-09-16",
-    "type": "preprint",
-    "venue": "MetaArXiv",
+    "doi": "10.1371/journal.pmed.1005275",
     "authors": [
       {
-        "name": "Xiangji Ying"
+        "given": "Xiangji",
+        "family": "Ying",
+        "name": "Xiangji Ying",
+        "orcid": "https://orcid.org/0000-0002-1713-3788",
+        "affiliations": [
+          "1 Department of Epidemiology, University of North Carolina Gillings School of Global Public Health, Chapel Hill, North Carolina, United States of America"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Tianjing Li"
+        "given": "Tianjing",
+        "family": "Li",
+        "name": "Tianjing Li",
+        "orcid": null,
+        "affiliations": [
+          "2 Department of Ophthalmology, University of Colorado Anschutz Medical Campus, Aurora, Colorado, United States of America"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Joanne E McKenzie"
+        "given": "Joanne E.",
+        "family": "McKenzie",
+        "name": "Joanne E. McKenzie",
+        "orcid": "https://orcid.org/0000-0003-3534-1641",
+        "affiliations": [
+          "3 Methods in Evidence Synthesis Unit, School of Public Health and Preventive Medicine, Monash University, Melbourne, Victoria, Australia"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Matthew J Page"
+        "given": "Matthew J.",
+        "family": "Page",
+        "name": "Matthew J. Page",
+        "orcid": "https://orcid.org/0000-0002-4242-7526",
+        "affiliations": [
+          "3 Methods in Evidence Synthesis Unit, School of Public Health and Preventive Medicine, Monash University, Melbourne, Victoria, Australia"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Kiran Ninan"
+        "given": "Kiran",
+        "family": "Ninan",
+        "name": "Kiran Ninan",
+        "orcid": "https://orcid.org/0000-0002-8085-6751",
+        "affiliations": [
+          "1 Department of Epidemiology, University of North Carolina Gillings School of Global Public Health, Chapel Hill, North Carolina, United States of America"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Jean-Pierre Oberste"
+        "given": "Jean-Pierre",
+        "family": "Oberste",
+        "name": "Jean-Pierre Oberste",
+        "orcid": "https://orcid.org/0009-0003-2075-5267",
+        "affiliations": [
+          "1 Department of Epidemiology, University of North Carolina Gillings School of Global Public Health, Chapel Hill, North Carolina, United States of America"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Colby J Vorland"
+        "given": "Colby J.",
+        "family": "Vorland",
+        "name": "Colby J. Vorland",
+        "orcid": "https://orcid.org/0000-0003-4225-372X",
+        "affiliations": [
+          "4 Department of Epidemiology and Biostatistics, Indiana University School of Public Health-Bloomington, Bloomington, Indiana, United States of America"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Andrew W Brown"
+        "given": "Andrew W.",
+        "family": "Brown",
+        "name": "Andrew W. Brown",
+        "orcid": "https://orcid.org/0000-0002-1758-8205",
+        "affiliations": [
+          "5 Department of Biostatistics, University of Arkansas for Medical Sciences, Little Rock, Arkansas, United States of America",
+          "6 Arkansas Children’s Research Institute, Little Rock, Arkansas, United States of America"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Riaz Qureshi"
+        "given": "Riaz",
+        "family": "Qureshi",
+        "name": "Riaz Qureshi",
+        "orcid": "https://orcid.org/0000-0002-6670-4874",
+        "affiliations": [
+          "2 Department of Ophthalmology, University of Colorado Anschutz Medical Campus, Aurora, Colorado, United States of America"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Nicholas J DeVito"
+        "given": "Nicholas J.",
+        "family": "DeVito",
+        "name": "Nicholas J. DeVito",
+        "orcid": "https://orcid.org/0000-0001-8286-1995",
+        "affiliations": [
+          "7 Nuffield Department of Primary Care Health Sciences, University of Oxford, Oxford, United Kingdom"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Ian J Saldanha"
+        "given": "Ian J.",
+        "family": "Saldanha",
+        "name": "Ian J. Saldanha",
+        "orcid": "https://orcid.org/0000-0002-2062-3382",
+        "affiliations": [
+          "8 Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health, Baltimore, Maryland, United States of America"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Martin Offringa"
+        "given": "Martin",
+        "family": "Offringa",
+        "name": "Martin Offringa",
+        "orcid": "https://orcid.org/0000-0002-4402-5299",
+        "affiliations": [
+          "9 Child Health Evaluative Sciences, The Hospital for Sick Children Research Institute, Toronto, Ontario, Canada"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Nancy J Butcher"
+        "given": "Nancy J.",
+        "family": "Butcher",
+        "name": "Nancy J. Butcher",
+        "orcid": "https://orcid.org/0000-0002-5152-0108",
+        "affiliations": [
+          "9 Child Health Evaluative Sciences, The Hospital for Sick Children Research Institute, Toronto, Ontario, Canada",
+          "10 Department of Psychiatry, University of Toronto, Toronto, Ontario, Canada"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Sirui Zhang"
+        "given": "Sirui",
+        "family": "Zhang",
+        "name": "Sirui Zhang",
+        "orcid": "https://orcid.org/0009-0002-8410-436X",
+        "affiliations": [
+          "11 Department of Epidemiology, School of Public Health, Brown University, Providence, Rhode Island, United States of America"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Phi-Yen Nguyen"
+        "given": "Phi-Yen",
+        "family": "Nguyen",
+        "name": "Phi-Yen Nguyen",
+        "orcid": "https://orcid.org/0000-0002-0476-3385",
+        "affiliations": [
+          "3 Methods in Evidence Synthesis Unit, School of Public Health and Preventive Medicine, Monash University, Melbourne, Victoria, Australia"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Joe Menke"
+        "given": "Joe",
+        "family": "Menke",
+        "name": "Joe Menke",
+        "orcid": "https://orcid.org/0000-0002-7374-7549",
+        "affiliations": [
+          "12 School of Information Sciences, University of Illinois Urbana-Champaign, Champaign, Illinois, United States of America"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Veronica Ka Wai Lai"
+        "given": "Veronica Ka Wai",
+        "family": "Lai",
+        "name": "Veronica Ka Wai Lai",
+        "orcid": "https://orcid.org/0000-0003-3593-9141",
+        "affiliations": [
+          "9 Child Health Evaluative Sciences, The Hospital for Sick Children Research Institute, Toronto, Ontario, Canada"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Halil Kilicoglu"
+        "given": "Halil",
+        "family": "Kilicoglu",
+        "name": "Halil Kilicoglu",
+        "orcid": "https://orcid.org/0000-0003-3987-9393",
+        "affiliations": [
+          "12 School of Information Sciences, University of Illinois Urbana-Champaign, Champaign, Illinois, United States of America"
+        ],
+        "is_corresponding": false
       },
       {
-        "name": "Evan Mayo-Wilson"
+        "given": "Evan",
+        "family": "Mayo-Wilson",
+        "name": "Evan Mayo-Wilson",
+        "orcid": "https://orcid.org/0000-0001-6126-2459",
+        "affiliations": [
+          "1 Department of Epidemiology, University of North Carolina Gillings School of Global Public Health, Chapel Hill, North Carolina, United States of America"
+        ],
+        "is_corresponding": true
       }
     ],
-    "url": "https://doi.org/10.31222/osf.io/5wrsm_v2",
-    "status_note": "Version 2, posted 16 September 2026. This manuscript remains a preprint.",
+    "venue": "PLOS Medicine",
+    "volume": "23",
+    "issue": "10",
+    "pages": "e1005275",
+    "date": "2026-10-21",
+    "year": 2026,
+    "type": "article",
+    "publication_category": "Guidelines and Guidance",
+    "pmid": "42905861",
+    "openalex_id": "https://openalex.org/W7223120825",
+    "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005275",
+    "license": "CC-BY-4.0",
+    "publicationTypes": [
+      "Journal Article"
+    ],
+    "status_note": "Published in PLOS Medicine on 21 October 2026 as Guidelines and Guidance. Earlier MetaArXiv versions are retained below.",
     "author_list_complete": true,
     "versions": [],
     "cv_ids": [],
@@ -30291,19 +31291,20 @@
       }
     ],
     "all_dois": [
-      "10.31222/osf.io/5wrsm_v2",
-      "10.31222/osf.io/5wrsm_v1"
+      "10.1371/journal.pmed.1005275",
+      "10.31222/osf.io/5wrsm_v1",
+      "10.31222/osf.io/5wrsm_v2"
     ],
-    "metadata_retrieved": "2026-10-10T21:31:17.509633+00:00",
+    "metadata_retrieved": "2026-10-24T09:09:36.942623+00:00",
     "sources": [
       {
-        "name": "OSF",
-        "url": "https://doi.org/10.31222/osf.io/5wrsm_v2",
-        "doi": "10.31222/osf.io/5wrsm_v2",
+        "name": "Publisher",
+        "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005275",
+        "doi": "10.1371/journal.pmed.1005275",
         "title": "Guidance for defining outcomes in clinical trials",
         "year": 2026,
-        "retrieved_at": "2026-10-10T21:31:17.509633+00:00",
-        "evidence": "Version-specific DOI, publication timestamp and complete 19-author byline checked against the OSF manuscript first page. Repository contributors are not substituted for manuscript authors."
+        "retrieved_at": "2026-10-24T09:09:36.942623+00:00",
+        "evidence": "The final article and preprint v2 have the same 19 authors in order, 225 randomly selected trials with 3,424 outcomes, initial 50-trial pilot, 4 January 2024 registry search, rater pool and six-element framework. Publisher JATS and PubMed confirm the final citation."
       },
       {
         "name": "OpenAlex",
@@ -30320,12 +31321,22 @@
         "doi": null,
         "year": 2026,
         "openalex_id": "https://openalex.org/W7148229368"
+      },
+      {
+        "name": "OSF",
+        "url": "https://doi.org/10.31222/osf.io/5wrsm_v2",
+        "doi": "10.31222/osf.io/5wrsm_v2",
+        "title": "Guidance for defining outcomes in clinical trials",
+        "year": 2026,
+        "retrieved_at": "2026-10-10T21:31:17.509633+00:00",
+        "evidence": "Version-specific DOI, publication timestamp and complete 19-author byline checked against the OSF manuscript first page. Repository contributors are not substituted for manuscript authors."
       }
     ],
     "source_names": [
-      "OSF",
+      "Publisher",
       "OpenAlex",
-      "Google Scholar"
+      "Google Scholar",
+      "OSF"
     ],
     "components": [
       {
@@ -31673,11 +32684,166 @@
           }
         ],
         "component_role": "preprint"
+      },
+      {
+        "catalog_id": "version-4e5e7042d7be",
+        "classification": {
+          "primary": "transparency",
+          "themes": [
+            "transparency"
+          ],
+          "subthemes": [
+            "transparency-registration"
+          ],
+          "applications": [
+            "Clinical trials",
+            "Outcome definitions"
+          ],
+          "summary": "Develops a structured approach for defining clinical-trial outcomes completely and consistently before trials begin.",
+          "study_group": "outcome-definitions-guidance",
+          "relationship": null,
+          "target_doi": null,
+          "confidence": "high",
+          "note": null,
+          "openalex_id": "https://openalex.org/W7147114582",
+          "id": "W7147114582",
+          "type": "preprint",
+          "classification_basis": "Editorial judgment based on the saved title and abstract, with stated exceptions; not an OpenAlex subject label.",
+          "source_urls": [
+            "https://api.openalex.org/works/W7147114582"
+          ],
+          "counting_note": "Distinct public output; count according to its output type, not automatically as a journal paper.",
+          "primarySubtheme": "transparency-registration",
+          "rationale": "Improves the completeness and consistency of clinical-trial outcome definitions; the saved contribution is guidance rather than software.",
+          "sourceUrl": "https://api.osf.io/v2/preprints/5wrsm/"
+        },
+        "related": [],
+        "open_science": [
+          {
+            "kind": "preprint",
+            "url": "https://doi.org/10.31222/osf.io/5wrsm_v2",
+            "label": "Preprint, version 2",
+            "evidence": "OSF version 2 and primary manuscript retrieved; Crossref confirms is-version-of relationship.",
+            "source_url": "https://doi.org/10.31222/osf.io/5wrsm_v2",
+            "verification": "verified-osf-version-and-manuscript",
+            "verified_at": "2026-10-10T21:31:17.509633+00:00"
+          },
+          {
+            "kind": "preprint",
+            "url": "https://doi.org/10.31222/osf.io/5wrsm_v1",
+            "label": "Preprint",
+            "source_url": "https://api.openalex.org/works/W7147114582",
+            "evidence": "Public preprint record in the saved source catalogue. No final journal article identified as of retrieval.",
+            "verified_at": "2026-09-12T02:41:33.503631+00:00",
+            "verification": "source-metadata",
+            "doi": "10.31222/osf.io/5wrsm_v1",
+            "doi_aliases": [
+              "10.31222/osf.io/5wrsm_v1"
+            ],
+            "aliases": [
+              "https://doi.org/10.31222/osf.io/5wrsm_v1"
+            ]
+          }
+        ],
+        "language": null,
+        "title": "Guidance for defining outcomes in clinical trials",
+        "doi": "10.31222/osf.io/5wrsm_v2",
+        "openalex_id": "https://openalex.org/W7213414860",
+        "year": 2026,
+        "date": "2026-09-16",
+        "type": "preprint",
+        "venue": "MetaArXiv",
+        "authors": [
+          {
+            "name": "Xiangji Ying"
+          },
+          {
+            "name": "Tianjing Li"
+          },
+          {
+            "name": "Joanne E McKenzie"
+          },
+          {
+            "name": "Matthew J Page"
+          },
+          {
+            "name": "Kiran Ninan"
+          },
+          {
+            "name": "Jean-Pierre Oberste"
+          },
+          {
+            "name": "Colby J Vorland"
+          },
+          {
+            "name": "Andrew W Brown"
+          },
+          {
+            "name": "Riaz Qureshi"
+          },
+          {
+            "name": "Nicholas J DeVito"
+          },
+          {
+            "name": "Ian J Saldanha"
+          },
+          {
+            "name": "Martin Offringa"
+          },
+          {
+            "name": "Nancy J Butcher"
+          },
+          {
+            "name": "Sirui Zhang"
+          },
+          {
+            "name": "Phi-Yen Nguyen"
+          },
+          {
+            "name": "Joe Menke"
+          },
+          {
+            "name": "Veronica Ka Wai Lai"
+          },
+          {
+            "name": "Halil Kilicoglu"
+          },
+          {
+            "name": "Evan Mayo-Wilson"
+          }
+        ],
+        "url": "https://doi.org/10.31222/osf.io/5wrsm_v2",
+        "status_note": "Version 2, posted 16 September 2026. This manuscript remains a preprint.",
+        "author_list_complete": true,
+        "versions": [],
+        "cv_ids": [],
+        "cv_numbers": [],
+        "scholar_entries": [],
+        "all_dois": [
+          "10.31222/osf.io/5wrsm_v2"
+        ],
+        "metadata_retrieved": "2026-10-10T21:31:17.509633+00:00",
+        "sources": [
+          {
+            "name": "OSF",
+            "url": "https://doi.org/10.31222/osf.io/5wrsm_v2",
+            "doi": "10.31222/osf.io/5wrsm_v2",
+            "title": "Guidance for defining outcomes in clinical trials",
+            "year": 2026,
+            "retrieved_at": "2026-10-10T21:31:17.509633+00:00",
+            "evidence": "Version-specific DOI, publication timestamp and complete 19-author byline checked against the OSF manuscript first page. Repository contributors are not substituted for manuscript authors."
+          }
+        ],
+        "source_names": [
+          "OSF"
+        ],
+        "component_role": "preprint"
       }
     ],
     "merged_catalog_ids": [
       "work-5aab49e02c6f",
-      "version-fd5e5e276ab6"
+      "version-fd5e5e276ab6",
+      "version-4e5e7042d7be"
     ],
     "source_author_lists": [
       {
@@ -32322,7 +33488,7 @@
       }
     ],
     "id": "work-5aab49e02c6f",
-    "typeLabel": "Preprint",
+    "typeLabel": "Article",
     "primary": "transparency",
     "themes": [
       "transparency"
@@ -32337,13 +33503,13 @@
     "summary": "Develops a structured approach for defining clinical-trial outcomes completely and consistently before trials begin.",
     "isPaper": true,
     "active": true,
-    "preprint": true,
-    "status": "Preprint · not peer reviewed",
+    "preprint": false,
+    "status": "Published",
     "short": "Guidance for defining outcomes in clinical trials",
     "takeaway": "Develops a structured approach for defining clinical-trial outcomes completely and consistently before trials begin.",
-    "venueLabel": "MetaArXiv",
+    "venueLabel": "PLOS Medicine",
     "isShip": false,
-    "componentCount": 1,
+    "componentCount": 2,
     "role": "Coauthor",
     "n": "010"
   },
@@ -158890,6 +160056,18 @@
         "verification": "verified-public-full-text",
         "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC9551113&retmode=xml",
         "verified_at": "2026-09-11"
+      },
+      {
+        "kind": "code",
+        "url": "https://doi.org/10.5281/zenodo.6967687",
+        "label": "Statistical reanalysis code (SAS)",
+        "source_url": "https://zenodo.org/records/6967687",
+        "evidence": "Zenodo/DataCite explicitly identify this open deposit as a supplement to DOI10.1016/j.eclinm.2022.101686, with matching study title and description. Retrieved Wang et al. Renalysis 2021-09-15.sas contains analysis code; MD5 dc9c6db67a4d657b17d35b3df517b18d matches repository metadata. The article itself says code is available on request, so the newer resource verification rests on the actual public deposit rather than that statement. No raw participant-data availability is asserted.",
+        "verification": "explicit-deposit-to-article-relationship-and-inspected-code-file",
+        "verified_at": "2026-10-24T09:10:10.559757+00:00",
+        "files": [
+          "Wang et al. Renalysis 2021-09-15.sas"
+        ]
       }
     ],
     "abstract_available": true,
